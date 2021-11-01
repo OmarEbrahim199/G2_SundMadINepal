@@ -1,66 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-    <ScrollView android:id="@+id/loading_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" >
+tools:context=".MainActivity">
 
-        <RelativeLayout android:id="@+id/content_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/page_loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/ic_loading_screen_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-
-        </RelativeLayout>
-
-    </ScrollView>
+    <ImageView
+        android:id="@+id/image_6"
+        android:layout_width="234dp"
+        android:layout_height="311dp"
+        android:contentDescription="image_6"
+        android:src="@drawable/image_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
-        android:id="@+id/page_loading_screen_ek1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        app:layout_anchor="@+id/loading_screen"
-        android:background="@drawable/ellipse_3"
-        app:layout_anchorGravity="center">
-
-
-
-
-        <RelativeLayout
-            android:id="@+id/loading_"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="141dp"
-            android:layout_marginTop="600dp">
-
-            <ImageView
-                android:id="@+id/loding_icon_1"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:contentDescription="loding_icon_1"
-                android:src="@drawable/loding_icon_1" />
-
-        </RelativeLayout>
-
+        android:id="@+id/loading_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/image_6"
-            android:layout_width="234dp"
-            android:layout_height="311dp"
-            android:layout_marginStart="89dp"
-            android:layout_marginTop="250dp"
-            android:contentDescription="image_6"
-            android:src="@drawable/image_6" />
-
+            android:id="@+id/loding_icon_1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="loding_icon_1"
+            android:src="@drawable/loding_icon_1" />
 
     </RelativeLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

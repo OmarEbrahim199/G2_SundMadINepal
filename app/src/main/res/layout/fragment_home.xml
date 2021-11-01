@@ -47,7 +47,7 @@
             app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toStartOf="parent"
             app:shapeAppearanceOverlay="@style/corner"
-            app:strokeColor="#108C15"
+            app:strokeColor="@color/white"
             app:strokeWidth="10dp"
             tools:src="@color/white" />
 
