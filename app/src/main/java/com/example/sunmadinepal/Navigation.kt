@@ -54,8 +54,8 @@ class Navigation : AppCompatActivity() {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = this.resources.getColor(R.color.red)
-            window.navigationBarColor = this.resources.getColor(R.color.red)
+            window.statusBarColor = this.resources.getColor(R.color.Orange)
+            window.navigationBarColor = this.resources.getColor(R.color.Orange)
 
 
         }
