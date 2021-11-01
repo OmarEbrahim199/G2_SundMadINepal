@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_recipes"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        android:title="@string/title_Recipes" />
+
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/heat"
+        android:title="@string/title_health" />
+
+    <item
+        android:id="@+id/navigation_garden"
+        android:icon="@drawable/foodicone"
+        android:title="@string/garden" />
+
+
+    <item
+        android:id="@id/navigation_profile"
+        android:icon="@drawable/ic_baseline_people_outline_24"
+        android:title="@string/title_profile"/>
+
+
+
+
+
+</menu>
+

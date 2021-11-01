@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sund Mad i Nepal</string>
+    <string name="title_home">Hjem</string>
+    <string name="title_Recipes">Opskrifter</string>
+    <string name="title_garden">have</string>
+    <string name="title_health">Sundhed</string>
+    <string name="health">Sundhed</string>
+    <string name="garden">have</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="language">Language</string>
+    <string name="change_language">Skift sprog</string>
+</resources>

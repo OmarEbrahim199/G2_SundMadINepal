@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sund Mad i Nepal</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_Recipes">Recipes</string>
+
+    <string name="title_health">Health</string>
+    <string name="title_garden">Garden</string>
+
+
+    <string name="title_profile">Profile</string>
+    <string name="button" translatable="false">Button</string>
+    <string name="hello_add_weight_adder" translatable="false">Hello add weight adder</string>
+    <string name="garden">Garden</string>
+    <string name="language" >Language</string>
+    <string name="change_language">Change Language</string>
+</resources>

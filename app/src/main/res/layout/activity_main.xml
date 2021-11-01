@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView android:id="@+id/loading_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/page_loading_screen_ek1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_anchor="@+id/loading_screen"
+        android:background="@drawable/ellipse_3"
+        app:layout_anchorGravity="center">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/loading_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="600dp">
+
+            <ImageView
+                android:id="@+id/loding_icon_1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="loding_icon_1"
+                android:src="@drawable/loding_icon_1" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/image_6"
+            android:layout_width="234dp"
+            android:layout_height="311dp"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="250dp"
+            android:contentDescription="image_6"
+            android:src="@drawable/image_6" />
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
