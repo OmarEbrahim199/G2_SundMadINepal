@@ -5,138 +5,126 @@
     style="@android:style/Widget.Material.Light.ScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="0dp"
-    android:layout_marginTop="0dp"
-    android:background="@drawable/ellipse_3"
+    android:background="@drawable/ic_background_vector"
     android:clipToPadding="true"
     android:fillViewport="true"
     android:scrollbarStyle="outsideOverlay">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.home.HomeFragment">
-
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView3"
-            android:layout_width="393dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="9dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="724dp"
-            android:src="@drawable/_tomato_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:shapeAppearanceOverlay="@style/corner"
-            app:strokeColor="#108C15"
-            app:strokeWidth="10dp" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView2"
-            android:layout_width="377dp"
-            android:layout_height="152dp"
-            android:layout_marginStart="9dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="928dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.45"
-            app:layout_constraintStart_toStartOf="parent"
-            app:shapeAppearanceOverlay="@style/corner"
-            app:strokeColor="@color/white"
-            app:strokeWidth="10dp"
-            tools:src="@color/white" />
+        tools:context=".ui.home.HomeFragment"
+        tools:ignore="ExtraText">
 
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="236dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginBottom="96dp"
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
             android:text="@string/welcome"
             android:textAlignment="textStart"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="454dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="164dp"
-            android:text="@string/next_doctors_appointment"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
+            android:textColor="@color/white"
+            android:textSize="50sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView6" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="426dp"
-            android:layout_height="66dp"
-            android:layout_marginTop="20dp"
-            android:text="21-10-2021"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="403dp"
-            android:layout_height="57dp"
-            android:layout_marginBottom="92dp"
-            android:text="@string/tomato"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.07" />
-
-        <TextView
-            android:id="@+id/textHome"
-            android:layout_width="323dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="30dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/language"
-            android:layout_width="135dp"
-            android:layout_height="73dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
             android:onClick="getText"
-
             android:text="@string/change_language"
-            app:layout_constraintBottom_toTopOf="@+id/textHome"
-            app:layout_constraintEnd_toStartOf="@+id/textView6"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/welcome"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/box_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_box_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+        <TextView
+            android:id="@+id/next_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/next_doctors_appointment"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/box_date"
+            app:layout_constraintTop_toTopOf="@id/box_date" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="21-10-2021"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/box_date"
+            app:layout_constraintStart_toStartOf="@id/box_date"
+            app:layout_constraintTop_toTopOf="@id/box_date" />
+
+        <ImageView
+            android:id="@+id/veggie_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_box_veggie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/box_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Veggie of the day"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@id/veggie_box"
+            app:layout_constraintTop_toTopOf="@id/veggie_box" />
+
+        <TextView
+            android:id="@+id/tomato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/tomato"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/veggie_box"
+            app:layout_constraintEnd_toEndOf="@id/veggie_box"
+            app:layout_constraintStart_toStartOf="@id/veggie_box" />
+
+        <ImageButton
+            android:id="@+id/tomota_image"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/_tomato_image"
+            app:layout_constraintBottom_toBottomOf="@id/veggie_box"
+            app:layout_constraintEnd_toEndOf="@id/veggie_box"
+            app:layout_constraintStart_toStartOf="@id/veggie_box"
+            app:shapeAppearanceOverlay="@style/corner" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
