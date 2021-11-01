@@ -84,23 +84,6 @@ class Navigation : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
-        val inflater = menuInflater
-        inflater.inflate(R.menu.bottom_nav_menu, menu)
-
-        return true
-    }
-
-
-
-    fun showPopupMenu(view: View?) {
-        val popup = PopupMenu(this, view)
-        val inflater: MenuInflater = popup.getMenuInflater()
-        inflater.inflate(R.menu.bottom_nav_menu, popup.getMenu())
-        popup.show()
-    }
 
 
 
