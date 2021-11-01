@@ -54,8 +54,8 @@ class Navigation : AppCompatActivity() {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = this.resources.getColor(R.color.red)
-            window.navigationBarColor = this.resources.getColor(R.color.red)
+            window.statusBarColor = this.resources.getColor(R.color.Orange)
+            window.navigationBarColor = this.resources.getColor(R.color.Orange)
 
 
         }
@@ -84,23 +84,6 @@ class Navigation : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
-        val inflater = menuInflater
-        inflater.inflate(R.menu.bottom_nav_menu, menu)
-
-        return true
-    }
-
-
-
-    fun showPopupMenu(view: View?) {
-        val popup = PopupMenu(this, view)
-        val inflater: MenuInflater = popup.getMenuInflater()
-        inflater.inflate(R.menu.bottom_nav_menu, popup.getMenu())
-        popup.show()
-    }
 
 
 
