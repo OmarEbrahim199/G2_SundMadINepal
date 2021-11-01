@@ -7,7 +7,7 @@
     android:background="@drawable/ic_background_vector"
     tools:context=".ui.health.HealthFragment">
 
-
+//Tekst til senere?
     <TextView
         android:id="@+id/text_health"
         android:layout_width="match_parent"
@@ -20,83 +20,66 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/maternity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-
-        android:layout_marginTop="52dp"
-        android:layout_marginBottom="275dp"
-        android:src="@drawable/icon_maternity"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/text_health"
-        app:layout_constraintEnd_toStartOf="@+id/lady_0to6"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1000goldendays" />
-
-    <ImageButton
-        android:id="@+id/lady6to12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="1dp"
-        android:src="@drawable/icon_6_12_months"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/text1000goldendays"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maternity"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/lady12to24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="69dp"
-        android:src="@drawable/icon_12_24_months"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/text_health"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lady6to12"
-        app:layout_constraintTop_toBottomOf="@+id/lady_0to6" />
-
     <TextView
         android:id="@+id/text1000goldendays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginTop="25dp"
         android:text="1000 golden days"
         android:textColor="@color/white"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/lady_0to6"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/maternity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/icon_maternity"
+        app:layout_constraintEnd_toStartOf="@id/lady_0to6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1000goldendays"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/lady_0to6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="53dp"
-
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
         android:src="@drawable/icon_0_6_months"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/lady12to24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/maternity"
-        app:layout_constraintTop_toBottomOf="@+id/text1000goldendays" />
+        app:layout_constraintTop_toBottomOf="@+id/text1000goldendays"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/lady6to12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/icon_6_12_months"
+        app:layout_constraintEnd_toStartOf="@id/lady12to24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maternity"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/lady12to24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/icon_12_24_months"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lady_0to6"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
