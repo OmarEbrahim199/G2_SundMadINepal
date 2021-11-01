@@ -92,7 +92,7 @@ class Navigation : AppCompatActivity() {
         val listItmes = arrayOf( "नेपाली", "English")
 
         val mBuilder = AlertDialog.Builder(this)
-        mBuilder.setTitle("Choose Language")
+        mBuilder.setTitle("@string/Choose Language")
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0) {
                 setLocate("ne")
