@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="411dp"
+    android:height="802dp"
+    android:viewportWidth="411"
+    android:viewportHeight="802">
+  <path
+      android:pathData="M462,569.897C462,617.946 517,801 347,789C166.403,789 -76,779.049 -76,731C-12,771.622 -209.003,884.851 37,695C405,411 462,521.849 462,569.897Z"
+      android:fillAlpha="0.8">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="518.14"
+          android:startX="203.055"
+          android:endY="797.897"
+          android:endX="203.055"
+          android:type="linear">
+        <item android:offset="0" android:color="#7FF7AC43"/>
+        <item android:offset="0.932292" android:color="#CCF7AC43"/>
+        <item android:offset="1" android:color="#99F7AC43"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M494,99C494,154.505 563.637,130.558 446,130.558C466,661 289,11.058 203,0.558C203,-54.947 200.363,-53 318,-53C422,3 494,43.495 494,99Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="-27"
+          android:startX="356.868"
+          android:endY="130.558"
+          android:endX="356.868"
+          android:type="linear">
+        <item android:offset="0" android:color="#33F7AC43"/>
+        <item android:offset="1" android:color="#99F7AC43"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M-46,707C-88,647 -68.983,50.395 -22.983,-5.605C23.018,-61.605 403.018,-75.605 417.018,-5.605C431.018,64.396 572.037,531 417.018,601C262,671 -4,767 -46,707Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="-30.54"
+          android:startX="237.48"
+          android:endY="636.636"
+          android:endX="237.48"
+          android:type="linear">
+        <item android:offset="0" android:color="#66F7AC43"/>
+        <item android:offset="1" android:color="#CCF7AC43"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>
