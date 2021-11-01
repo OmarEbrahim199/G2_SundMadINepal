@@ -29,11 +29,13 @@ import android.view.MenuInflater
 
 class Navigation : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityNavigationBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
 
        /* val config = resources.configuration
@@ -56,6 +58,7 @@ class Navigation : AppCompatActivity() {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.Orange)
             window.navigationBarColor = this.resources.getColor(R.color.Orange)
+
 
 
         }
@@ -82,6 +85,7 @@ class Navigation : AppCompatActivity() {
 
 
 
+
     }
 
 
@@ -89,10 +93,12 @@ class Navigation : AppCompatActivity() {
 
     fun showChangeLang() {
 
+        val text: TextView = findViewById(R.id.Choose_Language)
+
         val listItmes = arrayOf( "नेपाली", "English")
 
         val mBuilder = AlertDialog.Builder(this)
-        mBuilder.setTitle("@string/Choose Language")
+        mBuilder.setTitle(text.text)
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0) {
                 setLocate("ne")

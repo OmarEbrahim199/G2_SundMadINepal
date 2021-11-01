@@ -43,6 +43,19 @@
             app:layout_constraintStart_toEndOf="@+id/welcome"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/Choose_Language"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="731dp"
+            android:text="@string/choose_language"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/box_date"
+            app:layout_constraintStart_toEndOf="@+id/box_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/box_date"
             android:layout_width="wrap_content"
