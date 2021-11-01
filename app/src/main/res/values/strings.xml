@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Sund Mad i Nepal</string>
-    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_activity_navigation" translatable="false">Navigation</string>
     <string name="title_home">Home</string>
     <string name="title_Recipes">Recipes</string>
 
@@ -12,6 +12,10 @@
     <string name="button" translatable="false">Button</string>
     <string name="hello_add_weight_adder" translatable="false">Hello add weight adder</string>
     <string name="garden">Garden</string>
-    <string name="language" >Language</string>
+    <string name="language" translatable="false">Language</string>
     <string name="change_language">Change Language</string>
+    <string name="next_doctors_appointment">Next doctors appointment</string>
+    <string name="tomato">Tomato</string>
+    <string name="welcome">Welcome</string>
+    <string name="cauliflower">Cauliflower</string>
 </resources>

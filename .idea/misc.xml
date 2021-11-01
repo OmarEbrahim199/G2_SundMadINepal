@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_language.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_navigation.xml" value="0.23369565217391305" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_home.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_baseline_food_bank_24.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_language.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_navigation.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_profile_add.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_garden.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_profile.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/health.xml" value="0.13360507246376813" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/as.xml" value="0.2594871794871795" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/foodicone.xml" value="0.2594871794871795" />

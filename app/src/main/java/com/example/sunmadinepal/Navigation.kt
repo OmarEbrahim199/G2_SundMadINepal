@@ -106,25 +106,16 @@ class Navigation : AppCompatActivity() {
 
     fun showChangeLang() {
 
-        val listItmes = arrayOf("عربي", "हिंदी", "اردو", "English","Danish")
+        val listItmes = arrayOf( "नेपाली", "English")
 
         val mBuilder = AlertDialog.Builder(this)
         mBuilder.setTitle("Choose Language")
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0) {
-                setLocate("ar")
+                setLocate("ne")
                 recreate()
             } else if (which == 1) {
-                setLocate("hi")
-                recreate()
-            } else if (which == 2) {
-                setLocate("ur")
-                recreate()
-            } else if (which == 3) {
                 setLocate("en")
-                recreate()
-            }else if (which == 4) {
-                setLocate("da")
                 recreate()
             }
 
