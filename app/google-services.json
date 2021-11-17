@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746786611847",
+    "project_id": "sunmadinepal",
+    "storage_bucket": "sunmadinepal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746786611847:android:332c6225a43697d698ce22",
+        "android_client_info": {
+          "package_name": "com.example.sunmadinepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746786611847-rprp7bh88ria5rdbikd64hmku8s4hf1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv8sEfnHl-L_jsKMHZKKtZe2_6hwBK0WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746786611847-rprp7bh88ria5rdbikd64hmku8s4hf1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
