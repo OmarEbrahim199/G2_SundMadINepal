@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/ellipse_3"
-        tools:context=".ui.recipes.RecipesFragment">
+        tools:context=".ui.fragment.recipes.RecipesFragment">
 
         <TextView
             android:id="@+id/text_recipes"
@@ -21,14 +21,15 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="20sp"
-            tools:layout_editor_absoluteY="558dp" />
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="570dp" />
 
         <ImageButton
             android:id="@+id/search_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/search_bar"
+            android:src="@drawable/search_bar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/recipes_for_pregnant_woman"
+            android:src="@drawable/recipes_for_pregnant_woman"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/search_bar" />
@@ -48,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/recipes_for_mothers"
+            android:src="@drawable/recipes_for_mothers"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recipes_for_pregnant_woman" />
@@ -58,10 +59,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/recipes_for_children"
+            android:src="@drawable/recipes_for_children"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recipes_for_mothers" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

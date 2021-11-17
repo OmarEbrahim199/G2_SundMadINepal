@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_background_vector"
-    tools:context=".ui.health.HealthFragment">
+    tools:context=".ui.fragment.health.HealthFragment">
 
 //Tekst til senere?
     <TextView

@@ -7,8 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-
-    tools:context=".ui.garden.GardenFragment">
+    tools:context=".ui.fragment.garden.GardenFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -79,7 +78,7 @@
             app:layout_constraintTop_toBottomOf="@id/tomato_image"
             app:shapeAppearanceOverlay="@style/corner"
             app:strokeColor="@color/white"
-            app:strokeWidth="10dp" />
+             />
 
     <TextView
         android:id="@+id/cauliflower_text"
@@ -92,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/black"
-        android:textAppearance="bold"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

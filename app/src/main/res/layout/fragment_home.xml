@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.home.HomeFragment"
+        tools:context=".ui.fragment.home.HomeFragment"
         tools:ignore="ExtraText">
 
         <TextView
@@ -37,7 +37,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
-            android:onClick="getText"
+
             android:text="@string/change_language"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/welcome"

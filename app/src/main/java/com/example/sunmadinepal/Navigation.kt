@@ -3,9 +3,7 @@ package com.example.sunmadinepal
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
-import android.content.Intent
 import android.content.res.Configuration
-import android.graphics.Color.red
 import android.os.Build
 import android.os.Bundle
 import android.view.*
@@ -18,13 +16,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
 import com.example.sunmadinepal.databinding.ActivityNavigationBinding
-import com.example.sunmadinepal.ui.Profile.profile_Add
 import java.util.*
-import android.R.menu
-
-import android.view.MenuInflater
-
-
 
 
 class Navigation : AppCompatActivity() {
@@ -32,26 +24,15 @@ class Navigation : AppCompatActivity() {
 
     private lateinit var binding: ActivityNavigationBinding
 
+    override fun onStart() {
+        super.onStart()
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
 
-
-       /* val config = resources.configuration
-        val lang = "da" // your language code
-        val locale = Locale(lang)
-        Locale.setDefault(locale)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1)
-            config.setLocale(locale)
-        else
-            config.locale = locale
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
-            createConfigurationContext(config)
-        resources.updateConfiguration(config, resources.displayMetrics)
-
-*/
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -79,19 +60,37 @@ class Navigation : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+
         val actionBar = supportActionBar
         actionBar!!.title = resources.getString(R.string.app_name)
+        actionBar.setHomeButtonEnabled(true)
 
 
 
+        binding.apply {
+            // android:onClick="getText"
+
+            val getLan: Button = findViewById(R.id.language)
+            getLan.setOnClickListener {
+                getLanguage()
+            }
 
 
+        }
+
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 
 
 
-    fun showChangeLang() {
+
+     fun showChangeLang() {
 
         val text: TextView = findViewById(R.id.Choose_Language)
 
@@ -138,15 +137,10 @@ class Navigation : AppCompatActivity() {
     }
 
 
-    fun getText(view: android.view.View) {
+     fun getLanguage() {
         loadLocate()
         showChangeLang()
-        //val resultTv =findViewById<TextView>(R.id.textView4)
-       // val intent = Intent(this, profile_Add::class.java)
-        //startActivity(intent)
-        //  resultTv.setText("your entered contains")
     }
-
 
 
 

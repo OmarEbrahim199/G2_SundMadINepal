@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Profile.profile_Add"
+    tools:context=".ui.fragment.Profile.profile_Add"
     android:background="@drawable/ellipse_3">
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/texttospeak"
         android:layout_width="234dp"
         android:layout_height="104dp"
         android:layout_marginStart="88dp"
@@ -24,5 +24,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/speakbt1"
+        android:layout_width="263dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="110dp"
+        android:text="Speak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttospeak" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

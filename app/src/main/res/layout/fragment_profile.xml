@@ -22,7 +22,7 @@
         android:scrollbarSize="6dp"
         android:soundEffectsEnabled="true"
         android:splitMotionEvents="true"
-        tools:context=".ui.Profile.ProfileFragment">
+        tools:context=".ui.fragment.Profile.ProfileFragment">
 
         <TextView
             android:id="@+id/text_profile"
