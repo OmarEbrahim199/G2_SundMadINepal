@@ -27,7 +27,7 @@ class HealthFragment : Fragment(){
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         healthViewModel =
             ViewModelProvider(this).get(HealthViewModel::class.java)
@@ -45,9 +45,28 @@ class HealthFragment : Fragment(){
 
     override fun onStart() {
         super.onStart()
+        goToDestinations()
+
+
+    }
+
+    fun goToDestinations(){
+
         binding.apply {
+
             lady0to6.setOnClickListener {
-                findNavController().navigate(R.id.action_navigation_health_to_fragment_0_6_months) }
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_0_6_months)
+
+            }
+            lady6to12.setOnClickListener {
+                findNavController().navigate(R.id.action_navigation_health_to_agment_06_12_months)
+            }
+            lady12to24.setOnClickListener {
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_12_24_months)
+            }
+            maternity.setOnClickListener {
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_maternity)
+            }
 
 
 
@@ -55,7 +74,10 @@ class HealthFragment : Fragment(){
 
 
         }
+
     }
+
+
 
 
 }

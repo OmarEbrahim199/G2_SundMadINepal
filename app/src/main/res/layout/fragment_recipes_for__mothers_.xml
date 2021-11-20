@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -7,22 +7,15 @@
     tools:context=".ui.fragment.recipes.Recipes_for_Mothers_Fragment">
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="389dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="157dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="487dp"
-        android:text="Hello_From_Recipes_for_Mothers_Fragment"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
 
 
-</FrameLayout>
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

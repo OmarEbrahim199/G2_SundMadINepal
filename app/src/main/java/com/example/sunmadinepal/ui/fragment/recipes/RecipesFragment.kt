@@ -7,8 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentRecipesBinding
+import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.ui.ViewModel.RecipesViewModel
 
 
@@ -38,6 +41,7 @@ class RecipesFragment : Fragment() {
         val root: View = binding.root
 
 
+
         return root
     }
 
@@ -50,6 +54,7 @@ class RecipesFragment : Fragment() {
     fun goToDestinations(){
 
         binding.apply {
+
             recipesForPregnantWoman.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_recipes_to_pregant_woman_Fragment) }
 

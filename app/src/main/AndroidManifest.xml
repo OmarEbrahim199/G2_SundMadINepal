@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sunmadinepal">
         <activity
-            android:name="com.example.sunmadinepal.ui.fragment.garden.recipes.Recipes_for_pregant_woman"
+            android:name=".ui.fragment.recipes.InsideRecipes"
+            android:exported="true" />
+        <activity
+            android:name=".InsideTheRecipes"
+            android:exported="true" />
+        <activity
+            android:name=".ui.fragment.garden.recipes.Recipes_for_pregant_woman"
             android:exported="true" />
         <activity
             android:name=".language.Language"
             android:exported="true" />
         <activity
-            android:name="com.example.sunmadinepal.ui.fragment.garden.Profile.profile_Add"
+            android:name=".ui.fragment.Profile.profile_Add"
             android:exported="true" />
         <activity
             android:name=".Navigation"

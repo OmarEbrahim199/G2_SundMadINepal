@@ -21,6 +21,15 @@
         <action
             android:id="@+id/action_navigation_health_to_fragment_0_6_months"
             app:destination="@id/fragment_0_6_months" />
+        <action
+            android:id="@+id/action_navigation_health_to_fragment_12_24_months"
+            app:destination="@id/fragment_12_24_months" />
+        <action
+            android:id="@+id/action_navigation_health_to_fragment_maternity"
+            app:destination="@id/fragment_maternity" />
+        <action
+            android:id="@+id/action_navigation_health_to_agment_06_12_months"
+            app:destination="@id/agment_06_12_months" />
     </fragment>
 
     <fragment
@@ -61,6 +70,10 @@
         <action
             android:id="@+id/action_pregant_woman_Fragment_to_navigation_recipes"
             app:destination="@id/navigation_recipes" />
+        <action
+            android:id="@+id/action_pregant_woman_Fragment_to_insideRecipes"
+            app:destination="@id/insideRecipes" />
+
     </fragment>
     <fragment
         android:id="@+id/recipes_For_Children_Fragment"
@@ -70,6 +83,10 @@
         <action
             android:id="@+id/action_recipes_For_Children_Fragment_to_navigation_recipes2"
             app:destination="@id/navigation_recipes" />
+        <action
+            android:id="@+id/action_recipes_For_Children_Fragment_to_insideRecipes"
+            app:destination="@id/insideRecipes" />
+
     </fragment>
     <fragment
         android:id="@+id/recipes_for_Mothers_Fragment"
@@ -79,6 +96,10 @@
         <action
             android:id="@+id/action_recipes_for_Mothers_Fragment_to_navigation_recipes2"
             app:destination="@id/navigation_recipes" />
+        <action
+            android:id="@+id/action_recipes_for_Mothers_Fragment_to_insideRecipes"
+            app:destination="@id/insideRecipes" />
+
     </fragment>
     <fragment
         android:id="@+id/fragment_0_6_months"
@@ -89,5 +110,37 @@
             android:id="@+id/action_fragment_0_6_months_to_navigation_health"
             app:destination="@id/navigation_health" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_12_24_months"
+        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_12_24_months"
+        android:label="fragment_12_24_months"
+        tools:layout="@layout/fragment_12_24_months" >
+        <action
+            android:id="@+id/action_fragment_12_24_months_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+    <fragment
+        android:id="@+id/agment_06_12_months"
+        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_06_12_months"
+        android:label="fragment_agment_06_12_months"
+        tools:layout="@layout/fragment_agment_06_12_months" >
+        <action
+            android:id="@+id/action_agment_06_12_months_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_maternity"
+        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_maternity"
+        android:label="fragment_maternity"
+        tools:layout="@layout/fragment_maternity" >
+        <action
+            android:id="@+id/action_fragment_maternity_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+    <activity
+        android:id="@+id/insideRecipes"
+        android:name="com.example.sunmadinepal.ui.fragment.recipes.InsideRecipes"
+        android:label="activity_inside_recipes"
+        tools:layout="@layout/activity_inside_recipes" />
 
 </navigation>
