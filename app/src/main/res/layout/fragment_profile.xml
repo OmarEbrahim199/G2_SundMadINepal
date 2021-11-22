@@ -86,8 +86,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:shapeAppearanceOverlay="@style/corner"
-            app:strokeColor="#108C15"
-            app:strokeWidth="10dp" />
+ />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView2"
@@ -103,8 +102,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_profile"
             app:shapeAppearanceOverlay="@style/corner"
-            app:strokeColor="#108C15"
-            app:strokeWidth="10dp" />
+ />
 
         <Button
             android:id="@+id/button"
