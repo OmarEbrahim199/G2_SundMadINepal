@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#CF0505</color>
     <color name="menu">#805F38</color>
-    <color name="Orange">#FF9800</color>
+    <color name="Orange">#F7AC43</color>
+    <color name="Orange80">#CCF7AC43</color>
+    <color name="Orange60">#99F7AC43</color>
+
 
 </resources>
