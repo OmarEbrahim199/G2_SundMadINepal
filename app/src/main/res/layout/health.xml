@@ -33,6 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
+        android:background="?android:attr/selectableItemBackground"
         android:id="@+id/maternity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,17 +47,19 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
+        android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady_0to6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
         android:src="@drawable/icon_0_6_months"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1000goldendays"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
+        android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady6to12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,6 +73,7 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
+        android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady12to24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
