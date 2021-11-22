@@ -7,31 +7,36 @@
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_navigation.xml" value="0.264" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/activity_profile_add.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_0_6_months.xml" value="0.2056159420289855" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_agment_06_12_months.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_garden.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_home.xml" value="0.14855072463768115" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_maternity.xml" value="0.2056159420289855" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_pregant_woman_.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes__for__children_.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/health.xml" value="0.2" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/layout/recipedetails.xml" value="0.2056159420289855" />
-        <entry key="..\:/Users/Christoffer/StudioProjects/sunmadinepal/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/foodicone.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/heat.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_background_vector.xml" value="0.37604166666666666" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_baseline_food_bank_24.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_baseline_restaurant_menu_24.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_box_date.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_box_veggie.xml" value="0.37604166666666666" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_language.xml" value="0.13360507246376813" />
-        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_navigation.xml" value="0.13360507246376813" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/activity_profile_add.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/bottom_nav_icon_color_selector.xml" value="0.25815217391304346" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_0_6_months.xml" value="0.25815217391304346" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_agment_06_12_months.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_garden.xml" value="0.13360507246376813" />
         <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_home.xml" value="0.22" />
-        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_profile.xml" value="0.13360507246376813" />
-        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes.xml" value="0.13360507246376813" />
-        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/health.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_maternity.xml" value="0.25815217391304346" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_pregant_woman_.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_profile.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes.xml" value="0.22" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/fragment_recipes_for__mothers_.xml" value="0.25815217391304346" />
+        <entry key="..\:/Users/Gusta/AndroidStudioProjects/sunmadinepal/app/src/main/res/layout/health.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/as.xml" value="0.2594871794871795" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/foodicone.xml" value="0.2594871794871795" />
@@ -41,8 +46,6 @@
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2594871794871795" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2594871794871795" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2594871794871795" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_inside_recipes.xml" value="0.1" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_inside_the_recipes.xml" value="0.16051912568306012" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_language.xml" value="0.1140625" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_navigation.xml" value="0.16" />
@@ -51,15 +54,11 @@
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/activity_recipes_for_pregant_woman.xml" value="0.1" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fraggment_profile.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_0_6_months.xml" value="0.12421875" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_12_24_months.xml" value="0.13729508196721313" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_agment_06_12_months.xml" value="0.13729508196721313" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_blank.xml" value="0.10587431693989072" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_dashboard.xml" value="0.125" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_garden.xml" value="0.176" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_health.xml" value="0.125" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_insidethe_recipes.xml" value="0.17418032786885246" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_maternity.xml" value="0.1" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_pregant_woman_.xml" value="0.152" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
@@ -67,8 +66,6 @@
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_recipes__for__children_.xml" value="0.10587431693989072" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/fragment_recipes_for__mothers_.xml" value="0.115625" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/health.xml" value="0.2" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/recipedetails.xml" value="0.152" />
-        <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/layout/recipes22.xml" value="0.155078125" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.199609375" />
       </map>
