@@ -57,10 +57,6 @@ class Fragment_maternity : Fragment() {
         // Change ActionBar title in fragment
         (activity as AppCompatActivity).supportActionBar?.title = "Maternity"
 
-        val sectors = arrayOf(
-            "bankrupt","1000 points","miss turn","extra turn"
-        )
-
         binding.apply {
 
             val recyclerview = binding.recyclerView
