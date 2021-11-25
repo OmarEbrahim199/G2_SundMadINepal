@@ -70,8 +70,9 @@ class Fragment_maternity : Fragment() {
             // This loop will create 20 Views containing
             // the image with the count of view
 
-
             val string = Locale.getDefault().getLanguage()
+            val locale = Locale(string)
+            Locale.setDefault(locale)
 
 
             if(string =="en"){

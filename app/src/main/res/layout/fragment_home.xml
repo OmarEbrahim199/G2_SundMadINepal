@@ -37,11 +37,12 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
-
+            android:onClick="getLanguage"
             android:text="@string/change_language"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/welcome"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
 
         <TextView
             android:id="@+id/Choose_Language"

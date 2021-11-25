@@ -7,14 +7,16 @@
     tools:context=".ui.fragment.recipes.InsideRecipes"
     android:orientation="vertical">
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
         android:id="@+id/ivImage2"
-        android:scaleType="centerCrop"/>
+        android:layout_width="411dp"
+        android:layout_height="277dp"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="74dp" />
 
-
-        <TextView
+    <TextView
         android:id="@+id/title"
         android:layout_width="406dp"
         android:layout_height="76dp"
@@ -31,8 +33,8 @@
 
     <TextView
         android:id="@+id/tvwelcome"
-        android:layout_width="425dp"
-        android:layout_height="540dp"
+        android:layout_width="421dp"
+        android:layout_height="365dp"
         android:padding="20dp"
         android:text=""
         android:textColor="@color/black"

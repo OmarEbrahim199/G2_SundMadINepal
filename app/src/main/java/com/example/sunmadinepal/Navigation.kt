@@ -16,13 +16,15 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
 import com.example.sunmadinepal.databinding.ActivityNavigationBinding
+import com.example.sunmadinepal.language.Language
 import java.util.*
 
 
-class Navigation : AppCompatActivity() {
+class Navigation() : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityNavigationBinding
+
 
     override fun onStart() {
         super.onStart()
@@ -32,15 +34,12 @@ class Navigation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.Orange)
             window.navigationBarColor = this.resources.getColor(R.color.Orange)
-
-
 
         }
 
@@ -65,20 +64,6 @@ class Navigation : AppCompatActivity() {
         actionBar!!.title = resources.getString(R.string.app_name)
         actionBar.setHomeButtonEnabled(true)
 
-
-
-        binding.apply {
-            // android:onClick="getText"
-
-            val getLan: Button = findViewById(R.id.language)
-            getLan.setOnClickListener {
-                getLanguage()
-            }
-
-
-        }
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -87,6 +72,12 @@ class Navigation : AppCompatActivity() {
     }
 
 
+
+    // This mothed used in OnClick in Home XML
+    fun getLanguage(view: View) {
+        loadLocate()
+        showChangeLang()
+    }
 
 
 
@@ -114,7 +105,7 @@ class Navigation : AppCompatActivity() {
         mDialog.show()
 
     }
-    fun setLocate(Lang: String) {
+     fun setLocate(Lang: String) {
 
         val locale = Locale(Lang)
 
@@ -130,17 +121,18 @@ class Navigation : AppCompatActivity() {
         editor.apply()
     }
 
-    fun loadLocate() {
+    public fun loadLocate() {
         val sharedPreferences = getSharedPreferences("Settings", Activity.MODE_PRIVATE)
         val language = sharedPreferences.getString("My_Lang", "")
         language?.let { setLocate(it) }
     }
 
 
-     fun getLanguage() {
-        loadLocate()
-        showChangeLang()
-    }
+
+
+
+
+
 
 
 

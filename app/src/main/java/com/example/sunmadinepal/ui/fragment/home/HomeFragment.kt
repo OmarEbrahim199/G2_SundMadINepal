@@ -1,9 +1,12 @@
 package com.example.sunmadinepal.ui.fragment.home
 
+import android.icu.util.ULocale.getLanguage
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -37,10 +40,16 @@ class HomeFragment : Fragment() {
 
 
 
+
+
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

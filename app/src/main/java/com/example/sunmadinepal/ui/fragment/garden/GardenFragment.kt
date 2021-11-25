@@ -29,10 +29,8 @@ class GardenFragment : Fragment(){
 
   _binding = FragmentGardenBinding.inflate(inflater, container, false)
   val root: View = binding.root
-
-
-
   return root
+
  }
 
  override fun onDestroyView() {

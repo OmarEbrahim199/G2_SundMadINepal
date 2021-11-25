@@ -19,6 +19,7 @@ class Fragment_06_12_months : Fragment() {
 
     private var _binding: FragmentAgment0612MonthsBinding? = null
     private val binding get() = _binding!!
+    val data = ArrayList<RecipesData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +50,7 @@ class Fragment_06_12_months : Fragment() {
             recyclerview.layoutManager = LinearLayoutManager(activity)
 
             // ArrayList of class ItemsViewModel
-            val data = ArrayList<RecipesData>()
+
 
             // This loop will create 20 Views containing
             // the image with the count of view
@@ -88,5 +89,6 @@ class Fragment_06_12_months : Fragment() {
 
         }
     }
+
 
 }

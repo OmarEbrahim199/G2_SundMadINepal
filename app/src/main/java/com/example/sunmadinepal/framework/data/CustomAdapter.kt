@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.model.RecipesData
 import com.example.sunmadinepal.ui.fragment.recipes.InsideRecipes
@@ -29,7 +30,10 @@ class CustomAdapter(private val mList: List<RecipesData>, val parent: ViewGroup?
 
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+/*
+        Glide.with(parent?.context!!)
+            .load(mList.get(position).getItemImage())
+            .into( holder.imageView)*/
         // sets the image to the imageview from our itemHolder class
         holder.imageView.setImageResource(mList.get(position).getItemImage())
 
