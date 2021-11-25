@@ -21,6 +21,9 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.database.DatabaseReference
 
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.EventListener
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class Fragment_0_6_months : Fragment() {
@@ -66,6 +69,34 @@ class Fragment_0_6_months : Fragment() {
 
 
             var data = ArrayList<RecipesData>()
+
+            val string = Locale.getDefault().getLanguage()
+            val locale = Locale(string)
+            Locale.setDefault(locale)
+
+            if(string.equals("en")){
+
+                data.add(RecipesData(R.drawable.app_handwashing,"Baby 0 - 6 months","Bullet points:\n" +
+                        "\n" +
+                        "Visit the health post after 24 hours of birth, after 3 days, after 7 days and after 4 months.\n" +
+                        "Only breastfeeding is needed. No additional food or water.\n" +
+                        "If milk is not enough let the baby suckle more often. This will increase milk production\n" +
+                        "Wash hands before feeding baby\n"))
+
+            }
+
+            if(string.equals("ne")){
+                data.add(RecipesData(R.drawable.app_handwashing,"बच्चा ०-६ महिना","महत्वपुर्ण बिन्दु :\n" +
+                        "\n" +
+                        "स्वास्थ्य चौकीमा जचाउन जाने: बच्चा जन्मेको २४ घन्टाम, तेश्रो दिनमा, सातौ दिनमा र ४ महिना पर्छ \n" +
+                        "आमाको दुध मात्र खुवाउने, थप पानी पनि खुवाउनु पर्दैन। \n" +
+                        "\n" +
+                        "\n" +
+                        "दुध नपुगे बच्चालाई चुसाउने, जसले गर्दा दुध उत्पादन हुन्छ। \n" +
+                        "बच्चा लै दुध खुवाउनु अघि राम्रो संग हात धुने।\n"))
+            }
+
+
 
             // This will pass the ArrayList to our Adapter
             Adapter = CustomAdapter(data, null)

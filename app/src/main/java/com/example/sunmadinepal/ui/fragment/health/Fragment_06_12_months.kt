@@ -13,6 +13,8 @@ import com.example.sunmadinepal.databinding.Fragment1224MonthsBinding
 import com.example.sunmadinepal.databinding.FragmentAgment0612MonthsBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class Fragment_06_12_months : Fragment() {
@@ -51,33 +53,43 @@ class Fragment_06_12_months : Fragment() {
 
             // ArrayList of class ItemsViewModel
 
+            val string = Locale.getDefault().getLanguage()
+            val locale = Locale(string)
+            Locale.setDefault(locale)
 
-            // This loop will create 20 Views containing
-            // the image with the count of view
+            if(string.equals("en")){
 
+                data.add(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding,"Baby 6 - 9 months","Bullet points:\n" +
+                        "\n" +
+                        "Visit the healthpost at 6 months and 9 months.\n" +
+                        "Start to feed the baby solid food.\n" +
+                        "Start with a few spoonfuls 3 times in a day.\n" +
+                        "Use jaulo or litto\n" +
+                        "(see recipe here)\n" +
+                        "Slowly increase upto three bowls per day.\n" +
+                        "Give one bowl of jaulo and 2 glass of litto in a day\n" +
+                        "Wash your hands with soap before feeding your baby\n" +
+                        "\n" +
+                        "Swipe to see (example)\n"))
 
-            data.add(RecipesData(R.drawable.app_handwashing,
-                "During pregnancy:",
-                "1. Visit the healthpost 4 times during pregnancy\n" +
-                        "2. Make sure to eat a balanced diet\n" +
-                        "3. Balanced diet means eating food from all 4 food groups.\n" +
-                        "4. get plenty of rest.\n" +
-                        "5. wash hands after toilet and before eating.\n"))
+            }
 
-            data.add(RecipesData(R.drawable.app_go_to_healthpost,
-                "During pregnancy:",
-                "1. Visit the healthpost 4 times during pregnancy\n" +
-                        "2. Make sure to eat a balanced diet\n" +
-                        "3. Balanced diet means eating food from all 4 food groups.\n" +
-                        "4. get plenty of rest.\n" +
-                        "5. wash hands after toilet and before eating.\n"))
-
-            data.add(RecipesData(R.drawable.app_whentowashhands, "During pregnancy:", "1. Visit the healthpost 4 times during pregnancy\n" +
-                    "2. Make sure to eat a balanced diet\n" +
-                    "3. Balanced diet means eating food from all 4 food groups.\n" +
-                    "4. get plenty of rest.\n" +
-                    "5. wash hands after toilet and before eating.\n"))
-
+            if(string.equals("ne")){
+                data.add(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding,"६-९ ","महत्वपुर्ण बिन्दु :\n" +
+                        "\n" +
+                        "स्वास्थ्य चौकीमा जचाउन जाने\n" +
+                        "बच्चालाई थप पौष्टिक आहार खुवाउन सुरु गर्ने \n" +
+                        "सुरु गर्दा दैनिक ३ पटक सम्म केहि चम्चा खाना खुवाउने \n" +
+                        "जाउलो र लिटो खुवाउने (बनाउने तरिका यता हेर्नुस)\n" +
+                        "पछि बढाएर दैनिक ३ कचौरा सम्म खाना खुवाउने\n" +
+                        "\n" +
+                        "दैनिक १ कचौरा जाउलो र २ गिलास लिटो खुवाउने। \n" +
+                        "\n" +
+                        "बच्चालाई  खुवाउनु अघि राम्रो संग साबुन पानीले हात धुने। \n" +
+                        "\n" +
+                        "\n" +
+                        "उदाहरणको लागि अगाडी बढ्नुस\n"))
+            }
 
 
             // This will pass the ArrayList to our Adapter
