@@ -67,9 +67,6 @@ class Fragment_maternity : Fragment() {
             // ArrayList of class ItemsViewModel
             val data = ArrayList<RecipesData>()
 
-            // This loop will create 20 Views containing
-            // the image with the count of view
-
             val string = Locale.getDefault().getLanguage()
             val locale = Locale(string)
             Locale.setDefault(locale)
@@ -85,19 +82,7 @@ class Fragment_maternity : Fragment() {
                             "5. wash hands after toilet and before eating.\n"))
 
 
-                data.add(RecipesData(R.drawable.app_go_to_healthpost,
-                    "During pregnancy:",
-                    "1. Visit the healthpost 4 times during pregnancy\n" +
-                            "2. Make sure to eat a balanced diet\n" +
-                            "3. Balanced diet means eating food from all 4 food groups.\n" +
-                            "4. get plenty of rest.\n" +
-                            "5. wash hands after toilet and before eating.\n"))
 
-                data.add(RecipesData(R.drawable.app_whentowashhands, "During pregnancy:", "1. Visit the healthpost 4 times during pregnancy\n" +
-                        "2. Make sure to eat a balanced diet\n" +
-                        "3. Balanced diet means eating food from all 4 food groups.\n" +
-                        "4. get plenty of rest.\n" +
-                        "5. wash hands after toilet and before eating.\n"))
 
             }
 
@@ -105,7 +90,9 @@ class Fragment_maternity : Fragment() {
 
 
                 data.add(RecipesData(R.drawable.app_handwashing,
-                    "गर्भावस्थाको बेला", "कम्तिमा ४ पटक स्वास्थ्य चौकीमा जचाउन जानुपर्छ। \n" +
+                    "गर्भावस्थाको बेला",
+
+                    "कम्तिमा ४ पटक स्वास्थ्य चौकीमा जचाउन जानुपर्छ। \n" +
                             "पोषिलो खाना खानु जरुरी हुन्छ। \n" +
                             "पोषिलो खाना भन्नाले ४ किसिमका खानाको समूह हो। \n" +
                             "\n" +
