@@ -1,6 +1,7 @@
 package com.example.sunmadinepal.ui.fragment.health
 
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +13,7 @@ import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.HealthBinding
 
 import com.example.sunmadinepal.ui.ViewModel.HealthViewModel
-
+import java.util.*
 
 
 class HealthFragment : Fragment(){
@@ -42,10 +43,12 @@ class HealthFragment : Fragment(){
         super.onDestroyView()
         _binding = null
     }
-
+    val string = Locale.getDefault().getLanguage()
     override fun onStart() {
         super.onStart()
         goToDestinations()
+        setLocale(string)
+
 
 
     }
@@ -77,6 +80,15 @@ class HealthFragment : Fragment(){
 
     }
 
+    private fun setLocale(code: String) {
+        val config = Configuration()
+        var locale: Locale? = null
+        locale = Locale(code)
+        Locale.setDefault(locale)
+        config.locale = locale
+        this.resources.updateConfiguration(config,
+            this.resources.displayMetrics)
+    }
 
 
 

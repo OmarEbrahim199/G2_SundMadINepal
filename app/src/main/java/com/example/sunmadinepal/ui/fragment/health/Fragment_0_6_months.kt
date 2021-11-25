@@ -31,6 +31,7 @@ class Fragment_0_6_months : Fragment() {
     private var _binding: Fragment06MonthsBinding? = null
     private val binding get() = _binding!!
 
+    val string = Locale.getDefault().getLanguage()
 
     // private var data = ArrayList<RecipesData>()
     private lateinit var Adapter: CustomAdapter
@@ -70,9 +71,7 @@ class Fragment_0_6_months : Fragment() {
 
             var data = ArrayList<RecipesData>()
 
-            val string = Locale.getDefault().getLanguage()
-            val locale = Locale(string)
-            Locale.setDefault(locale)
+
 
             if(string.equals("en")){
 

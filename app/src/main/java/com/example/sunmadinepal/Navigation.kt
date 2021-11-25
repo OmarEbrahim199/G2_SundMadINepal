@@ -34,6 +34,8 @@ class Navigation() : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -74,7 +76,7 @@ class Navigation() : AppCompatActivity() {
 
 
     // This mothed used in OnClick in Home XML
-    fun getLanguage(view: View) {
+    public fun getLanguage(view: View) {
         loadLocate()
         showChangeLang()
     }

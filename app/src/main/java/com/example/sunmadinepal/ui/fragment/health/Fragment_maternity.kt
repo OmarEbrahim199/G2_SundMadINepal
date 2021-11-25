@@ -28,6 +28,7 @@ class Fragment_maternity : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
 
+    val string = Locale.getDefault().getLanguage()
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,9 +68,8 @@ class Fragment_maternity : Fragment() {
             // ArrayList of class ItemsViewModel
             val data = ArrayList<RecipesData>()
 
-            val string = Locale.getDefault().getLanguage()
-            val locale = Locale(string)
-            Locale.setDefault(locale)
+
+
 
 
             if(string =="en"){

@@ -21,8 +21,9 @@ class Fragment_06_12_months : Fragment() {
 
     private var _binding: FragmentAgment0612MonthsBinding? = null
     private val binding get() = _binding!!
-    val data = ArrayList<RecipesData>()
 
+
+    val string = Locale.getDefault().getLanguage()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -53,10 +54,8 @@ class Fragment_06_12_months : Fragment() {
 
             // ArrayList of class ItemsViewModel
 
-            val string = Locale.getDefault().getLanguage()
-            val locale = Locale(string)
-            Locale.setDefault(locale)
 
+            val data = ArrayList<RecipesData>()
             if(string.equals("en")){
 
                 data.add(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding,"Baby 6 - 9 months","Bullet points:\n" +

@@ -20,6 +20,10 @@ class Recipes_for_Mothers_Fragment : Fragment() {
     private val binding get() = _binding!!
 
 
+    val string = Locale.getDefault().getLanguage()
+    val locale = Locale(string)
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,15 +42,8 @@ class Recipes_for_Mothers_Fragment : Fragment() {
             // ArrayList of class ItemsViewModel
             val data = ArrayList<RecipesData>()
 
-            // This loop will create 20 Views containing
-            // the image with the count of view
 
 
-
-
-            val string = Locale.getDefault().getLanguage()
-            val locale = Locale(string)
-            Locale.setDefault(locale)
 
             if(string.equals("en")){
 

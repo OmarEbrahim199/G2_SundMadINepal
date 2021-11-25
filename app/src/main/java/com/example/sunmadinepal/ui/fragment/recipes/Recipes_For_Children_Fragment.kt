@@ -1,16 +1,24 @@
 package com.example.sunmadinepal.ui.fragment.recipes
 
+import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
+import com.example.sunmadinepal.databinding.FragmentGardenBinding
 import com.example.sunmadinepal.databinding.FragmentRecipesForChildrenBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
+import com.example.sunmadinepal.ui.ViewModel.GardenViewModel
+import com.example.sunmadinepal.ui.ViewModel.RecipesViewModel
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -20,8 +28,18 @@ class Recipes_For_Children_Fragment : Fragment() {
     private var _binding: FragmentRecipesForChildrenBinding? = null
     private val binding get() = _binding!!
 
+
+    private lateinit var recipesViewModel : RecipesViewModel
+
+    val string = Locale.getDefault().getLanguage()
+   // val locale = Locale(string)
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
     }
 
@@ -33,17 +51,34 @@ class Recipes_For_Children_Fragment : Fragment() {
         // Change ActionBar title in fragment
         (activity as AppCompatActivity).supportActionBar?.title = "Recipes for children"
 
+        recipesViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
 
-        // Inflate the layout for this fragment
-        _binding = FragmentRecipesForChildrenBinding.inflate(inflater ,container, false)
-        val view = binding?.root
-        // Inflate the layout for this fragment
-        return view
+        _binding = FragmentRecipesForChildrenBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+
+
+        return root
 
     }
 
+
+
+
+    override fun onPause(){
+        super.onPause()
+
+
+    }
+
+
+
+
     override fun onStart() {
         super.onStart()
+
+
+
 
         binding.apply {
 
@@ -57,9 +92,7 @@ class Recipes_For_Children_Fragment : Fragment() {
 
 
 
-            val string = Locale.getDefault().getLanguage()
-            val locale = Locale(string)
-            Locale.setDefault(locale)
+
 
             if(string.equals("en")){
 
@@ -107,14 +140,11 @@ class Recipes_For_Children_Fragment : Fragment() {
             }
 
             // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(data,null,)
+            val adapter = CustomAdapter(data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter
         }
-
-
-
     }
 
 
