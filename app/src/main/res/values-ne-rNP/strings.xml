@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sund Mad i Nepal</string>
     <string name="welcome">स्वागत</string>
     <string name="next_doctors_appointment" translatable="false">"अर्को डाक्टर को नियुक्ति "</string>
     <string name="tomato">टमाटर</string>
@@ -14,4 +13,8 @@
     <string name="cauliflower">फूल गोबी</string>
     <string name="choose_language">भाषा छान्नुहोस्</string>
     <string name="language" translatable="false">भाषा</string>
+    <string name="_1000_golden_days">सुनौलो हजार दिन</string>
+    <string name="change_language">भाषा परिवर्तन</string>
+    <string name="title_activity_navigation" translatable="false">नेभिगेसन</string>
+    <string name="app_name">Healthy Food in Nepal</string>
 </resources>
