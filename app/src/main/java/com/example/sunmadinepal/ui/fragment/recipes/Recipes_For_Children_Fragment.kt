@@ -1,23 +1,17 @@
 package com.example.sunmadinepal.ui.fragment.recipes
 
-import android.content.Context
-import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
-import com.example.sunmadinepal.databinding.FragmentGardenBinding
 import com.example.sunmadinepal.databinding.FragmentRecipesForChildrenBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
-import com.example.sunmadinepal.ui.ViewModel.GardenViewModel
 import com.example.sunmadinepal.ui.ViewModel.RecipesViewModel
 import java.util.*
 import kotlin.collections.ArrayList

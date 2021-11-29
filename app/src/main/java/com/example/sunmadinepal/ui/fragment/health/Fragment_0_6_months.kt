@@ -7,20 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.Fragment06MonthsBinding
-import com.example.sunmadinepal.databinding.FragmentRecipesForChildrenBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import com.google.firebase.firestore.*
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.database.DatabaseReference
 
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.EventListener
 import java.util.*
 import kotlin.collections.ArrayList
@@ -140,12 +133,6 @@ class Fragment_0_6_months : Fragment() {
                 Adapter.notifyDataSetChanged()
 
 
-                /*
-                 val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference("message")
-
-        myRef.setValue("Hello, World!")
-                 */
             }
         })
     }

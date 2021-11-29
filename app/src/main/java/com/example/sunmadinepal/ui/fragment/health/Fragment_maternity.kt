@@ -1,16 +1,10 @@
 package com.example.sunmadinepal.ui.fragment.health
 
-import android.app.Activity
-import android.app.AlertDialog
-import android.content.Context
-import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R

@@ -4,6 +4,8 @@
 
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -12,11 +14,9 @@
         <activity
             android:name=".ui.fragment.recipes.InsideRecipes"
             android:exported="true" />
+
         <activity
-            android:name=".InsideTheRecipes"
-            android:exported="true" />
-        <activity
-            android:name=".ui.fragment.garden.recipes.Recipes_for_pregant_woman"
+            android:name=".ui.fragment.recipes.Recipes_for_pregant_woman"
             android:exported="true" />
         <activity
             android:name=".language.Language"
@@ -38,5 +38,10 @@
             </intent-filter>
         </activity>
     </application>
+
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+
 
 </manifest>
