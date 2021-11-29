@@ -34,17 +34,17 @@ class ProfileFragment : Fragment() {
         val root: View = binding.root
 
 
-
+/*
         val textView= binding.textProfile
-        profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })
+        profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })*/
 
 
 
-        val btn : Button =binding.addweightoo
+       /* val btn : Button =binding.addweightoo
         profileViewModel.newactivity.observe(viewLifecycleOwner, Observer { btn.setOnClickListener { // Launching new Activity on selecting single List Item
             val i = Intent(activity, profile_Add::class.java)
             startActivity(i)
-        } })
+        } })*/
 
 
         return root

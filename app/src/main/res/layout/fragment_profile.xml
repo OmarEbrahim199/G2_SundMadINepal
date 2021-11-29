@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@android:style/Widget.Material.ScrollView"
+    android:background="@drawable/ic_background_vector"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="0dp"
-    android:layout_marginTop="0dp"
-    android:background="@drawable/ellipse_3"
     android:fillViewport="true"
     android:scrollbarStyle="outsideOverlay">
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,108 +21,69 @@
         tools:context=".ui.fragment.Profile.ProfileFragment">
 
         <TextView
-            android:id="@+id/text_profile"
-            android:layout_width="411dp"
-            android:layout_height="43dp"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="28sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile">
+        </ImageView>
+
+        <Button
+            android:id="@+id/add_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
+            android:text="Add appointment +"
+            app:layout_constraintEnd_toEndOf="@id/box"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toTopOf="@id/box">
+        </Button>
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="410dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="291dp"
-            android:background="#18ACBF"
-            android:fontFamily="monospace"
-            android:text="Parent Name"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/text_profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Dates:"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toBottomOf="@id/add_appointment">
+        </TextView>
 
-        <Button
-            android:id="@+id/addweightoo"
-            android:layout_width="264dp"
-            android:layout_height="89dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="253dp"
-            android:layout_marginEnd="82dp"
-            android:layout_marginBottom="10dp"
-
-
-            android:text="Add Weight"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_profile"
-            app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="21-10-2021"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toBottomOf="@id/dates">
+        </TextView>
 
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView1"
-            android:layout_width="360dp"
-            android:layout_height="220dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="42dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="29dp"
-            android:src="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/text_profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:shapeAppearanceOverlay="@style/corner"
- />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView2"
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="62dp"
-            android:src="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/addweightoo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_profile"
-            app:shapeAppearanceOverlay="@style/corner"
- />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="284dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="132dp"
-            android:text="Dibashika"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="284dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="32dp"
-            android:text="Add new kid"
-            app:layout_constraintBottom_toBottomOf="@+id/addweightoo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.284" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -33,9 +33,9 @@
         <Button
             android:id="@+id/language"
             android:layout_width="125dp"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="25dp"
             android:onClick="getLanguage"
             android:text="@string/change_language"
@@ -59,13 +59,16 @@
 
         <ImageView
             android:id="@+id/box_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
-            android:src="@drawable/ic_box_date"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/welcome" />
+            app:layout_constraintTop_toBottomOf="@id/welcome">
+        </ImageView>
 
         <TextView
             android:id="@+id/next_doc"
@@ -97,19 +100,22 @@
 
         <ImageView
             android:id="@+id/veggie_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
-            android:src="@drawable/ic_box_veggie"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/box_date" />
 
         <TextView
+            android:id="@+id/veggie_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="Veggie of the day"
             android:textColor="@color/black"
             android:textSize="32sp"
@@ -120,25 +126,27 @@
             android:id="@+id/tomato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/tomato"
             android:textAlignment="center"
-            android:textSize="20sp"
             android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@id/veggie_box"
             app:layout_constraintEnd_toEndOf="@id/veggie_box"
-            app:layout_constraintStart_toStartOf="@id/veggie_box" />
+            app:layout_constraintStart_toStartOf="@id/veggie_box"
+            app:layout_constraintTop_toBottomOf="@id/tomota_image" />
 
         <ImageButton
-            android:background="?android:attr/selectableItemBackground"
             android:id="@+id/tomota_image"
             android:layout_width="350dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/_tomato_image"
             app:layout_constraintBottom_toBottomOf="@id/veggie_box"
             app:layout_constraintEnd_toEndOf="@id/veggie_box"
             app:layout_constraintStart_toStartOf="@id/veggie_box"
+            app:layout_constraintTop_toBottomOf="@id/veggie_text"
             app:shapeAppearanceOverlay="@style/corner" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

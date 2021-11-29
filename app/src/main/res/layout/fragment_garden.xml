@@ -38,35 +38,85 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/corner"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
+
+<!--Start of first box -->
+    <ImageView
+            android:id="@+id/tomato_box"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/background_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/How_to_plant_in_my_garden"/>
 
         <TextView
-            android:id="@+id/text_tomato"
+            android:id="@+id/tomato_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:text="Tomato"
-            android:textAlignment="center"
-            android:textSize="26sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tomato_image"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@id/tomato_box"
+            app:layout_constraintEnd_toEndOf="@id/tomato_box"
+            app:layout_constraintTop_toTopOf="@id/tomato_box" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/tomato_image"
-            android:layout_width="360dp"
-            android:layout_height="225dp"
-            android:layout_marginTop="40dp"
+        <ImageButton
+            android:id="@+id/tomota_image"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
             android:src="@drawable/_tomato_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/How_to_plant_in_my_garden"
-            app:shapeAppearanceOverlay="@style/corner"
- />
+            app:layout_constraintTop_toBottomOf="@id/tomato_text"
+            app:layout_constraintBottom_toBottomOf="@id/tomato_box"
+            app:layout_constraintEnd_toEndOf="@id/tomato_box"
+            app:layout_constraintStart_toStartOf="@id/tomato_box"
+            app:shapeAppearanceOverlay="@style/corner" />
 
-        <com.google.android.material.imageview.ShapeableImageView
+<!-- Start of second box -->
+    <ImageView
+        android:id="@+id/cauliflower_box"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/background_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tomato_box"/>
+
+        <TextView
+            android:id="@+id/cauliflower_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Cauliflower"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@id/cauliflower_box"
+            app:layout_constraintEnd_toEndOf="@id/cauliflower_box"
+            app:layout_constraintTop_toTopOf="@id/cauliflower_box" />
+
+        <ImageButton
+            android:id="@+id/cauliflower_image"
+            android:layout_width="320dp"
+            android:layout_height="125dp"
+            android:background="@color/white"
+            android:src="@drawable/cauliflower"
+            app:layout_constraintTop_toBottomOf="@id/cauliflower_text"
+            app:layout_constraintBottom_toBottomOf="@id/cauliflower_box"
+            app:layout_constraintEnd_toEndOf="@id/cauliflower_box"
+            app:layout_constraintStart_toStartOf="@id/cauliflower_box"
+            app:shapeAppearanceOverlay="@style/corner" />
+
+<!--        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/cauliflower_image"
             android:layout_width="360dp"
             android:layout_height="225dp"
@@ -74,7 +124,7 @@
             android:src="@drawable/cauliflower"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tomato_image"
+            app:layout_constraintTop_toBottomOf="@id/tomato_box"
             app:shapeAppearanceOverlay="@style/corner"
              />
 
@@ -89,8 +139,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/black"
-        />
+        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+
+    <!--<TableLayout (alternative test to layout)
+        android:id="@+id/tomato_box"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/How_to_plant_in_my_garden">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Tomato"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="32sp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/tomato_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:src="@drawable/_tomato_image"
+            app:layout_constraintTop_toBottomOf="@id/How_to_plant_in_my_garden">
+        </ImageButton>
+    </TableLayout>-->
