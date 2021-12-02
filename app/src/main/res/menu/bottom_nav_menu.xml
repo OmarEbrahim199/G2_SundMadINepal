@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/navigation_garden"
-        android:icon="@drawable/foodicone"
+        android:icon="@drawable/ic_baseline_eco_24"
         android:title="@string/garden" />
 
 
