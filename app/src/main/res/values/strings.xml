@@ -17,7 +17,6 @@
     <string name="next_doctors_appointment">Next doctors appointment</string>
     <string name="tomato">Tomato</string>
     <string name="welcome">Welcome</string>
-    <string name="cauliflower">Cauliflower</string>
 
     <string name="choose_language">Choose Language</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -25,4 +24,6 @@
     <string name="recipesTranslate" translatable="false">3</string>
     <string name="_1000_golden_days">1000 golden days</string>
     <string name="health">Health</string>
+    <string name="How_to_plant_in_my_garden" >How to plant in my garden</string>
+    <string name="cauliflower">Cauliflower</string>
 </resources>
