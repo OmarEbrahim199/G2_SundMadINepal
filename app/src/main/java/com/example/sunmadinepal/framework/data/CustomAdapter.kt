@@ -50,7 +50,6 @@ class CustomAdapter(private val mList: List<RecipesData>, val parent: ViewGroup?
             intent.putExtra("Description",
                 mList.get(holder.bindingAdapterPosition).getItemDescription())
             v.context.startActivity(intent)
-
         }
 
     }

@@ -12,7 +12,6 @@ import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.RotateAnimation
 import android.widget.*
-import com.example.sunmadinepal.ui.fragment.recipes.IOnBackPressed
 import java.util.*
 
 
@@ -24,19 +23,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         LogoStart()
-
-
     }
-
-
 
     override fun onStart() {
         super.onStart()
-
-
     }
-
-
 
     private fun LogoStart() {
 
