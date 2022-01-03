@@ -14,4 +14,9 @@
         <!-- Customize your theme here. -->
 
     </style>
+
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">@android:color/white</item>
+    </style>
+
 </resources>

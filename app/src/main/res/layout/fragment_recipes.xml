@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Opdater buttons så det ikke er et billede men tekst-->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background_vector"
-    >
+    android:background="@drawable/ic_background_vector">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,8 +34,56 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 -->
+        <Button
+            android:id="@+id/Recipes_pregnant_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/pregnant_woman"
+            android:text="Recipes for pregnant woman"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
+        <Button
+            android:id="@+id/Recipes_mothers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/mum_with_baby"
+            android:text="Recipes for mothers"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Recipes_pregnant_woman" />
+
+        <Button
+            android:id="@+id/Recipes_children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/mum_with_kid"
+            android:text="Recipes for children"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Recipes_mothers" />
+
+
+        <!--<ImageButton
             android:background="?android:attr/selectableItemBackground"
             android:id="@+id/recipes_for_pregnant_woman"
             android:layout_width="wrap_content"
@@ -68,8 +114,7 @@
             android:src="@drawable/recipes_for_children"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recipes_for_mothers" />
-
+            app:layout_constraintTop_toBottomOf="@+id/recipes_for_mothers" /> -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
