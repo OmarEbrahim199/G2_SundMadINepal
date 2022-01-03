@@ -43,8 +43,6 @@ class Recipes_for_Mothers_Fragment : Fragment() {
             val data = ArrayList<RecipesData>()
 
 
-
-
             if(string.equals("en")){
 
                 data.add(RecipesData(R.drawable.app_jaulo,"Jaulo", "Ingredients:\n" +
@@ -66,8 +64,6 @@ class Recipes_for_Mothers_Fragment : Fragment() {
 
 
             }
-
-
 
             if(string.equals("ne")){
                 data.add(RecipesData(R.drawable.app_jaulo,"“जाउलो”\n","चहिने सामग्रीहरु ः\n" +

@@ -28,13 +28,8 @@ class Recipes_For_Children_Fragment : Fragment() {
     val string = Locale.getDefault().getLanguage()
    // val locale = Locale(string)
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
-
     }
 
     override fun onCreateView(
@@ -50,19 +45,12 @@ class Recipes_For_Children_Fragment : Fragment() {
         _binding = FragmentRecipesForChildrenBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
-
         return root
-
     }
-
-
 
 
     override fun onPause(){
         super.onPause()
-
-
     }
 
 
@@ -70,9 +58,6 @@ class Recipes_For_Children_Fragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-
-
-
 
         binding.apply {
 
@@ -83,9 +68,6 @@ class Recipes_For_Children_Fragment : Fragment() {
 
             // ArrayList of class ItemsViewModel
             val data = ArrayList<RecipesData>()
-
-
-
 
 
             if(string.equals("en")){
@@ -110,8 +92,6 @@ class Recipes_For_Children_Fragment : Fragment() {
 
             }
 
-
-
             if(string.equals("ne")){
                 data.add(RecipesData(R.drawable.app_jaulo,"“जाउलो”\n","चहिने सामग्रीहरु ः\n" +
                         "                      \t\n" +
@@ -130,7 +110,6 @@ class Recipes_For_Children_Fragment : Fragment() {
 
                 data.add(RecipesData(R.drawable.app_how_to_make_litto,"“पोषिलो पिठो बनाउने तरिका ः\n”\n","पोषिलो पिठो अन्न समूहबाट भिन्न किसिमका २ भाग अन्न (चामल, गहुँ, मकै, कोदो, जौ, फापर आदि मध्येबाट १÷भाग) र १ भाग गेडागुडी (भटमास, चना केराउ मध्ये आदि) लाई छुट्टाछुट्टै केलाउने र राम्ररी पाक्ने गरि भुट्ने र छुट्टाछुट्टै पिधेर तयार गरिएको पिठोलाई पकाउँदा साग, गाजर , दूध, घ्यू, मह, अण्डा, मासु, आयोडिनयुक्त नुन मिसाई तयार गर्न सकिन्छ ।"))
 
-
             }
 
             // This will pass the ArrayList to our Adapter
@@ -140,6 +119,5 @@ class Recipes_For_Children_Fragment : Fragment() {
             recyclerview.adapter = adapter
         }
     }
-
 
 }

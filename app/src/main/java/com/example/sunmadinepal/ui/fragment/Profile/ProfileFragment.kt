@@ -14,9 +14,6 @@ import androidx.lifecycle.Observer
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ui.ViewModel.ProfileViewModel
 
-
-
-
 class ProfileFragment : Fragment() {
 
 

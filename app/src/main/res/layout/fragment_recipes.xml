@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- Opdater buttons så det ikke er et billede men tekst-->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,10 +22,8 @@
             android:textAlignment="center"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="570dp" />
-
-
-
+            tools:layout_editor_absoluteY="570dp"
+            tools:ignore="MissingConstraints" />
 
         <!-- Search widget commented out
         <ImageButton
@@ -75,4 +73,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+</ScrollView>

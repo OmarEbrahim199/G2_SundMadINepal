@@ -59,8 +59,6 @@ class RecipesFragment : Fragment() {
        }
        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,callback)*/
 
-
-
         return root
     }
 

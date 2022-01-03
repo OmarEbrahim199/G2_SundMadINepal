@@ -35,15 +35,10 @@ class profile_Add : AppCompatActivity() {
             Toast.makeText(this,toSpeak,Toast.LENGTH_SHORT).show()
             t1.speak(toSpeak,TextToSpeech.QUEUE_FLUSH,null)
 
-
         }
 
 
     }
-
-
-
-
 
 
 

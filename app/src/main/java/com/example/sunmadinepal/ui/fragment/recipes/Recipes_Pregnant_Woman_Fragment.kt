@@ -56,8 +56,6 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
     }
 
     override fun onStart() {
@@ -67,8 +65,6 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
         }else if (string.equals("ne")){
             readFireStoreData("itemName1","itemDescription1")
         }
-
-
     }
 
 
@@ -85,9 +81,6 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
         (activity as AppCompatActivity).supportActionBar?.title = "Recipes for pregnant woman"
 
         return  view
-
-
-
     }
 
 
@@ -124,10 +117,7 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
                 data.add(RecipesData(R.drawable.app_how_to_make_litto,"How to prepare nutritional flour:","Take 2 proportions of different types of grains (corn, barley, rye, millet, oat, rice, etc. one proportio each) and 1 proportion of cereals/lentils (soya, chickpeas, peas, etc). Separately sort/clean and dry roast well until cooked properly and then separately grind store. This flour can be cooked with green spinach, carrot ,milk, clarified butter, honey , eggs, meat, and iodized salt. " ))
 
-
             }
-
-
 
             if(string.equals("ne")){
                 data.add(RecipesData(R.drawable.app_jaulo,"“जाउलो”\n","चहिने सामग्रीहरु ः\n" +
@@ -152,9 +142,6 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter
-
-
-
 
         }
 

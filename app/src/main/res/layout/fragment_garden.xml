@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/text_garden"
@@ -114,7 +115,8 @@
             app:layout_constraintBottom_toBottomOf="@id/cauliflower_box"
             app:layout_constraintEnd_toEndOf="@id/cauliflower_box"
             app:layout_constraintStart_toStartOf="@id/cauliflower_box"
-            app:shapeAppearanceOverlay="@style/corner" />
+            app:shapeAppearanceOverlay="@style/corner"
+            />
 
 <!--        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/cauliflower_image"
@@ -126,20 +128,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tomato_box"
             app:shapeAppearanceOverlay="@style/corner"
-             />
-
-    <TextView
-        android:id="@+id/cauliflower_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cauliflower"
-        android:textAlignment="center"
-        android:textSize="26sp"
-        app:layout_constraintTop_toTopOf="@id/cauliflower_image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
-        />-->
+             /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
