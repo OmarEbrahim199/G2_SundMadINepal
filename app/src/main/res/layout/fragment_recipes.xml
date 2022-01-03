@@ -35,7 +35,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 -->
         <Button
-            android:id="@+id/Recipes_pregnant_woman"
+            android:id="@+id/recipes_for_pregnant_woman"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -51,7 +51,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/Recipes_mothers"
+            android:id="@+id/recipes_for_mothers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -64,10 +64,10 @@
             android:theme="@style/Button.White"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Recipes_pregnant_woman" />
+            app:layout_constraintTop_toBottomOf="@id/recipes_for_pregnant_woman" />
 
         <Button
-            android:id="@+id/Recipes_children"
+            android:id="@+id/recipes_for_children"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -80,7 +80,7 @@
             android:theme="@style/Button.White"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Recipes_mothers" />
+            app:layout_constraintTop_toBottomOf="@id/recipes_for_mothers" />
 
 
         <!--<ImageButton
