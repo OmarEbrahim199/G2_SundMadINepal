@@ -63,9 +63,6 @@ class Fragment_maternity : Fragment() {
             val data = ArrayList<RecipesData>()
 
 
-
-
-
             if(string =="en"){
                 data.add(RecipesData(R.drawable.app_handwashing,
                     "During pregnancy:",
@@ -75,13 +72,9 @@ class Fragment_maternity : Fragment() {
                             "4. get plenty of rest.\n" +
                             "5. wash hands after toilet and before eating.\n"))
 
-
-
-
             }
 
             if(string =="ne") {
-
 
                 data.add(RecipesData(R.drawable.app_handwashing,
                     "गर्भावस्थाको बेला",
@@ -97,25 +90,14 @@ class Fragment_maternity : Fragment() {
             }
 
 
-
-
-
-
-
             // This will pass the ArrayList to our Adapter
             val adapter = CustomAdapter(data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter
 
-
         }
 
-
     }
-
-
-
-
 
 }

@@ -14,13 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="133dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+<!--    <TextView
         android:id="@+id/text1000goldendays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,9 +30,88 @@
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/general_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_box"
+        android:text="General health information"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="22sp"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toEndOf="@id/lady_0to6"
+        app:layout_constraintStart_toStartOf="@id/maternity"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <Button
+        android:id="@+id/maternity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_box"
+        android:drawableBottom="@drawable/pregnant_woman"
+        android:text="Pregnancy"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="16sp"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toStartOf="@id/lady_0to6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/general_information" />
+
+    <Button
+        android:id="@+id/lady_0to6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_box"
+        android:drawableBottom="@drawable/mum_with_baby"
+        android:text="0-6 months"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="16sp"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/maternity"
+        app:layout_constraintTop_toBottomOf="@id/general_information" />
+
+    <Button
+        android:id="@+id/lady6to12"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_box"
+        android:drawableBottom="@drawable/mum_with_kid"
+        android:text="6-12 months"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="16sp"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toStartOf="@id/lady12to24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maternity" />
+
+    <Button
+        android:id="@+id/lady12to24"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_box"
+        android:drawableBottom="@drawable/mum_with_child"
+        android:text="12-24 months"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="16sp"
+        android:theme="@style/Button.White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lady6to12"
+        app:layout_constraintTop_toBottomOf="@id/lady_0to6"/>
+
+   <!-- <ImageButton
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/maternity"
         android:layout_width="wrap_content"
@@ -44,9 +123,9 @@
         app:layout_constraintEnd_toStartOf="@id/lady_0to6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1000goldendays"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck" /> -->
 
-    <ImageButton
+    <!-- <ImageButton
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady_0to6"
         android:layout_width="wrap_content"
@@ -56,9 +135,9 @@
         android:src="@drawable/icon_0_6_months"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1000goldendays"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck" /> -->
 
-    <ImageButton
+    <!--<ImageButton
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady6to12"
         android:layout_width="wrap_content"
@@ -70,9 +149,9 @@
         app:layout_constraintEnd_toStartOf="@id/lady12to24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/maternity"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
 
-    <ImageButton
+    <!--<ImageButton
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/lady12to24"
         android:layout_width="wrap_content"
@@ -82,6 +161,6 @@
         android:src="@drawable/icon_12_24_months"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lady_0to6"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

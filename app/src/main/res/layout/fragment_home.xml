@@ -11,7 +11,6 @@
     android:fillViewport="true"
     android:scrollbarStyle="outsideOverlay">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,14 +34,15 @@
             android:id="@+id/language"
             android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_box"
             android:onClick="getLanguage"
             android:text="@string/change_language"
+            android:textColor="@color/Orange"
+            android:textSize="14sp"
+            android:theme="@style/Button.White"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/welcome"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/welcome"
             tools:ignore="OnClick" />
 
         <TextView
