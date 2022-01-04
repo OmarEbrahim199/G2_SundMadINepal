@@ -54,8 +54,6 @@ class Fragment_12_24_months : Fragment() {
             // ArrayList of class ItemsViewModel
             val data = ArrayList<RecipesData>()
 
-
-
             if(string.equals("en")){
 
                 data.add(RecipesData(R.drawable.app_banana,"Baby 9 - 12 months:","9 - 12 months\n" +

@@ -30,7 +30,6 @@ class Fragment_0_6_months : Fragment() {
     private lateinit var Adapter: CustomAdapter
     private lateinit var db: FirebaseFirestore
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -88,30 +87,20 @@ class Fragment_0_6_months : Fragment() {
                         "बच्चा लै दुध खुवाउनु अघि राम्रो संग हात धुने।\n"))
             }
 
-
-
             // This will pass the ArrayList to our Adapter
             Adapter = CustomAdapter(data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = Adapter
 
-
-
-
-
         }
-
-
     }
-
 
     private fun EventChangListener() {
 
         db = FirebaseFirestore.getInstance()
         db.collection("Recipes").addSnapshotListener(object : EventListener<QuerySnapshot> {
             override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
-
 
                 if (error != null) {
                     Log.e("Firestore Error", error.message.toString())
@@ -126,7 +115,6 @@ class Fragment_0_6_months : Fragment() {
                         //data.add(dc.document.toObject(RecipesData::class.java))
                         /*  data.add(RecipesData(R.drawable.app_handwashing,"er",
                               dc.document.toObject(RecipesData::class.java).toString()))*/
-
                     }
 
                 }

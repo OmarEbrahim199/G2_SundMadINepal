@@ -1,6 +1,5 @@
 package com.example.sunmadinepal.ui.fragment.health
 
-
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -48,18 +47,17 @@ class HealthFragment : Fragment(){
         super.onStart()
         goToDestinations()
         setLocale(string)
-
-
-
     }
 
     fun goToDestinations(){
 
         binding.apply {
 
+            generalInformation.setOnClickListener{
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_generalhealth)
+            }
             lady0to6.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_health_to_fragment_0_6_months)
-
             }
             lady6to12.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_health_to_agment_06_12_months)
@@ -70,12 +68,6 @@ class HealthFragment : Fragment(){
             maternity.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_health_to_fragment_maternity)
             }
-
-
-
-
-
-
         }
 
     }
@@ -89,7 +81,4 @@ class HealthFragment : Fragment(){
         this.resources.updateConfiguration(config,
             this.resources.displayMetrics)
     }
-
-
-
 }

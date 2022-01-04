@@ -12,14 +12,16 @@
         android:layout_height="250dp"
         android:background="@drawable/ic_loading_screen_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Background"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Welcome"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome"
         android:textColor="@color/white"
         android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,18 +32,19 @@
         android:id="@+id/mum_and_child"
         android:layout_width="234dp"
         android:layout_height="311dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="image_6"
+        android:layout_marginTop="40dp"
         android:src="@drawable/image_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome" />
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        android:contentDescription="Front_pic"
+        tools:ignore="HardcodedText" />
 
     <RelativeLayout
         android:id="@+id/loading_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +59,8 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:contentDescription="loding_icon_1"
-            android:src="@drawable/loding_icon_1" />
+            android:src="@drawable/loding_icon_1"
+            tools:ignore="HardcodedText" />
 
     </RelativeLayout>
 

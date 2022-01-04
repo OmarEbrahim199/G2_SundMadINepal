@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
-import com.example.sunmadinepal.databinding.Fragment1224MonthsBinding
-
-import com.example.sunmadinepal.databinding.FragmentAgment0612MonthsBinding
+import com.example.sunmadinepal.databinding.Fragment0612MonthsBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import java.util.*
@@ -19,7 +17,7 @@ import kotlin.collections.ArrayList
 
 class Fragment_06_12_months : Fragment() {
 
-    private var _binding: FragmentAgment0612MonthsBinding? = null
+    private var _binding: Fragment0612MonthsBinding? = null
     private val binding get() = _binding!!
 
 
@@ -34,7 +32,7 @@ class Fragment_06_12_months : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentAgment0612MonthsBinding.inflate(inflater, container, false)
+        _binding = Fragment0612MonthsBinding.inflate(inflater, container, false)
         val view = binding?.root
         // Inflate the layout for this fragment
         return view
@@ -70,7 +68,6 @@ class Fragment_06_12_months : Fragment() {
                         "Wash your hands with soap before feeding your baby\n" +
                         "\n" +
                         "Swipe to see (example)\n"))
-
             }
 
             if(string.equals("ne")){

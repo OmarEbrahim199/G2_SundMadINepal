@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_navigation_health_to_agment_06_12_months"
             app:destination="@id/agment_06_12_months" />
+        <action
+            android:id="@+id/action_navigation_health_to_fragment_generalhealth"
+            app:destination="@id/fragment_generalhealth" />
     </fragment>
 
     <fragment
@@ -123,7 +126,7 @@
         android:id="@+id/agment_06_12_months"
         android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_06_12_months"
         android:label="fragment_agment_06_12_months"
-        tools:layout="@layout/fragment_agment_06_12_months" >
+        tools:layout="@layout/fragment_06_12_months" >
         <action
             android:id="@+id/action_agment_06_12_months_to_navigation_health"
             app:destination="@id/navigation_health" />
@@ -142,5 +145,14 @@
         android:name="com.example.sunmadinepal.ui.fragment.recipes.InsideRecipes"
         android:label="activity_inside_recipes"
         tools:layout="@layout/activity_inside_recipes" />
+    <fragment
+        android:id="@+id/fragment_generalhealth"
+        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_generalhealth"
+        android:label="fragment_generalhealth"
+        tools:layout="@layout/fragment_generalhealth" >
+        <action
+            android:id="@+id/action_fragment_generalhealth_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
 
 </navigation>

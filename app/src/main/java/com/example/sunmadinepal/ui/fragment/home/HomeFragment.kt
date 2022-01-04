@@ -39,9 +39,6 @@ class HomeFragment : Fragment() {
 
 
 
-
-
-
     }
 
 

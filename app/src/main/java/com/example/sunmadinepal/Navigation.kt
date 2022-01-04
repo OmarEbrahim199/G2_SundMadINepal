@@ -35,14 +35,12 @@ class Navigation() : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
 
-
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.Orange)
             window.navigationBarColor = this.resources.getColor(R.color.Orange)
-
         }
 
 
@@ -55,7 +53,7 @@ class Navigation() : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_profile,R.id.navigation_health, R.id.navigation_recipes,R.id.navigation_garden
+                R.id.navigation_home, R.id.navigation_profile,R.id.navigation_health, R.id.navigation_recipes,R.id.navigation_garden,
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -65,7 +63,6 @@ class Navigation() : AppCompatActivity() {
         val actionBar = supportActionBar
         actionBar!!.title = resources.getString(R.string.app_name)
         actionBar.setHomeButtonEnabled(true)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -74,14 +71,11 @@ class Navigation() : AppCompatActivity() {
     }
 
 
-
     // This mothed used in OnClick in Home XML
     public fun getLanguage(view: View) {
         loadLocate()
         showChangeLang()
     }
-
-
 
      fun showChangeLang() {
 
