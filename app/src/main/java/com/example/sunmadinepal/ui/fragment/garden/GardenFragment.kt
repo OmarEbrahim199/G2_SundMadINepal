@@ -42,6 +42,4 @@ class GardenFragment : Fragment(){
   super.onStart()
  }
 
-
-
 }

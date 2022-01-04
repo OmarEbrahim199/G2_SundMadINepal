@@ -75,7 +75,7 @@ class Fragment_generalhealth : Fragment() {
             }
 
             if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_go_to_healthpost,"६-९ ","महत्वपुर्ण बिन्दु :\n" +
+                data.add(RecipesData(R.drawable.app_go_to_healthpost,"बिरामी बच्चाको स्याहार ","महत्वपुर्ण बिन्दु :\n" +
                         "\n" +
                         "६ महिना भन्दा कम उमेरका बिरामी शिशुलाई आमाको दूध नियमित रूपमा साविक भन्दा बढी पटक खुवाउनुपर्छ।\n" +
                         "६ महिना पुरा भइसकेको बिरामी शिशुलाई आमाको दूधको साथसाथै थप पोषिलो खानाहरु पनि खुवाइरहनु पर्दछ। \n" +

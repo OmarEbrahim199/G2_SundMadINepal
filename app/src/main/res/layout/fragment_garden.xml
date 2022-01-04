@@ -27,22 +27,91 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
+       <!-- <TextView
             android:id="@+id/How_to_plant_in_my_garden"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="@string/How_to_plant_in_my_garden"
+            android:text="@string/garden"
             android:textAlignment="center"
             android:textSize="28sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/soil"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/corner"
-            android:textColor="@color/white" />
+            android:textColor="@color/white" />-->
 
-<!--Start of first box -->
-    <ImageView
+        <Button
+            android:id="@+id/soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/pregnant_woman"
+            android:text="Preparing the soil"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/compost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/mum_with_baby"
+            android:text="How to make compost"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/soil" />
+
+        <Button
+            android:id="@+id/water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/mum_with_kid"
+            android:text="How to water crops"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/compost" />
+
+        <Button
+            android:id="@+id/what_to_grow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/mum_with_kid"
+            android:text="What to grow in the garden"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:theme="@style/Button.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/water" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+    <!--Start of first box -->
+    <!--<ImageView
             android:id="@+id/tomato_box"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -77,10 +146,10 @@
             app:layout_constraintBottom_toBottomOf="@id/tomato_box"
             app:layout_constraintEnd_toEndOf="@id/tomato_box"
             app:layout_constraintStart_toStartOf="@id/tomato_box"
-            app:shapeAppearanceOverlay="@style/corner" />
+            app:shapeAppearanceOverlay="@style/corner" />-->
 
-<!-- Start of second box -->
-    <ImageView
+    <!-- Start of second box -->
+    <!--<ImageView
         android:id="@+id/cauliflower_box"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -116,24 +185,7 @@
             app:layout_constraintEnd_toEndOf="@id/cauliflower_box"
             app:layout_constraintStart_toStartOf="@id/cauliflower_box"
             app:shapeAppearanceOverlay="@style/corner"
-            />
-
-<!--        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/cauliflower_image"
-            android:layout_width="360dp"
-            android:layout_height="225dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/cauliflower"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tomato_box"
-            app:shapeAppearanceOverlay="@style/corner"
-             /> -->
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
-
+            />-->
     <!--<TableLayout (alternative test to layout)
         android:id="@+id/tomato_box"
         android:layout_width="match_parent"
