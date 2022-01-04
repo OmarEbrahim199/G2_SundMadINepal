@@ -18,6 +18,9 @@
     <string name="title_garden">Garden</string>
     <string name="garden">garden</string>
     <string name="title_profile">Profile</string>
+    <string name="doctor_appointment">Doctor Appointments</string>
+    <string name="add_doctor_appointment">Add Doctor Appointments +</string>
+
 
     <string name="app_name">Nepal App</string>
     <string name="language">Language</string>
