@@ -26,4 +26,7 @@
     <string name="health">Health</string>
     <string name="How_to_plant_in_my_garden" >How to plant in my garden</string>
     <string name="cauliflower">Cauliflower</string>
+    <string name="recipes_for_mothers">Recipes for mothers</string>
+    <string name="recipes_for_children">Recipes for children</string>
+    <string name="recipes_for_pregnant_woman">Recipes for pregnant woman</string>
 </resources>

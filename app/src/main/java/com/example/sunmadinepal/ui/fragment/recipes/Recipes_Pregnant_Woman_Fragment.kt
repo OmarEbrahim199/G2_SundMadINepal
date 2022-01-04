@@ -32,6 +32,7 @@ import com.google.firebase.auth.FirebaseUser
 import android.app.ProgressDialog
 import android.util.Log
 import android.widget.Toast
+import com.example.sunmadinepal.framework.db.Firebase
 import com.google.firebase.database.DatabaseError
 
 import com.google.firebase.database.DataSnapshot
@@ -60,10 +61,13 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        val firebase = Firebase()
         if (string.equals("en")){
-            readFireStoreData("itemName","itemDescription")
+            Log.d("FirebaseLog","in english")
+            firebase.readFireStoreData("itemName","itemDescription")
         }else if (string.equals("ne")){
-            readFireStoreData("itemName1","itemDescription1")
+            Log.d("FirebaseLog","in Nepali")
+            firebase.readFireStoreData("itemName1","itemDescription1")
         }
     }
 
@@ -147,85 +151,5 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
     }
 
-    fun getMal(){
-        val recyclerview = binding.recyclerView
-        val data = ArrayList<RecipesData>()
-        // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(activity)
-
-
-        val rootRef = FirebaseDatabase.getInstance().reference
-        val commandsRef = rootRef.child("Recipes").child("itemDescription")
-        val eventListener: ValueEventListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                for (ds in dataSnapshot.children) {
-                    val executed = ds.child("executed").getValue(Boolean::class.java)!!!!
-                    val text = ds.child("text").getValue(String::class.java)
-                    val timestamp = ds.child("timestamp").getValue(Double::class.java)!!!!
-                    Log.d("TAG", "$executed / $text / $timestamp")
-
-                    val animal = ds.getValue(RecipesData::class.java)
-                    data.add(animal!!)
-                    println(animal)
-
-                }
-                val adapter = CustomAdapter(data, null)
-
-                // Setting the Adapter with the recyclerview
-                recyclerview.adapter = adapter
-                adapter.notifyDataSetChanged()
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {}
-        }
-        commandsRef.addListenerForSingleValueEvent(eventListener)
-
-    }
-
-
-    fun readFireStoreData(ItemName :String , itemDescription:String){
-        val df = FirebaseAuth.getInstance()
-        val db = FirebaseFirestore.getInstance()
-
-        progressDialog =  ProgressDialog(this.context)
-
-        // Setting up message in Progress dialog.
-        progressDialog!!.setMessage("Loading Images From Firebase.");
-
-
-          // Showing progress dialog.
-        progressDialog!!.show();
-        val recyclerview = binding.recyclerView
-        val data = ArrayList<RecipesData>()
-
-
-        // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(activity)
-
-        db.collection("Recipes")
-            .get()
-            .addOnCompleteListener{
-                if (it.isSuccessful){
-                    for (document in it.result!!){
-
-                        val ItemImage = document.data.getValue("ItemImage")
-                        val itemName = document.data.getValue(ItemName)
-                        val itemDescription= document.data.getValue(itemDescription)
-
-                        progressDialog!!.dismiss()
-
-                        data.add(RecipesData(R.drawable.app_go_to_healthpost,itemName.toString(), itemDescription.toString() ))
-                    }
-                    // This will pass the ArrayList to our Adapter
-                    val adapter = CustomAdapter(data, null)
-
-                    // Setting the Adapter with the recyclerview
-                    recyclerview.adapter = adapter
-                    adapter.notifyDataSetChanged()
-                }
-            }
-
-
-    }
 
 }
