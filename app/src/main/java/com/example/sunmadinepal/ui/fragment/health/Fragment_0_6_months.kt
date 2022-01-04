@@ -50,7 +50,8 @@ class Fragment_0_6_months : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        (activity as AppCompatActivity).supportActionBar?.title = "From 0 to 6 months"
+        //(activity as AppCompatActivity).supportActionBar?.title = "From 0 to 6 months"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.months_0to6)
         binding.apply {
 
 

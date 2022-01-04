@@ -5,6 +5,13 @@
     <string name="tomato">टमाटर</string>
     <string name="health">स्वास्थ</string>
     <string name="title_health">स्वास्थ</string>
+
+    <string name="generalhealth">सामान्य जानकारी</string>
+    <string name="Pregnancy">गर्भावस्था</string>
+    <string name="months_0to6">० - ६ महिना</string>
+    <string name="months_6to12">६ - १२ महिना</string>
+    <string name="months_12to24">१२ - २४ महिना</string>
+
     <string name="title_garden">बगैंचा</string>
     <string name="title_Recipes">व्यञ्जनहरु</string>
     <string name="title_home">घर</string>

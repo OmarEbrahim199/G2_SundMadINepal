@@ -2,12 +2,20 @@
     <string name="app_name">Nepal App</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_home">Home</string>
+    
     <string name="title_Recipes">Recipes</string>
-
+    <string name="recipe_pregnant_woman">Recipes for pregnant woman</string>
+    <string name="recipe_for_mothers">Recipes for mothers</string>
+    <string name="recipe_for_children">Recipes for children</string>
+    
     <string name="title_health">Health</string>
+    <string name="generalhealth">General health information</string>
+    <string name="Pregnancy">Pregnancy</string>
+    <string name="months_0to6">0–6 months</string>
+    <string name="months_6to12">6–12 months</string>
+    <string name="months_12to24">12–24 months</string>
+
     <string name="title_garden">Garden</string>
-
-
     <string name="title_profile">Profile</string>
     <string name="button" translatable="false">Button</string>
     <string name="hello_add_weight_adder" translatable="false">Hello add weight adder</string>

@@ -50,7 +50,9 @@ class Fragment_maternity : Fragment() {
         super.onStart()
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "Maternity"
+        //(activity as AppCompatActivity).supportActionBar?.title = "Maternity"
+
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.Pregnancy)
 
         binding.apply {
 
