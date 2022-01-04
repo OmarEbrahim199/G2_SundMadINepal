@@ -38,7 +38,8 @@ class Recipes_For_Children_Fragment : Fragment() {
     ): View? {
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "Recipes for children"
+        //(activity as AppCompatActivity).supportActionBar?.title = "Recipes for children"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.recipe_for_children)
 
         recipesViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
 

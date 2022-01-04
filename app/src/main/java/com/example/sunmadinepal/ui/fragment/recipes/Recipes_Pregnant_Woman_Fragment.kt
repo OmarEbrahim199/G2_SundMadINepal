@@ -78,7 +78,8 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "Recipes for pregnant woman"
+        //activity as AppCompatActivity).supportActionBar?.title = "Recipes for pregnant woman"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.recipe_pregnant_woman)
 
         return  view
     }

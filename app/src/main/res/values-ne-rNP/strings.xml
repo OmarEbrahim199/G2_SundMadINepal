@@ -4,8 +4,15 @@
     <string name="next_doctors_appointment" translatable="false">"अर्को डाक्टर को नियुक्ति "</string>
     <string name="tomato">टमाटर</string>
     <string name="health">स्वास्थ</string>
-    <string name="title_health">स्वास्थ</string>
 
+    <string name="title_home">घर</string>
+
+    <string name="title_Recipes">व्यञ्जनहरु</string>
+    <string name="recipe_pregnant_woman">गर्भवती महिला को लागि व्यञ्जनहरु</string>
+    <string name="recipe_for_mothers">आमाहरूको लागि व्यञ्जनहरू</string>
+    <string name="recipe_for_children">बच्चाहरु को लागि व्यञ्जनहरु</string>
+
+    <string name="title_health">स्वास्थ</string>
     <string name="generalhealth">सामान्य जानकारी</string>
     <string name="Pregnancy">गर्भावस्था</string>
     <string name="months_0to6">० - ६ महिना</string>
@@ -13,8 +20,6 @@
     <string name="months_12to24">१२ - २४ महिना</string>
 
     <string name="title_garden">बगैंचा</string>
-    <string name="title_Recipes">व्यञ्जनहरु</string>
-    <string name="title_home">घर</string>
     <string name="title_profile">प्रोफाइल</string>
     <string name="garden">बगैंचा</string>
     <string name="cauliflower">फूल गोबी</string>
