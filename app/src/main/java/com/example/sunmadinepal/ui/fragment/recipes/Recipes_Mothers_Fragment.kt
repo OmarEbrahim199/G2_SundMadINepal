@@ -8,15 +8,15 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
-import com.example.sunmadinepal.databinding.FragmentRecipesForMothersBinding
+import com.example.sunmadinepal.databinding.FragmentRecipesMothersBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import java.util.*
 import kotlin.collections.ArrayList
 
-class Recipes_for_Mothers_Fragment : Fragment() {
+class Recipes_Mothers_Fragment : Fragment() {
 
-    private var _binding: FragmentRecipesForMothersBinding? = null
+    private var _binding: FragmentRecipesMothersBinding? = null
     private val binding get() = _binding!!
 
 
@@ -98,7 +98,7 @@ class Recipes_for_Mothers_Fragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentRecipesForMothersBinding.inflate(inflater ,container, false)
+        _binding = FragmentRecipesMothersBinding.inflate(inflater ,container, false)
         val view = binding?.root
 
         // Change ActionBar title in fragment

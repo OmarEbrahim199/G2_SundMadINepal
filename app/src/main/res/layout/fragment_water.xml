@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_vector"
-    tools:context=".ui.fragment.health.Fragment_generalhealth">
+    tools:context=".ui.fragment.garden.WaterFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -14,4 +14,4 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

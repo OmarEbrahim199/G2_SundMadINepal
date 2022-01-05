@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_vector"
-    tools:context=".ui.fragment.recipes.Recipes_For_Children_Fragment">
-
-
+    tools:context=".ui.fragment.garden.CompostFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -15,8 +12,6 @@
         android:layout_height="match_parent"
         android:scrollbars="vertical">
 
-
     </androidx.recyclerview.widget.RecyclerView>
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

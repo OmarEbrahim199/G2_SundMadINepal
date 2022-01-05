@@ -44,7 +44,6 @@ import com.google.firebase.database.FirebaseDatabase
 
 
 
-
 class Recipes_Pregnant_Woman_Fragment : Fragment() {
 
     private var _binding: FragmentPregantWomanBinding? = null

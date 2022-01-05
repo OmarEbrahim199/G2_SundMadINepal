@@ -26,5 +26,6 @@
     <string name="health">Health</string>
     <string name="How_to_plant_in_my_garden">How to plant in my garden</string>
     <string name="cauliflower">Cauliflower</string>
+    <!--    Translate later-->
     <string name="healthy_veggies" translatable="false">Healthy veggies</string>
 </resources>

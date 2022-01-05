@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
-import com.example.sunmadinepal.databinding.FragmentRecipesForChildrenBinding
+import com.example.sunmadinepal.databinding.FragmentRecipesChildrenBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import com.example.sunmadinepal.ui.ViewModel.RecipesViewModel
@@ -17,9 +17,9 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class Recipes_For_Children_Fragment : Fragment() {
+class Recipes_Children_Fragment : Fragment() {
 
-    private var _binding: FragmentRecipesForChildrenBinding? = null
+    private var _binding: FragmentRecipesChildrenBinding? = null
     private val binding get() = _binding!!
 
 
@@ -42,7 +42,7 @@ class Recipes_For_Children_Fragment : Fragment() {
 
         recipesViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
 
-        _binding = FragmentRecipesForChildrenBinding.inflate(inflater, container, false)
+        _binding = FragmentRecipesChildrenBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root

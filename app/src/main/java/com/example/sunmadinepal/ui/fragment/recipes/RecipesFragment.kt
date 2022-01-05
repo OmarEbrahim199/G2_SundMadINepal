@@ -5,18 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentRecipesBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.ui.ViewModel.RecipesViewModel
 import java.util.*
 
@@ -82,15 +75,13 @@ class RecipesFragment : Fragment() {
         binding.apply {
 
             recipesForPregnantWoman.setOnClickListener {
-                findNavController().navigate(R.id.action_navigation_recipes_to_pregant_woman_Fragment) }
+                findNavController().navigate(R.id.action_navigation_recipes_to_recipes_Pregnant_Woman_Fragment) }
 
-
-            recipesForMothers.setOnClickListener {
-                findNavController().navigate(R.id.action_navigation_recipes_to_recipes_for_Mothers_Fragment2)
+            recipesForMothers.setOnClickListener{
+                findNavController().navigate(R.id.action_navigation_recipes_to_recipes_Mothers_Fragment)
             }
-
-            recipesForChildren.setOnClickListener {
-                findNavController().navigate(R.id.action_navigation_recipes_to_recipes_For_Children_Fragment2)
+            recipesForChildren.setOnClickListener{
+                findNavController().navigate(R.id.action_navigation_recipes_to_recipes_Children_Fragment)
             }
 
         }
