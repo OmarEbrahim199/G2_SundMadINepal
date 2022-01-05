@@ -1,5 +1,7 @@
 package com.example.sunmadinepal.ui.fragment.Profile
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,6 +15,7 @@ import androidx.lifecycle.Observer
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ui.ViewModel.ProfileViewModel
+import java.util.*
 
 class ProfileFragment : Fragment() {
 
@@ -29,6 +32,20 @@ class ProfileFragment : Fragment() {
         profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val date = Calendar.getInstance()
+        val year = date.get(Calendar.YEAR)
+        val month = date.get(Calendar.MONTH)
+        val day = date.get(Calendar.DAY_OF_MONTH)
+
+        binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(), { view, savedYear, savedMonth, savedDay ->
+            binding.dateBox.setText(""+ savedDay +"-"+ savedMonth +"-"+ savedYear)
+        }, year, month, day)
+
+            datePickerDialog.show()
+
+        }
+
 
 
 /*
