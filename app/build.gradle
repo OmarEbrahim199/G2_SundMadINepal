@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
 }
 
 
@@ -77,30 +78,31 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
     //ROOM Database https://developer.android.com/training/data-storage/room
-    val roomVersion = "2.4.0"
+    //https://developer.android.com/codelabs/android-room-with-a-view-kotlin#3 for plugin
 
-    implementation("androidx.room:room-runtime:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.room:room-runtime:2.4.0")
+    annotationProcessor("androidx.room:room-compiler:2.4.0")
 
     // To use Kotlin annotation processing tool (kapt)
-    kapt("androidx.room:room-compiler:$roomVersion")
+    kapt("androidx.room:room-compiler:2.4.0")
     // To use Kotlin Symbolic Processing (KSP)
-    ksp("androidx.room:room-compiler:$roomVersion")
+
+    //ksp("androidx.room:room-compiler:$roomVersion")
 
     // optional - Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:$roomVersion")
+    implementation("androidx.room:room-ktx:2.4.0")
 
     // optional - RxJava2 support for Room
-    implementation("androidx.room:room-rxjava2:$roomVersion")
+    implementation("androidx.room:room-rxjava2:2.4.0")
 
     // optional - RxJava3 support for Room
-    implementation("androidx.room:room-rxjava3:$roomVersion")
+    implementation("androidx.room:room-rxjava3:2.4.0")
 
     // optional - Guava support for Room, including Optional and ListenableFuture
-    implementation("androidx.room:room-guava:$roomVersion")
+    implementation("androidx.room:room-guava:2.4.0")
 
     // optional - Test helpers
-    testImplementation("androidx.room:room-testing:$roomVersion")
+    testImplementation("androidx.room:room-testing:2.4.0")
 
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:2.4.0")
