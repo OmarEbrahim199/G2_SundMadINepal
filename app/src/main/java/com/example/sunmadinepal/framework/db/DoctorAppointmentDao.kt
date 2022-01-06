@@ -1,13 +1,10 @@
 package com.example.sunmadinepal.framework.db
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 
 
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
-
+@Dao
 interface DoctorAppointmentDao {
     @Insert
     fun insertAll(vararg doctorAppointments: DoctorAppointment)

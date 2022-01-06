@@ -12,6 +12,8 @@ import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.RotateAnimation
 import android.widget.*
+import androidx.room.Room
+import com.example.sunmadinepal.framework.db.AppDatabase
 import java.util.*
 
 
@@ -28,6 +30,17 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
     }
+
+
+    //Gets an instance of the database: https://developer.android.com/training/data-storage/room
+    val db = Room.databaseBuilder(
+        applicationContext,
+        AppDatabase::class.java, "local-database"
+    ).build()
+
+
+
+
 
     private fun LogoStart() {
 
