@@ -7,9 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.room.Room
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ViewModel.ProfileViewModel
+import com.example.sunmadinepal.framework.db.AppDatabase
+import com.example.sunmadinepal.framework.db.DoctorAppointment
+import com.example.sunmadinepal.framework.db.DoctorAppointmentDao
 import java.util.*
 
 class ProfileFragment : Fragment() {
@@ -32,6 +36,7 @@ class ProfileFragment : Fragment() {
         val year = date.get(Calendar.YEAR)
         val month = date.get(Calendar.MONTH)
         val day = date.get(Calendar.DAY_OF_MONTH)
+
 
         binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(), { view, savedYear, savedMonth, savedDay ->
             binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)

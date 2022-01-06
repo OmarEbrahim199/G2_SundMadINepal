@@ -11,6 +11,9 @@ interface DoctorAppointmentDao {
     @Insert
     fun insertAll(vararg doctorAppointments: DoctorAppointment)
 
+    @Insert
+    suspend fun addDoctorAppointment(doctorAppointment: DoctorAppointment)
+
     @Delete
     fun delete(doctorAppointment: DoctorAppointment)
 
