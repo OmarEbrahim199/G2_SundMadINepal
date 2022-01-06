@@ -1,6 +1,8 @@
 package com.example.sunmadinepal.framework.db
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
+import java.util.concurrent.Flow
 
 
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
@@ -13,8 +15,9 @@ interface DoctorAppointmentDao {
     fun delete(doctorAppointment: DoctorAppointment)
 
     @Query("SELECT * FROM doctorAppointments")
-    fun getAll(): List<DoctorAppointment>
+    fun readAll(): LiveData<List<DoctorAppointment>>
 
     @Update
     fun updateDoctorAppointments(vararg doctorAppointments: DoctorAppointment)
+
 }
