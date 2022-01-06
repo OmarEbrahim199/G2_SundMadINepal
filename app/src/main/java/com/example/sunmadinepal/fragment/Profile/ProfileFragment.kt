@@ -34,7 +34,7 @@ class ProfileFragment : Fragment() {
         val day = date.get(Calendar.DAY_OF_MONTH)
 
         binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(), { view, savedYear, savedMonth, savedDay ->
-            binding.dateBox.setText(""+ savedDay +"-"+ savedMonth +"-"+ savedYear)
+            binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
         }, year, month, day)
 
             datePickerDialog.show()
