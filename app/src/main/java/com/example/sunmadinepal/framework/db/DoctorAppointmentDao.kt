@@ -3,6 +3,7 @@ package com.example.sunmadinepal.framework.db
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
@@ -16,4 +17,7 @@ interface DoctorAppointmentDao {
 
     @Query("SELECT * FROM doctorAppointments")
     fun getAll(): List<DoctorAppointment>
+
+    @Update
+    fun updateDoctorAppointments(vararg doctorAppointments: DoctorAppointment)
 }
