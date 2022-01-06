@@ -32,15 +32,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    //Gets an instance of the database: https://developer.android.com/training/data-storage/room
-    val db = Room.databaseBuilder(
-        applicationContext,
-        AppDatabase::class.java, "local-database"
-    ).build()
-
-
-
-
 
     private fun LogoStart() {
 
