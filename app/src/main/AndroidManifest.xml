@@ -12,17 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sunmadinepal">
         <activity
-            android:name=".ui.fragment.recipes.InsideRecipes"
+            android:name="com.example.sunmadinepal.fragment.recipes.InsideRecipes"
             android:exported="true" />
 
-        <activity
-            android:name=".ui.fragment.recipes.Recipes_for_pregant_woman"
-            android:exported="true" />
+        <!--<activity
+            android:name="com.example.sunmadinepal.fragment.recipes.Recipes_pregant_woman"
+            android:exported="true" />-->
+
         <activity
             android:name=".language.Language"
             android:exported="true" />
         <activity
-            android:name=".ui.fragment.Profile.profile_Add"
+            android:name="com.example.sunmadinepal.fragment.Profile.profile_Add"
             android:exported="true" />
         <activity
             android:name=".Navigation"

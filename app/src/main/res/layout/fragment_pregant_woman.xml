@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_vector"
-    tools:context=".ui.fragment.recipes.Recipes_Pregnant_Woman_Fragment">
+    tools:context=".fragment.recipes.Recipes_Pregnant_Woman_Fragment">
 
 
     <androidx.recyclerview.widget.RecyclerView

@@ -9,13 +9,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.sunmadinepal.ui.fragment.home.HomeFragment"
+        android:name="com.example.sunmadinepal.fragment.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_health"
-        android:name="com.example.sunmadinepal.ui.fragment.health.HealthFragment"
+        android:name="com.example.sunmadinepal.fragment.health.HealthFragment"
         android:label="@string/title_health"
         tools:layout="@layout/health" >
         <action
@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/navigation_recipes"
-        android:name="com.example.sunmadinepal.ui.fragment.recipes.RecipesFragment"
+        android:name="com.example.sunmadinepal.fragment.recipes.RecipesFragment"
         android:label="@string/title_Recipes"
         tools:layout="@layout/fragment_recipes" >
         <action
@@ -53,7 +53,7 @@
 
     <fragment
         android:id="@id/navigation_garden"
-        android:name="com.example.sunmadinepal.ui.fragment.garden.GardenFragment"
+        android:name="com.example.sunmadinepal.fragment.garden.GardenFragment"
         android:label="@string/title_garden"
         tools:layout="@layout/fragment_garden"
         >
@@ -73,14 +73,14 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.sunmadinepal.ui.fragment.Profile.ProfileFragment"
+        android:name="com.example.sunmadinepal.fragment.Profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" >
 
     </fragment>
     <fragment
         android:id="@+id/fragment_0_6_months"
-        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_0_6_months"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_0_6_months"
         android:label="fragment_0_6_months"
         tools:layout="@layout/fragment_0_6_months" >
         <action
@@ -89,7 +89,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_12_24_months"
-        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_12_24_months"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_12_24_months"
         android:label="fragment_12_24_months"
         tools:layout="@layout/fragment_12_24_months" >
         <action
@@ -98,7 +98,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_06_12_months"
-        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_06_12_months"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_06_12_months"
         android:label="fragment_06_12_months"
         tools:layout="@layout/fragment_06_12_months">
         <action
@@ -107,7 +107,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_maternity"
-        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_maternity"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_maternity"
         android:label="fragment_maternity"
         tools:layout="@layout/fragment_maternity" >
         <action
@@ -116,12 +116,12 @@
     </fragment>
     <activity
         android:id="@+id/insideRecipes"
-        android:name="com.example.sunmadinepal.ui.fragment.recipes.InsideRecipes"
+        android:name="com.example.sunmadinepal.fragment.recipes.InsideRecipes"
         android:label="activity_inside_recipes"
         tools:layout="@layout/activity_inside_recipes" />
     <fragment
         android:id="@+id/fragment_generalhealth"
-        android:name="com.example.sunmadinepal.ui.fragment.health.Fragment_generalhealth"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_generalhealth"
         android:label="fragment_generalhealth"
         tools:layout="@layout/fragment_generalhealth" >
         <action
@@ -130,7 +130,7 @@
     </fragment>
     <fragment
         android:id="@+id/recipes_Pregnant_Woman_Fragment"
-        android:name="com.example.sunmadinepal.ui.fragment.recipes.Recipes_Pregnant_Woman_Fragment"
+        android:name="com.example.sunmadinepal.fragment.recipes.Recipes_Pregnant_Woman_Fragment"
         android:label="fragment_pregant_woman"
         tools:layout="@layout/fragment_pregant_woman" >
         <action
@@ -142,7 +142,7 @@
     </fragment>
     <fragment
         android:id="@+id/recipes_Children_Fragment"
-        android:name="com.example.sunmadinepal.ui.fragment.recipes.Recipes_Children_Fragment"
+        android:name="com.example.sunmadinepal.fragment.recipes.Recipes_Children_Fragment"
         android:label="fragment_recipes_children"
         tools:layout="@layout/fragment_recipes_children" >
         <action
@@ -154,7 +154,7 @@
     </fragment>
     <fragment
         android:id="@+id/recipes_Mothers_Fragment"
-        android:name="com.example.sunmadinepal.ui.fragment.recipes.Recipes_Mothers_Fragment"
+        android:name="com.example.sunmadinepal.fragment.recipes.Recipes_Mothers_Fragment"
         android:label="fragment_recipes_mothers"
         tools:layout="@layout/fragment_recipes_mothers" >
         <action
@@ -166,7 +166,7 @@
     </fragment>
     <fragment
         android:id="@+id/compostFragment"
-        android:name="com.example.sunmadinepal.ui.fragment.garden.CompostFragment"
+        android:name="com.example.sunmadinepal.fragment.garden.CompostFragment"
         android:label="fragment_compost"
         tools:layout="@layout/fragment_compost" >
         <action
@@ -175,7 +175,7 @@
     </fragment>
     <fragment
         android:id="@+id/soilFragment"
-        android:name="com.example.sunmadinepal.ui.fragment.garden.SoilFragment"
+        android:name="com.example.sunmadinepal.fragment.garden.SoilFragment"
         android:label="fragment_soil"
         tools:layout="@layout/fragment_soil" >
         <action
@@ -184,7 +184,7 @@
     </fragment>
     <fragment
         android:id="@+id/waterFragment"
-        android:name="com.example.sunmadinepal.ui.fragment.garden.WaterFragment"
+        android:name="com.example.sunmadinepal.fragment.garden.WaterFragment"
         android:label="fragment_water"
         tools:layout="@layout/fragment_water" >
         <action
@@ -193,7 +193,7 @@
     </fragment>
     <fragment
         android:id="@+id/growingFragment"
-        android:name="com.example.sunmadinepal.ui.fragment.garden.GrowingFragment"
+        android:name="com.example.sunmadinepal.fragment.garden.GrowingFragment"
         android:label="fragment_growing"
         tools:layout="@layout/fragment_growing" >
         <action

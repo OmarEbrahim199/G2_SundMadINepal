@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_vector"
-    tools:context=".ui.fragment.health.HealthFragment">
+    tools:context=".fragment.health.HealthFragment">
 
     <TextView
         android:id="@+id/text_health"
