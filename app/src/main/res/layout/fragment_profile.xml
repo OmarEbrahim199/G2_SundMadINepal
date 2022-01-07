@@ -62,38 +62,24 @@
             android:id="@+id/dates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:text="@string/doctor_appointment"
             android:textColor="@color/black"
             android:textSize="26dp"
+            app:layout_constraintEnd_toEndOf="@+id/box"
             app:layout_constraintStart_toStartOf="@id/box"
-            app:layout_constraintTop_toBottomOf="@id/add_appointment">
-        </TextView>
+            app:layout_constraintTop_toBottomOf="@id/add_appointment"></TextView>
 
         <EditText
             android:id="@+id/dateBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
             android:layout_marginTop="10dp"
             android:text="21-10-2021"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/box"
             app:layout_constraintStart_toStartOf="@id/box"
-            app:layout_constraintTop_toBottomOf="@id/dates">
-        </EditText>
-
-        <TextView
-            android:id="@+id/date2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="10dp"
-            android:text="15-01-2022"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@id/box"
-            app:layout_constraintTop_toBottomOf="@id/dateBox">
-        </TextView>
+            app:layout_constraintTop_toBottomOf="@id/dates"></EditText>
 
         <Button
             android:id="@+id/save_date"
