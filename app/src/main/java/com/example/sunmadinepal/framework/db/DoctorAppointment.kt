@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 data class DoctorAppointment(
     @PrimaryKey val dId: Int,
 
-    @ColumnInfo(name = "date" ) val date: String?,
+    @ColumnInfo(name = "date" ) val date: Int?,
     /*@ColumnInfo(name = "month" ) val month: Int?,
     @ColumnInfo(name = "day" ) val day: Int?,
     @ColumnInfo(name = "hour" ) val hour: Int?,

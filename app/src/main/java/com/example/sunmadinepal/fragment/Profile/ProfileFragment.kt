@@ -74,9 +74,9 @@ class ProfileFragment : Fragment() {
     }
 
     private fun insertDataToDatabase() {
-        val dateToDatabase = binding.dateBox.text.toString()
+        val dateToDatabase = binding.dateBox.text
 
-        val doctorAppointment = DoctorAppointment(0,dateToDatabase)
+        val doctorAppointment = DoctorAppointment(0,Integer.parseInt(dateToDatabase.toString()))
 
         doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
         Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
