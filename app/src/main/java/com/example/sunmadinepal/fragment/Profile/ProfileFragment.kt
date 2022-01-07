@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
@@ -14,6 +15,7 @@ import com.example.sunmadinepal.ViewModel.ProfileViewModel
 import com.example.sunmadinepal.framework.db.AppDatabase
 import com.example.sunmadinepal.framework.db.DoctorAppointment
 import com.example.sunmadinepal.framework.db.DoctorAppointmentDao
+import com.example.sunmadinepal.framework.db.DoctorAppointmentViewModel
 import java.util.*
 
 class ProfileFragment : Fragment() {
@@ -21,6 +23,7 @@ class ProfileFragment : Fragment() {
 
     private lateinit var profileViewModel: ProfileViewModel
     private var _binding:FragmentProfileBinding ? = null
+    private lateinit var doctorAppointmentViewModel: DoctorAppointmentViewModel
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,9 +31,10 @@ class ProfileFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
 
         val date = Calendar.getInstance()
         val year = date.get(Calendar.YEAR)
@@ -44,6 +48,10 @@ class ProfileFragment : Fragment() {
 
             datePickerDialog.show()
 
+        }
+
+        binding.saveDate.setOnClickListener {
+            insertDataToDatabase()
         }
 
 
@@ -62,6 +70,15 @@ class ProfileFragment : Fragment() {
 
 
         return root
+    }
+
+    private fun insertDataToDatabase() {
+        val dateToDatabase = binding.dateBox.text.toString()
+
+        val doctorAppointment = DoctorAppointment(0,dateToDatabase)
+
+        doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
+        Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
     }
 
 
