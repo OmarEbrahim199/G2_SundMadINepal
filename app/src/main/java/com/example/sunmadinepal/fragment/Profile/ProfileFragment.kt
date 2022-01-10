@@ -1,6 +1,7 @@
 package com.example.sunmadinepal.fragment.Profile
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -44,18 +45,13 @@ class ProfileFragment : Fragment() {
         val day = date.get(Calendar.DAY_OF_MONTH)
 
 
-        binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
-            binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
-        }, year, month, day)
+        binding.addAppointment.setOnClickListener {
+            pickDateTime()
 
-            datePickerDialog.show()
 
-        }
-
-        binding.saveDate.setOnClickListener {
-            insertDataToDatabase()
-        }
-
+            binding.saveDate.setOnClickListener {
+                insertDataToDatabase()
+            }
 
 
 /*
@@ -63,19 +59,37 @@ class ProfileFragment : Fragment() {
         profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })*/
 
 
-
-       /* val btn : Button =binding.addweightoo
+            /* val btn : Button =binding.addweightoo
         profileViewModel.newactivity.observe(viewLifecycleOwner, Observer { btn.setOnClickListener { // Launching new Activity on selecting single List Item
             val i = Intent(activity, profile_Add::class.java)
             startActivity(i)
         } })*/
 
-
+        }
         return root
     }
 
+
+    //pickDateTime() based on: https://stackoverflow.com/questions/38604157/android-date-time-picker-in-one-dialog
+     fun pickDateTime() {
+        val currentDateTime = Calendar.getInstance()
+        val startYear = currentDateTime.get(Calendar.YEAR)
+        val startMonth = currentDateTime.get(Calendar.MONTH)
+        val startDay = currentDateTime.get(Calendar.DAY_OF_MONTH)
+        val startHour = currentDateTime.get(Calendar.HOUR_OF_DAY)
+        val startMinute = currentDateTime.get(Calendar.MINUTE)
+        DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { _, year, month, day ->
+            TimePickerDialog(requireContext(), TimePickerDialog.OnTimeSetListener { _, hour, minute ->
+                val pickedDateTime = Calendar.getInstance()
+                pickedDateTime.set(year, month, day, hour, minute)
+                binding.dateBox.setText(""+hour+":"+minute +" " +day +"/"+ (month+1) +"/"+ year)
+            }, startHour, startMinute, true).show()
+        }, startYear, startMonth, startDay).show()
+    }
+
+
     private fun insertDataToDatabase() {
-        val dateToDatabase = binding.dateBox.text.
+        val dateToDatabase = binding.dateBox.toString()
 
         val doctorAppointment = DoctorAppointment(0,dateToDatabase)
 
@@ -85,3 +99,35 @@ class ProfileFragment : Fragment() {
 
 
 }
+
+
+/**
+ *         binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
+binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
+}, year, month, day)
+
+datePickerDialog.show()
+
+}
+
+binding.saveDate.setOnClickListener {
+insertDataToDatabase()
+}
+
+
+return root
+}
+
+private fun insertDataToDatabase() {
+val dateToDatabase = binding.dateBox.text.toString()
+
+val doctorAppointment = DoctorAppointment(0,dateToDatabase)
+
+doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
+Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
+}
+ *
+ *
+ *
+ *
+ */
