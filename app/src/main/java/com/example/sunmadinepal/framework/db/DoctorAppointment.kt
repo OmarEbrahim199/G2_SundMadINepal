@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "doctorAppointments")
 data class DoctorAppointment(
-    @PrimaryKey val dId: Int,
+    @PrimaryKey(autoGenerate = true) val dId: Int,
 
     @ColumnInfo(name = "date" ) val date: Int?,
     /*@ColumnInfo(name = "month" ) val month: Int?,
