@@ -39,10 +39,10 @@ class ProfileFragment : Fragment() {
 
         doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
 
-        val date = Calendar.getInstance()
-        val year = date.get(Calendar.YEAR)
-        val month = date.get(Calendar.MONTH)
-        val day = date.get(Calendar.DAY_OF_MONTH)
+        //val date = Calendar.getInstance()
+        //val year = date.get(Calendar.YEAR)
+        //val month = date.get(Calendar.MONTH)
+        //val day = date.get(Calendar.DAY_OF_MONTH)
 
 
         binding.addAppointment.setOnClickListener {
