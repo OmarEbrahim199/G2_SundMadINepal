@@ -103,13 +103,14 @@
         <entry key="..\:/Users/Omare/Downloads/android-basics-kotlin-dice-roller-with-images-app-solution-master/sunmadinepal/app/src/main/res/xml/network_security_config.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_inside_recipes.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/activity_profile_add.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_maternity.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/fragment_pregant_woman.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_recipes.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/fragment_recipes__for__children_.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/fragment_recipes_for__mothers_.xml" value="0.10833333333333334" />
+        <entry key="app/src/main/res/layout/recipedetails.xml" value="0.15" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12083333333333333" />
       </map>
     </option>

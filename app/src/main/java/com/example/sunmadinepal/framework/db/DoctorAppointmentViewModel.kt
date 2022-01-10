@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 //Based on https://www.youtube.com/watch?v=lwAvI3WDXBY
 class DoctorAppointmentViewModel(application: Application): AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<DoctorAppointment>>
+    val readAllData: LiveData<List<DoctorAppointment>>
     private val repository: DataRepository
 
 
