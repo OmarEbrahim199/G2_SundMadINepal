@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
+import com.example.sunmadinepal.R
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ViewModel.ProfileViewModel
@@ -43,7 +44,7 @@ class ProfileFragment : Fragment() {
         val day = date.get(Calendar.DAY_OF_MONTH)
 
 
-        binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(), { view, savedYear, savedMonth, savedDay ->
+        binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
             binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
         }, year, month, day)
 
@@ -74,9 +75,9 @@ class ProfileFragment : Fragment() {
     }
 
     private fun insertDataToDatabase() {
-        val dateToDatabase = binding.dateBox.text
+        val dateToDatabase = binding.dateBox.text.
 
-        val doctorAppointment = DoctorAppointment(0,Integer.parseInt(dateToDatabase.toString()))
+        val doctorAppointment = DoctorAppointment(0,dateToDatabase)
 
         doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
         Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
