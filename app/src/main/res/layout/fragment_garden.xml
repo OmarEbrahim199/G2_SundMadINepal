@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@android:style/Widget.Material.ScrollView"
@@ -9,10 +10,6 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context=".fragment.garden.GardenFragment">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/text_garden"
@@ -43,11 +40,10 @@
 
         <Button
             android:id="@+id/soil"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
-            android:drawableLeft="@drawable/pregnant_woman"
             android:text="Preparing the soil"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -56,14 +52,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/compost"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
-            android:drawableLeft="@drawable/mum_with_baby"
             android:text="How to make compost"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -72,14 +68,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/soil" />
+        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/water"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
-            android:drawableLeft="@drawable/mum_with_kid"
             android:text="How to water crops"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -88,14 +84,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/compost" />
+        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/grow"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
-            android:drawableLeft="@drawable/mum_with_kid"
             android:text="What to grow in the garden"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -104,12 +100,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/water" />
-
-
+        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
 
     <!--Start of first box -->
     <!--<ImageView
