@@ -68,13 +68,14 @@ class ProfileFragment : Fragment() {
         val startDay = currentDateTime.get(Calendar.DAY_OF_MONTH)
         val startHour = currentDateTime.get(Calendar.HOUR_OF_DAY)
         val startMinute = currentDateTime.get(Calendar.MINUTE)
-        DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { _, year, month, day ->
-            TimePickerDialog(requireContext(), TimePickerDialog.OnTimeSetListener { _, hour, minute ->
+        DatePickerDialog(requireContext(), R.style.DatePickerDialogTheme, DatePickerDialog.OnDateSetListener { _, year, month, day ->
+            TimePickerDialog(requireContext(), R.style.DatePickerDialogTheme, TimePickerDialog.OnTimeSetListener { _, hour, minute ->
                 val pickedDateTime = Calendar.getInstance()
                 pickedDateTime.set(year, month, day, hour, minute)
-                binding.dateBox.setText(""+hour+":"+minute +" " +day +"/"+ (month+1) +"/"+ year)
+                binding.dateBox.setText(""+hour+":"+minute +"    " +day +"/"+ (month+1) +"/"+ year)
             }, startHour, startMinute, true).show()
         }, startYear, startMonth, startDay).show()
+        R.style.Theme_Design_Light
     }
 
 
