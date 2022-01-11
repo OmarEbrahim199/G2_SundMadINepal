@@ -2,10 +2,6 @@ package com.example.sunmadinepal.framework.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-<<<<<<< HEAD
-=======
-import java.util.*
->>>>>>> origin/Database
 import java.util.concurrent.Flow
 
 
@@ -15,12 +11,6 @@ interface DoctorAppointmentDao {
     @Insert
     fun insertAll(vararg doctorAppointments: DoctorAppointment)
 
-<<<<<<< HEAD
-=======
-    @Insert
-    suspend fun addDoctorAppointment(doctorAppointment: DoctorAppointment)
-
->>>>>>> origin/Database
     @Delete
     fun delete(doctorAppointment: DoctorAppointment)
 

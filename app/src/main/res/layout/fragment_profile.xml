@@ -21,103 +21,79 @@
         tools:context=".fragment.Profile.ProfileFragment">
 
         <TextView
-            android:id="@+id/Profile"
+            android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
-            android:text="Doctor Appointments"
+            android:text="@string/title_profile"
             android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </TextView>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="271dp"
-            android:layout_height="292dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="70dp"
-            android:background="@drawable/background_box"
-            app:layout_constraintCircleRadius="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/dateBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dates"></TextView>
-
-            <TextView
-                android:id="@+id/dates"
-                android:layout_width="184dp"
-                android:layout_height="44dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="40dp"
-                android:text="My Doctor Appointments"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></TextView>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerview1"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dates" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="409dp"
-            android:layout_height="105dp"
-            android:layout_marginTop="76dp"
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+            app:layout_constraintTop_toBottomOf="@id/profile">
+        </ImageView>
 
-            <Button
-                android:id="@+id/add_appointment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/background_box"
-                android:text="@string/add_doctor_appointment"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/save_date"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></Button>
+        <Button
+            android:id="@+id/add_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
+            android:text="@string/add_doctor_appointment"
+            app:layout_constraintEnd_toEndOf="@id/box"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toTopOf="@id/box">
+        </Button>
 
-            <Button
-                android:id="@+id/save_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Save Date"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.945"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="-4dp"> </Button>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/doctor_appointment"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toBottomOf="@id/add_appointment">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dateBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="21-10-2021"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toBottomOf="@id/dates">
+        </TextView>
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="15-01-2022"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/box"
+            app:layout_constraintTop_toBottomOf="@id/dateBox">
+        </TextView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

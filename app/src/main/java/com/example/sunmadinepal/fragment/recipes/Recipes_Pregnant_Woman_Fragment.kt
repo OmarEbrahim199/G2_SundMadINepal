@@ -68,7 +68,7 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
         if (string.equals("en")){
             recipesViewModel.fetchEventRecipeForPregnant("JauloTitleEn","JauloDescriptionEn","NutritiousFlowerTitleEn","NutritiousFlowerDescriptionEn", "LittoTitleEn", "LittoDescriptionEn")
         }else if (string.equals("ne")){
-            recipesViewModel.fetchEventRecipeForPregnant("JauloTitleNe","JauloDescriptionNe","NutritiousFlowerTitleNe","NutritiousFlowerDescriptionNe","LittoTitleNe","LittoDescriptionNe")
+            recipesViewModel.fetchEventRecipeForPregnant("JauloTitleEn","JauloDescriptionNe","NutritiousFlowerTitleNe","NutritiousFlowerDescriptionNe","LittoTitleNe","LittoDescriptionNe")
         }
             progressDialog =  ProgressDialog(this.context)
             // Setting up message in Progress dialog.

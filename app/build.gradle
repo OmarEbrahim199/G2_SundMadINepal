@@ -109,12 +109,9 @@ dependencies {
 
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:2.4.0")
-<<<<<<< HEAD
 
     // https://mvnrepository.com/artifact/org.mockito/mockito-core
     testImplementation("org.mockito:mockito-core:3.4.6")
     testImplementation("org.mockito:mockito-core:2.13.0")
 
-=======
->>>>>>> origin/Database
 }
