@@ -67,7 +67,7 @@ class RecipesViewModel : ViewModel() {
 
     }
 
-    internal fun fetchEventRecipeForPregnant(ItemName :String , ItemDescription:String) {
+    internal fun fetchEventRecipeForPregnant(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
@@ -79,11 +79,14 @@ class RecipesViewModel : ViewModel() {
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
+                   val itemName1 = document.data.getValue(ItemName1) as String
+                    val itemDescription1= document.data.getValue(ItemDescription1).toString()
+
 
 
 
                     _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
+                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName1, itemDescription1 )))
 
 
 
