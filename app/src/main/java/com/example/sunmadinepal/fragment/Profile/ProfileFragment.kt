@@ -9,15 +9,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.example.sunmadinepal.R
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ViewModel.ProfileViewModel
-import com.example.sunmadinepal.framework.db.AppDatabase
-import com.example.sunmadinepal.framework.db.DoctorAppointment
-import com.example.sunmadinepal.framework.db.DoctorAppointmentDao
-import com.example.sunmadinepal.framework.db.DoctorAppointmentViewModel
+import com.example.sunmadinepal.framework.db.*
 import java.util.*
 
 class ProfileFragment : Fragment() {
@@ -39,12 +37,6 @@ class ProfileFragment : Fragment() {
 
         doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
 
-        //val date = Calendar.getInstance()
-        //val year = date.get(Calendar.YEAR)
-        //val month = date.get(Calendar.MONTH)
-        //val day = date.get(Calendar.DAY_OF_MONTH)
-
-
         binding.addAppointment.setOnClickListener {
             pickDateTime()
 
@@ -53,21 +45,19 @@ class ProfileFragment : Fragment() {
                 insertDataToDatabase()
             }
 
+            //Based on https://www.youtube.com/watch?v=3USvr1Lz8g8&t=49s
+            val adapter = ListAdapter()
+            val recyclerView = binding.recyclerview1
+            recyclerView.adapter = adapter
+            recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-/*
-        val textView= binding.textProfile
-        profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })*/
-
-
-            /* val btn : Button =binding.addweightoo
-        profileViewModel.newactivity.observe(viewLifecycleOwner, Observer { btn.setOnClickListener { // Launching new Activity on selecting single List Item
-            val i = Intent(activity, profile_Add::class.java)
-            startActivity(i)
-        } })*/
+            //doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
+            doctorAppointmentViewModel.readAllData.observe(viewLifecycleOwner, androidx.lifecycle.Observer {doctorAppointment -> adapter.setData(doctorAppointment) })
 
         }
         return root
     }
+
 
 
     //pickDateTime() based on: https://stackoverflow.com/questions/38604157/android-date-time-picker-in-one-dialog
@@ -101,8 +91,28 @@ class ProfileFragment : Fragment() {
 }
 
 
-/**
- *         binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
+/*
+        val textView= binding.textProfile
+        profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })*/
+
+
+/* val btn : Button =binding.addweightoo
+profileViewModel.newactivity.observe(viewLifecycleOwner, Observer { btn.setOnClickListener { // Launching new Activity on selecting single List Item
+val i = Intent(activity, profile_Add::class.java)
+startActivity(i)
+} })*/
+
+
+
+
+
+//val date = Calendar.getInstance()
+//val year = date.get(Calendar.YEAR)
+//val month = date.get(Calendar.MONTH)
+//val day = date.get(Calendar.DAY_OF_MONTH)
+
+
+/*binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
 binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
 }, year, month, day)
 
@@ -126,8 +136,4 @@ val doctorAppointment = DoctorAppointment(0,dateToDatabase)
 doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
 Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
 }
- *
- *
- *
- *
  */
