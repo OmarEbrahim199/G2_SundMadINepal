@@ -60,7 +60,7 @@ class Fragment_generalhealth : Fragment() {
             val data = ArrayList<RecipesData>()
             if(string.equals("en")){
 
-                data.add(RecipesData(R.drawable.app_go_to_healthpost,"Caring for a sick child","Bullet points:\n" +
+                data.add(RecipesData(R.drawable.app_go_to_healthpost.toString(),"Caring for a sick child","Bullet points:\n" +
                         "\n" +
                         "Sick infants under 6 months of age should be breastfed more often than usual.\n" +
                         "Sick baby who has completed 6 months should be fed mother's milk as well as more nutritious food.\n" +
@@ -73,7 +73,7 @@ class Fragment_generalhealth : Fragment() {
             }
 
             if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_go_to_healthpost,"बिरामी बच्चाको स्याहार ","महत्वपुर्ण बिन्दु :\n" +
+                data.add(RecipesData(R.drawable.app_go_to_healthpost.toString(),"बिरामी बच्चाको स्याहार ","महत्वपुर्ण बिन्दु :\n" +
                         "\n" +
                         "६ महिना भन्दा कम उमेरका बिरामी शिशुलाई आमाको दूध नियमित रूपमा साविक भन्दा बढी पटक खुवाउनुपर्छ।\n" +
                         "६ महिना पुरा भइसकेको बिरामी शिशुलाई आमाको दूधको साथसाथै थप पोषिलो खानाहरु पनि खुवाइरहनु पर्दछ। \n" +
@@ -86,7 +86,7 @@ class Fragment_generalhealth : Fragment() {
             }
 
             // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(data, null)
+            val adapter = CustomAdapter(activity as AppCompatActivity,data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter

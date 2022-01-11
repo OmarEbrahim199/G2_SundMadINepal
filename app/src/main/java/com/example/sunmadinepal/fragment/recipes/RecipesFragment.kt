@@ -1,10 +1,15 @@
 package com.example.sunmadinepal.fragment.recipes
 
+import android.app.ProgressDialog
+import android.content.Context
 import android.content.res.Configuration
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -33,13 +38,14 @@ class RecipesFragment : Fragment() {
         setLocale(string)
     }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        dashboardViewModel =
-            ViewModelProvider(this).get(RecipesViewModel::class.java)
+        //dashboardViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
 
         _binding = FragmentRecipesBinding.inflate(inflater, container, false)
         val root: View = binding.root

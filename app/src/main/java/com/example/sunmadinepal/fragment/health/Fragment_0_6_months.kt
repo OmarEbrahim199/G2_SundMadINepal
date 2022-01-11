@@ -68,7 +68,7 @@ class Fragment_0_6_months : Fragment() {
 
             if(string.equals("en")){
 
-                data.add(RecipesData(R.drawable.app_handwashing,"Baby 0 - 6 months","Bullet points:\n" +
+                data.add(RecipesData(R.drawable.app_handwashing.toString(),"Baby 0 - 6 months","Bullet points:\n" +
                         "\n" +
                         "Visit the health post after 24 hours of birth, after 3 days, after 7 days and after 4 months.\n" +
                         "Only breastfeeding is needed. No additional food or water.\n" +
@@ -78,7 +78,7 @@ class Fragment_0_6_months : Fragment() {
             }
 
             if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_handwashing,"बच्चा ०-६ महिना","महत्वपुर्ण बिन्दु :\n" +
+                data.add(RecipesData(R.drawable.app_handwashing.toString(),"बच्चा ०-६ महिना","महत्वपुर्ण बिन्दु :\n" +
                         "\n" +
                         "स्वास्थ्य चौकीमा जचाउन जाने: बच्चा जन्मेको २४ घन्टाम, तेश्रो दिनमा, सातौ दिनमा र ४ महिना पर्छ \n" +
                         "आमाको दुध मात्र खुवाउने, थप पानी पनि खुवाउनु पर्दैन। \n" +
@@ -89,7 +89,7 @@ class Fragment_0_6_months : Fragment() {
             }
 
             // This will pass the ArrayList to our Adapter
-            Adapter = CustomAdapter(data, null)
+            Adapter = CustomAdapter(activity as AppCompatActivity,data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = Adapter

@@ -65,7 +65,7 @@ class Fragment_maternity : Fragment() {
 
 
             if(string =="en"){
-                data.add(RecipesData(R.drawable.app_handwashing,
+                data.add(RecipesData(R.drawable.app_handwashing.toString(),
                     "During pregnancy:",
                     "1. Visit the healthpost 4 times during pregnancy\n" +
                             "2. Make sure to eat a balanced diet\n" +
@@ -77,7 +77,7 @@ class Fragment_maternity : Fragment() {
 
             if(string =="ne") {
 
-                data.add(RecipesData(R.drawable.app_handwashing,
+                data.add(RecipesData(R.drawable.app_handwashing.toString(),
                     "गर्भावस्थाको बेला",
 
                     "कम्तिमा ४ पटक स्वास्थ्य चौकीमा जचाउन जानुपर्छ। \n" +
@@ -91,7 +91,7 @@ class Fragment_maternity : Fragment() {
 
 
             // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(data, null)
+            val adapter = CustomAdapter(activity as AppCompatActivity,data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter

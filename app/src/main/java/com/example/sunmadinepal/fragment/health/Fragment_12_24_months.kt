@@ -58,7 +58,7 @@ class Fragment_12_24_months : Fragment() {
 
             if(string.equals("en")){
 
-                data.add(RecipesData(R.drawable.app_banana,"Baby 9 - 12 months:","9 - 12 months\n" +
+                data.add(RecipesData(R.drawable.app_banana.toString(),"Baby 9 - 12 months:","9 - 12 months\n" +
                         "Visit the healthpost when the baby is 9 months old.\n" +
                         "Give 3 meals in a day +  1 snack\n" +
                         "Breastfeed frequently\n" +
@@ -71,7 +71,7 @@ class Fragment_12_24_months : Fragment() {
             }
 
             if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_banana,"बच्चा ०-९ महिना "," ०-९ महिना\n" +
+                data.add(RecipesData(R.drawable.app_banana.toString(),"बच्चा ०-९ महिना "," ०-९ महिना\n" +
                         " बच्चाले ९ महिना पुगेपछि स्वास्थ्य चौकीमा जचाउन जानुपर्छ ।\n" +
                         "\n" +
                         "दैनिक ३ पटक खाना र एक पटक खाजा खुवाउनु पर्छ \n" +
@@ -85,7 +85,7 @@ class Fragment_12_24_months : Fragment() {
 
 
             // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(data, null)
+            val adapter = CustomAdapter(activity as AppCompatActivity,data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter

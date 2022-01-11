@@ -73,7 +73,7 @@ class Recipes_Children_Fragment : Fragment() {
 
             if(string.equals("en")){
 
-                data.add(RecipesData(R.drawable.app_jaulo,"Jaulo", "Ingredients:\n" +
+                data.add(RecipesData(R.drawable.app_jaulo.toString(),"Jaulo", "Ingredients:\n" +
                         "Rice\t25 gram\n" +
                         "Mung / pink lentil / split yellow pigeon peas / black gram lentil\t8 gram\n" +
                         "Clarified butter or oil 5 gram\n" +
@@ -88,13 +88,13 @@ class Recipes_Children_Fragment : Fragment() {
 
 
 
-                data.add(RecipesData(R.drawable.app_how_to_make_litto,"How to prepare nutritional flour:","Take 2 proportions of different types of grains (corn, barley, rye, millet, oat, rice, etc. one proportio each) and 1 proportion of cereals/lentils (soya, chickpeas, peas, etc). Separately sort/clean and dry roast well until cooked properly and then separately grind store. This flour can be cooked with green spinach, carrot ,milk, clarified butter, honey , eggs, meat, and iodized salt. " ))
+                data.add(RecipesData(R.drawable.app_how_to_make_litto.toString(),"How to prepare nutritional flour:","Take 2 proportions of different types of grains (corn, barley, rye, millet, oat, rice, etc. one proportio each) and 1 proportion of cereals/lentils (soya, chickpeas, peas, etc). Separately sort/clean and dry roast well until cooked properly and then separately grind store. This flour can be cooked with green spinach, carrot ,milk, clarified butter, honey , eggs, meat, and iodized salt. " ))
 
 
             }
 
             if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_jaulo,"“जाउलो”\n","चहिने सामग्रीहरु ः\n" +
+                data.add(RecipesData(R.drawable.app_jaulo.toString(),"“जाउलो”\n","चहिने सामग्रीहरु ः\n" +
                         "                      \t\n" +
                         "चमल       २५ ग्राम\n" +
                         "मुंग वा मुसुरो वा रहको वा कालो दाल ८ ग्राम\n" +
@@ -109,12 +109,12 @@ class Recipes_Children_Fragment : Fragment() {
                         "·       स्वादको लागि थोरै आयोडिन युक्त नून हाल्ने ।\n"))
 
 
-                data.add(RecipesData(R.drawable.app_how_to_make_litto,"“पोषिलो पिठो बनाउने तरिका ः\n”\n","पोषिलो पिठो अन्न समूहबाट भिन्न किसिमका २ भाग अन्न (चामल, गहुँ, मकै, कोदो, जौ, फापर आदि मध्येबाट १÷भाग) र १ भाग गेडागुडी (भटमास, चना केराउ मध्ये आदि) लाई छुट्टाछुट्टै केलाउने र राम्ररी पाक्ने गरि भुट्ने र छुट्टाछुट्टै पिधेर तयार गरिएको पिठोलाई पकाउँदा साग, गाजर , दूध, घ्यू, मह, अण्डा, मासु, आयोडिनयुक्त नुन मिसाई तयार गर्न सकिन्छ ।"))
+                data.add(RecipesData(R.drawable.app_how_to_make_litto.toString(),"“पोषिलो पिठो बनाउने तरिका ः\n”\n","पोषिलो पिठो अन्न समूहबाट भिन्न किसिमका २ भाग अन्न (चामल, गहुँ, मकै, कोदो, जौ, फापर आदि मध्येबाट १÷भाग) र १ भाग गेडागुडी (भटमास, चना केराउ मध्ये आदि) लाई छुट्टाछुट्टै केलाउने र राम्ररी पाक्ने गरि भुट्ने र छुट्टाछुट्टै पिधेर तयार गरिएको पिठोलाई पकाउँदा साग, गाजर , दूध, घ्यू, मह, अण्डा, मासु, आयोडिनयुक्त नुन मिसाई तयार गर्न सकिन्छ ।"))
 
             }
 
             // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(data, null)
+            val adapter = CustomAdapter(activity as AppCompatActivity,data, null)
 
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter

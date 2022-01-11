@@ -5,7 +5,7 @@ import com.example.sunmadinepal.R
 import java.io.File
 
 data class RecipesData(
-    var itemImage: Int,
+    var itemImage: String,
     var itemName: String,
     var itemDescription: String,
 
@@ -22,12 +22,12 @@ data class RecipesData(
     }
 
     @JvmName("getItemImage1")
-    fun getItemImage(): Int {
+    fun getItemImage(): String {
         return itemImage
     }
 
     @JvmName("setItemImage1")
-    fun setItemImage(itemImage: Int) {
+    fun setItemImage(itemImage: String) {
         this.itemImage = itemImage
     }
 
@@ -40,6 +40,8 @@ data class RecipesData(
     fun setItemDescription(itemDescription: String) {
         this.itemDescription = itemDescription
     }
+
+
 
 
 }

@@ -1,13 +1,16 @@
 package com.example.sunmadinepal.fragment.recipes
 
+import android.app.ProgressDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
+import com.example.sunmadinepal.ViewModel.RecipesViewModel
 import com.example.sunmadinepal.databinding.FragmentRecipesMothersBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
@@ -18,6 +21,9 @@ class Recipes_Mothers_Fragment : Fragment() {
 
     private var _binding: FragmentRecipesMothersBinding? = null
     private val binding get() = _binding!!
+    private lateinit var recipesViewModel: RecipesViewModel
+    private var _events = ArrayList<RecipesData>()
+    var progressDialog: ProgressDialog? = null // Creating Progress dialog
 
 
     val string = Locale.getDefault().getLanguage()
@@ -32,7 +38,45 @@ class Recipes_Mothers_Fragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        binding.apply {
+        if (string.equals("en")){
+            recipesViewModel.fetchEvent("itemName","itemDescription")
+        }else if (string.equals("ne")){
+            recipesViewModel.fetchEvent("itemName1","itemDescription1")
+        }
+
+        progressDialog =  ProgressDialog(this.context)
+
+
+        // Setting up message in Progress dialog.
+        progressDialog!!.setTitle("Data Base retrieving")
+        progressDialog!!.setMessage("Loading Data From Firebase.");
+        progressDialog!!.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+
+
+        //Showing progress dialog.
+        progressDialog!!.show();
+
+        val recyclerview = binding.recyclerView
+        // this creates a vertical layout Manager
+        recyclerview.hasFixedSize()
+        recyclerview.layoutManager = LinearLayoutManager(activity)
+        val adapter = CustomAdapter( activity as AppCompatActivity,_events, null)
+        recyclerview.adapter = adapter
+
+
+
+
+        recipesViewModel.events.observe(this, androidx.lifecycle.Observer {
+                event ->
+            _events.removeAll(_events)
+            _events.addAll(event)
+            recyclerview.adapter!!.notifyDataSetChanged()
+            progressDialog!!.dismiss()
+
+
+        })
+
+        /*binding.apply {
 
             val recyclerview = binding.recyclerView
 
@@ -92,12 +136,13 @@ class Recipes_Mothers_Fragment : Fragment() {
             // Setting the Adapter with the recyclerview
             recyclerview.adapter = adapter
         }
-
+*/
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
+        recipesViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
         _binding = FragmentRecipesMothersBinding.inflate(inflater ,container, false)
         val view = binding?.root
 

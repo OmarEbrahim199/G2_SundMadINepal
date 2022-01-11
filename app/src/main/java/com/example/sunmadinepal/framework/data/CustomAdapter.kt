@@ -1,5 +1,7 @@
 package com.example.sunmadinepal.framework.data
 
+import android.app.Application
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -7,13 +9,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.model.RecipesData
 import com.example.sunmadinepal.fragment.recipes.InsideRecipes
 
 
-class CustomAdapter(private val mList: List<RecipesData>, val parent: ViewGroup?) :
+class CustomAdapter( private val context: Context,private val mList: List<RecipesData>, val parent: ViewGroup?) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+
+
 
 
     // create new views
@@ -29,25 +34,28 @@ class CustomAdapter(private val mList: List<RecipesData>, val parent: ViewGroup?
 
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-/*
-        Glide.with(parent?.context!!)
-            .load(mList.get(position).getItemImage())
-            .into( holder.imageView)*/
+
+        val user =mList.get(position)
+
+
+        Glide.with(this.context)
+            .load(user.itemImage.toInt())
+            .into( holder.imageView)
         // sets the image to the imageview from our itemHolder class
-        holder.imageView.setImageResource(mList.get(position).getItemImage())
+        //holder.imageView.setImageResource(mList.get(position).getItemImage())
+        //holder.imageView.setImageURI(mList.get(position).getItemImage())
 
         // sets the text to the textview from our itemHolder class
-        holder.textView.text = mList.get(position).itemName //ItemsViewModel.itemName
-        holder.textViewt.text = mList.get(position).itemDescription //ItemsViewModel.itemDescription
+        holder.textView.text = user.itemName //ItemsViewModel.itemName
+        holder.textViewt.text = user.itemDescription //ItemsViewModel.itemDescription
 
 
         holder.imageView.setOnClickListener { v ->
             val intent = Intent(v.context, InsideRecipes::class.java)
             // intent.putExtra("Image",mList.get(position).getItemImage())
-            intent.putExtra("Image", mList.get(holder.bindingAdapterPosition).getItemImage())
+            intent.putExtra("Image", mList.get(holder.bindingAdapterPosition).getItemImage().toInt())
             intent.putExtra("Title", mList.get(holder.bindingAdapterPosition).getItemName())
-            intent.putExtra("Description",
-                mList.get(holder.bindingAdapterPosition).getItemDescription())
+            intent.putExtra("Description", mList.get(holder.bindingAdapterPosition).getItemDescription())
             v.context.startActivity(intent)
         }
 
