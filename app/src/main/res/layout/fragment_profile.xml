@@ -89,7 +89,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="409dp"
             android:layout_height="105dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="76dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +118,7 @@
                 app:layout_constraintHorizontal_bias="0.945"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="-4dp"> </Button>
+                tools:layout_editor_absoluteX="-4dp"></Button>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
