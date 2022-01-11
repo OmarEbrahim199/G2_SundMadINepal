@@ -67,7 +67,7 @@ class RecipesViewModel : ViewModel() {
 
     }
 
-    internal fun fetchEventRecipeForPregnant(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String) {
+    internal fun fetchEventRecipeForPregnant(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String,ItemName2 :String , ItemDescription2:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
@@ -81,12 +81,15 @@ class RecipesViewModel : ViewModel() {
                     itemDescription= document.data.getValue(ItemDescription).toString()
                    val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
+                    val itemName2 = document.data.getValue(ItemName2) as String
+                    val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
 
 
 
                     _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName1, itemDescription1 )))
+                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName1, itemDescription1 ))).
+                            plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName2, itemDescription2 )))
 
 
 
@@ -101,6 +104,37 @@ class RecipesViewModel : ViewModel() {
     }
 
     internal fun fetchEventRecipeForMothers(ItemName :String , ItemDescription:String) {
+        firestore.collection("Recipes").get().addOnCompleteListener{
+            if (it.isCanceled){
+                Log.e("Error"," Error in database")
+            }
+            if (it.isSuccessful){
+                for (document in it.result!!){
+
+                    // ItemImage =document.data.getValue("itemName1").toString()
+
+                    itemName = document.data.getValue(ItemName) as String
+                    itemDescription= document.data.getValue(ItemDescription).toString()
+
+
+
+                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
+
+
+
+                }
+
+
+            }
+        }.addOnFailureListener { exception ->
+            Log.d(ContentValues.TAG, "get failed with ", exception)
+        }
+
+    }
+
+
+    internal fun fetchEventRecipeForChildren(ItemName :String , ItemDescription:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
