@@ -38,14 +38,12 @@ class RecipesViewModel : ViewModel() {
     var ItemImage =""
     var itemName =""
     var itemDescription =""
-    internal fun fetchEvent(ItemName :String , ItemDescription:String) {
 
-
+    internal fun fetchEventRecipesForChildren(ItemName :String , ItemDescription:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
             }
-
             if (it.isSuccessful){
                 for (document in it.result!!){
 
@@ -53,6 +51,34 @@ class RecipesViewModel : ViewModel() {
 
                      itemName = document.data.getValue(ItemName) as String
                      itemDescription= document.data.getValue(ItemDescription).toString()
+
+                    _events.value =listOf(RecipesData(R.drawable.food3.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_spinach_saag_for_jaulo.toString() ,itemName, itemDescription )))
+
+
+
+                }
+
+
+            }
+        }.addOnFailureListener { exception ->
+            Log.d(ContentValues.TAG, "get failed with ", exception)
+        }
+
+    }
+
+    internal fun fetchEventRecipeForPregnant(ItemName :String , ItemDescription:String) {
+        firestore.collection("Recipes").get().addOnCompleteListener{
+            if (it.isCanceled){
+                Log.e("Error"," Error in database")
+            }
+            if (it.isSuccessful){
+                for (document in it.result!!){
+
+                   // ItemImage =document.data.getValue("itemName1").toString()
+
+                    itemName = document.data.getValue(ItemName) as String
+                    itemDescription= document.data.getValue(ItemDescription).toString()
 
 
 
@@ -70,6 +96,37 @@ class RecipesViewModel : ViewModel() {
         }
 
     }
+
+    internal fun fetchEventRecipeForMothers(ItemName :String , ItemDescription:String) {
+        firestore.collection("Recipes").get().addOnCompleteListener{
+            if (it.isCanceled){
+                Log.e("Error"," Error in database")
+            }
+            if (it.isSuccessful){
+                for (document in it.result!!){
+
+                    // ItemImage =document.data.getValue("itemName1").toString()
+
+                    itemName = document.data.getValue(ItemName) as String
+                    itemDescription= document.data.getValue(ItemDescription).toString()
+
+
+
+                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
+
+
+
+                }
+
+
+            }
+        }.addOnFailureListener { exception ->
+            Log.d(ContentValues.TAG, "get failed with ", exception)
+        }
+
+    }
+
 
     internal var events : MutableLiveData<List<RecipesData>>
         get() {

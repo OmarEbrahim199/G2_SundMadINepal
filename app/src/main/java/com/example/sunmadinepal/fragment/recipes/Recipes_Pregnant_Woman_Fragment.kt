@@ -53,9 +53,7 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
     val string = Locale.getDefault().getLanguage()
     val locale = Locale(string)
     private lateinit var recipesViewModel: RecipesViewModel
-    val handler = Handler(Looper.getMainLooper())
     private var _events = ArrayList<RecipesData>()
-
     var progressDialog: ProgressDialog? = null // Creating Progress dialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,9 +66,9 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
         super.onStart()
 
         if (string.equals("en")){
-            recipesViewModel.fetchEvent("itemName","itemDescription")
+            recipesViewModel.fetchEventRecipeForPregnant("ItemName3","itemDescription")
         }else if (string.equals("ne")){
-            recipesViewModel.fetchEvent("itemName1","itemDescription1")
+            recipesViewModel.fetchEventRecipeForPregnant("itemName1","itemDescription1")
         }
             progressDialog =  ProgressDialog(this.context)
             // Setting up message in Progress dialog.
@@ -94,54 +92,7 @@ class Recipes_Pregnant_Woman_Fragment : Fragment() {
             recyclerview.adapter!!.notifyDataSetChanged()
         })
 
-
-
-
-
-
-        handler.postDelayed({
-/*
-            val adapter = CustomAdapter(cloudData.getData()!!, null)
-            recyclerview.adapter = adapter
-            adapter.notifyDataSetChanged()
-            progressDialog!!.dismiss()
-            Log.e("Ne","ni"+cloudData.getData())*/
-
-            }, 1000)
-
-        //recipesViewModel.text.observe(viewLifecycleOwner, Observer { recyclerview.adapter  })
-
-       /* val job = GlobalScope.launch { // launch a new coroutine and keep a reference to its Job
-            // ...
-
-
-            Log.e("He","hi"+cloudData.getData())
-
-        }
-        runBlocking {
-            job.join()
-
-
-
-            val adapter = CustomAdapter(cloudData.getData()!!, null)
-            recyclerview.adapter = adapter
-            adapter.notifyDataSetChanged()
-            progressDialog!!.dismiss()
-            Log.e("Ne","ni"+cloudData.getData())
-
-            // wait until child coroutine completes
-
-        }*/
-
-
-
-
-
     }
-
-
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
