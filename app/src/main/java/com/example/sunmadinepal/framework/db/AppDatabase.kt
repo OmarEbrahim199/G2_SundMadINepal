@@ -4,6 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+<<<<<<< HEAD
+=======
+import androidx.room.TypeConverters
+>>>>>>> origin/Database
 
 
 //Based on: https://developer.android.com/training/data-storage/room
