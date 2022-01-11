@@ -23,7 +23,7 @@ class ProfileFragment : Fragment() {
 // Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 
     private lateinit var profileViewModel: ProfileViewModel
-    private var _binding:FragmentProfileBinding ? = null
+    private var _binding: FragmentProfileBinding ? = null
     private lateinit var doctorAppointmentViewModel: DoctorAppointmentViewModel
 
     // This property is only valid between onCreateView and
@@ -75,12 +75,11 @@ class ProfileFragment : Fragment() {
                 binding.dateBox.setText(""+hour+":"+minute +"    " +day +"/"+ (month+1) +"/"+ year)
             }, startHour, startMinute, true).show()
         }, startYear, startMonth, startDay).show()
-        R.style.Theme_Design_Light
     }
 
 
     private fun insertDataToDatabase() {
-        val dateToDatabase = binding.dateBox.toString()
+        val dateToDatabase = binding.dateBox.text.toString()
 
         val doctorAppointment = DoctorAppointment(0,dateToDatabase)
 
