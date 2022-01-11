@@ -14,7 +14,7 @@ class RecipesDataViewModel : ViewModel {
 
     constructor() : super()
     constructor(recipesData: RecipesData) : super() {
-        this.itemImage =recipesData.itemImage
+        //this.itemImage =recipesData.itemImage
         this.itemName = recipesData.itemName
         this.itemDescription = recipesData.itemDescription
     }
@@ -28,10 +28,10 @@ class RecipesDataViewModel : ViewModel {
     fun  getArrayList() :MutableLiveData<ArrayList<RecipesDataViewModel>>{
 
 
-        val cat1 = RecipesData(R.drawable.app_how_to_make_litto,"How to prepare nutritional flour:","hdjhfdjfhdjf ")
+       // val cat1 = RecipesData(R.drawable.app_how_to_make_litto,"How to prepare nutritional flour:","hdjhfdjfhdjf ")
 
-        val caviewmodle1 : RecipesDataViewModel = RecipesDataViewModel(cat1)
-        arrayList.add(caviewmodle1)
+       // val caviewmodle1 : RecipesDataViewModel = RecipesDataViewModel(cat1)
+       // arrayList.add(caviewmodle1)
         arraylistmutablelivedata.value = arrayList
         return arraylistmutablelivedata
     }

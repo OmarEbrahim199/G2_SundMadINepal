@@ -1,55 +1,115 @@
 package com.example.sunmadinepal.framework.db
 
-import android.os.Bundle
+import android.content.ContentValues.TAG
+import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sunmadinepal.R
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
+import com.example.sunmadinepal.model.RecipesData
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class CloudData : AppCompatActivity() {
 
-    lateinit var storage: FirebaseStorage
+    val data = ArrayList<RecipesData>()
 
-    // storageRef was previously used to transfer data.
-    private lateinit var storageRef: StorageReference
+  /*  fun readData(ref: FirebaseDatabase, listener: getSome) {
+        listener.onStart()
+        ref.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                listener.onSuccess(dataSnapshot)
+            }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_lifecycle_demo)
-    }
+            fun onCancelled(firebaseError: FirebaseError?) {
+                listener.onFailure()
+            }
+        })
+    }*/
 
-    // [START storage_download_lifecycle]
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
 
-        // If there's a download in progress, save the reference so you can query it later
-        outState.putString("reference", storageRef.toString())
-    }
 
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
 
-        // If there was a download in progress, get its reference and create a new StorageReference
-        val stringRef = savedInstanceState.getString("reference") ?: return
+    fun getDataFireBase(ItemName :String , ItemDescription:String)  {
 
-        storageRef = storage.getReferenceFromUrl(stringRef)
+        val db = FirebaseFirestore.getInstance()
 
-        // Find all DownloadTasks under this StorageReference (in this example, there should be one)
-        val tasks = storageRef.activeDownloadTasks
+        db.collection("Recipes").addSnapshotListener { value, error ->
 
-        if (tasks.size > 0) {
-            // Get the task monitoring the download
-            val task = tasks[0]
 
-            // Add new listeners to the task using an Activity scope
-            task.addOnSuccessListener(this) {
-                // Success!
-                // ...
+            if(error != null){
+                Toast.makeText(this,error.localizedMessage,Toast.LENGTH_LONG).show()
+
+            }
+            else{
+                if(value != null){
+                    if(!value.isEmpty){ //is not empty
+                        val documents = value.documents
+                        for(document in documents){
+                            //casting
+
+
+                            //Querying the userDetails database searching for the matching userID
+                            db.collection("Recipes").get()
+                                .addOnSuccessListener { userDocs ->
+                                    for (doc in userDocs) {
+                                       // userName = doc.get("username") as String // Getting the username from the document
+                                        val comment = document.get(ItemName)
+                                        val downloadUrl = document.get(ItemDescription)
+                                        val post =RecipesData(R.drawable.app_go_to_healthpost.toString(),comment.toString(), downloadUrl.toString() )
+                                        data.add(post)
+                                    }
+
+                                }
+                                .addOnFailureListener { exception ->
+                                    Log.d(TAG, "get failed with ", exception)
+                                }
+
+
+                        }
+                    }
+                }
             }
         }
+
+
+
+
     }
+
+
+    fun readFireStoreData(ItemName :String , itemDescription:String){
+        val db = FirebaseFirestore.getInstance()
+
+        db.collection("Recipes").get().addOnCompleteListener{
+
+            if (it.isCanceled){
+                Log.e("Error"," Error in database")
+            }
+
+            if (it.isSuccessful){
+                    for (document in it.result!!){
+
+                        val ItemImage = document.data.getValue("ItemImage")
+                        val itemName = document.data.getValue(ItemName)
+                        val itemDescription= document.data.getValue(itemDescription)
+
+
+
+                        data.add(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName.toString(), itemDescription.toString() ))
+                    }
+
+                }
+            }
+    }
+
+    @JvmName("getData1")
+    fun getData(): ArrayList<RecipesData>? {
+
+        return data
+    }
+
+
 
 
 }
+
