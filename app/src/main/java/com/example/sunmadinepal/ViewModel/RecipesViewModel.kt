@@ -23,8 +23,6 @@ class RecipesViewModel : ViewModel() {
 
     private var firestore : FirebaseFirestore = FirebaseFirestore.getInstance()
     private var _events = MutableLiveData<List<RecipesData>>()
-    var progressDialog: ProgressDialog? = null // Creating Progress dialog
-
 
     private val _text = MutableLiveData<String>().apply {
         value
@@ -52,8 +50,8 @@ class RecipesViewModel : ViewModel() {
                      itemName = document.data.getValue(ItemName) as String
                      itemDescription= document.data.getValue(ItemDescription).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.food3.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_spinach_saag_for_jaulo.toString() ,itemName, itemDescription )))
+                    _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
 
 
 
