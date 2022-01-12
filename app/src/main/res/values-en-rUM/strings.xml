@@ -33,4 +33,10 @@
     <string name="choose_language">Choose Language</string>
     <string name="_1000_golden_days">1000 golden days</string>
     <string name="How_to_plant_in_my_garden">How to plant in my garden</string>
+    <string name="preparing_the_soil">Preparing the soil</string>
+    <string name="how_to_water_crops">How to water crops</string>
+    <string name="what_to_grow_in_the_garden">What to grow in the garden</string>
+    <string name="how_to_make_compost">How to make compost</string>
+    <string name="doctor_appointments" translatable="false">Doctor Appointments</string>
+    <string name="healthy_veggies" translatable="false">Healthy veggies</string>
 </resources>
