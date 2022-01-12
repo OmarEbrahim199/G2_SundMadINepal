@@ -51,18 +51,17 @@ class Recipes_Children_Fragment : Fragment() {
         return root
     }
 
-
     override fun onPause(){
         super.onPause()
     }
 
-
-
-
     override fun onStart() {
         super.onStart()
 
+        getData()
+    }
 
+    private fun getData() {
         if (string.equals("en")){
             recipesViewModel.fetchEventRecipesForChildren("itemName","itemDescription")
 
@@ -90,8 +89,7 @@ class Recipes_Children_Fragment : Fragment() {
             progressDialog!!.dismiss()
             recyclerview.adapter!!.notifyDataSetChanged()
         })
-
-
     }
+
 
 }

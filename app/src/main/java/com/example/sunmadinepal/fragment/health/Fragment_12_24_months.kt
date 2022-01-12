@@ -1,13 +1,16 @@
 package com.example.sunmadinepal.fragment.health
 
+import android.app.ProgressDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
+import com.example.sunmadinepal.ViewModel.HealthViewModel
 import com.example.sunmadinepal.databinding.Fragment1224MonthsBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
@@ -18,13 +21,12 @@ import kotlin.collections.ArrayList
 class Fragment_12_24_months : Fragment() {
 
     private var _binding: Fragment1224MonthsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-
     val string = Locale.getDefault().getLanguage()
-
     private val binding get() = _binding!!
+    private var _events = ArrayList<RecipesData>()
+    var progressDialog: ProgressDialog? = null // Creating Progress dialog
+    private lateinit var healthViewModel : HealthViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,6 +37,7 @@ class Fragment_12_24_months : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
+        healthViewModel = ViewModelProvider(this).get(HealthViewModel::class.java)
         _binding = Fragment1224MonthsBinding.inflate(inflater, container, false)
         val view = binding?.root
         // Inflate the layout for this fragment
@@ -46,52 +49,42 @@ class Fragment_12_24_months : Fragment() {
         //(activity as AppCompatActivity).supportActionBar?.title = "From 12 to 24months"
         (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.months_12to24)
 
-        binding.apply {
-
-            val recyclerview = binding.recyclerView
-
-            // this creates a vertical layout Manager
-            recyclerview.layoutManager = LinearLayoutManager(activity)
-
-            // ArrayList of class ItemsViewModel
-            val data = ArrayList<RecipesData>()
-
-            if(string.equals("en")){
-
-                data.add(RecipesData(R.drawable.app_banana.toString(),"Baby 9 - 12 months:","9 - 12 months\n" +
-                        "Visit the healthpost when the baby is 9 months old.\n" +
-                        "Give 3 meals in a day +  1 snack\n" +
-                        "Breastfeed frequently\n" +
-                        "Make litto and jaulo. \n" +
-                        "Give fruit as a snack.\n" +
-                        "Never give junkfood.\n" +
-                        "Use clean and safe water.\n" +
-                        "Wash hands before feeding\n"))
-
-            }
-
-            if(string.equals("ne")){
-                data.add(RecipesData(R.drawable.app_banana.toString(),"बच्चा ०-९ महिना "," ०-९ महिना\n" +
-                        " बच्चाले ९ महिना पुगेपछि स्वास्थ्य चौकीमा जचाउन जानुपर्छ ।\n" +
-                        "\n" +
-                        "दैनिक ३ पटक खाना र एक पटक खाजा खुवाउनु पर्छ \n" +
-                        "आमाको दुध पटक पटक खुवाउने। \n" +
-                        "लिटो र जाउलो बनाएर खुवाउन। \n" +
-                        "खाजाको लागि फलफुल खुवाउन। \n" +
-                        "बाहिरको खाना नदिने। \n" +
-                        "सफा र सुरक्षित पानीको प्रयोग गर्ने । \n" +
-                        "बच्चालाई  खुवाउनु अघि राम्रो संग हात धुने।\n"))
-            }
+        getData()
 
 
-            // This will pass the ArrayList to our Adapter
-            val adapter = CustomAdapter(activity as AppCompatActivity,data, null)
-
-            // Setting the Adapter with the recyclerview
-            recyclerview.adapter = adapter
 
 
+    }
+
+    private fun getData() {
+
+        if (string.equals("en")){
+            healthViewModel.fetchEvent_12_24_Months("itemName","itemDescription")
+
+        }else if (string.equals("ne")){
+            healthViewModel.fetchEvent_12_24_Months("itemName1","itemDescription1")
         }
+        progressDialog =  ProgressDialog(this.context)
+        // Setting up message in Progress dialog.
+        progressDialog!!.setMessage("Loading Data From Firebase.");
+        //Showing progress dialog.
+        progressDialog!!.show()
+
+        val recyclerview = binding.recyclerView
+        // this creates a vertical layout Manager
+        recyclerview.hasFixedSize()
+        recyclerview.layoutManager = LinearLayoutManager(activity)
+        val adapter = CustomAdapter(activity as AppCompatActivity,_events, null)
+        recyclerview.adapter = adapter
+
+
+        healthViewModel.events.observe(this, androidx.lifecycle.Observer {
+                event ->
+            _events.removeAll(_events)
+            _events.addAll(event)
+            progressDialog!!.dismiss()
+            recyclerview.adapter!!.notifyDataSetChanged()
+        })
     }
 
 
