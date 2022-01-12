@@ -11,8 +11,5 @@ data class DoctorAppointment(
     @PrimaryKey(autoGenerate = true) val dId: Int,
 
     @ColumnInfo(name = "date" ) val date: String?,
-    /*@ColumnInfo(name = "month" ) val month: Int?,
-    @ColumnInfo(name = "day" ) val day: Int?,
-    @ColumnInfo(name = "hour" ) val hour: Int?,
-    @ColumnInfo(name = "minute" ) val minute: Int?*/
+
 )

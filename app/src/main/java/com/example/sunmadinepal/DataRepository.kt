@@ -6,6 +6,7 @@ import com.example.sunmadinepal.framework.db.DoctorAppointmentDao
 
 //Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 
+
 class DataRepository(private val doctorAppointmentDao: DoctorAppointmentDao) {
 
     val readAllData: LiveData<List<DoctorAppointment>> = doctorAppointmentDao.readAll()

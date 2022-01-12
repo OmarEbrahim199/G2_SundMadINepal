@@ -6,6 +6,7 @@ import java.util.*
 import java.util.concurrent.Flow
 
 
+
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
 @Dao
 interface DoctorAppointmentDao {

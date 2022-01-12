@@ -8,6 +8,7 @@ import com.example.sunmadinepal.DataRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+
 //Based on https://www.youtube.com/watch?v=lwAvI3WDXBY
 class DoctorAppointmentViewModel(application: Application): AndroidViewModel(application) {
 

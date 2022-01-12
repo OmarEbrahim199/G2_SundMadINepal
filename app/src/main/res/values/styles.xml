@@ -19,6 +19,8 @@
         <item name="colorOnPrimary">#000</item>
     </style>
 
+
+    <!-- Style for datepickerdialog and timepickerdialog   -->
     <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@color/Orange</item>
         <item name="colorControlActivated">@color/Orange</item>
