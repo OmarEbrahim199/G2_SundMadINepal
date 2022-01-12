@@ -36,7 +36,7 @@
             android:theme="@style/Button.White"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/welcome"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick,UsingOnClickInXml" />
 
         <TextView
             android:id="@+id/Choose_Language"
@@ -53,16 +53,15 @@
 
         <ImageView
             android:id="@+id/box_date"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="125dp"
-            android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
             android:src="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/welcome">
-        </ImageView>
+            app:layout_constraintTop_toBottomOf="@id/welcome"
+            android:contentDescription="doctor appointments overview"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/next_doc"
@@ -90,22 +89,75 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/box_date"
             app:layout_constraintStart_toStartOf="@id/box_date"
-            app:layout_constraintTop_toTopOf="@id/box_date" />
+            app:layout_constraintTop_toTopOf="@id/box_date"
+            tools:ignore="HardcodedText" />
 
-        <TextView
-            android:layout_width="match_parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/veggie"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background_box"
-            android:text="@string/healthy_veggies"
-            android:textColor="@color/Orange"
-            android:textAlignment="center"
-            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/box_date" />
+            app:layout_constraintTop_toBottomOf="@+id/box_date">
+
+                <TextView
+                    android:id="@+id/titel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/healthy_veggies"
+                    android:textColor="@color/Orange"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/veggie" />
+
+                <TextView
+                    android:id="@+id/veggie_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/cabbage_is_rich_in_vitamin_k"
+                    android:textColor="@color/Orange"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titel" />
+
+                <TextView
+                    android:id="@+id/veggie_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/tomato_is_rich_in_vitamin_a_c"
+                    android:textColor="@color/Orange"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/veggie_1" />
+
+                <TextView
+                    android:id="@+id/veggie_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/carrot_is_rich_in_vitamin_a"
+                    android:textColor="@color/Orange"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/veggie_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
