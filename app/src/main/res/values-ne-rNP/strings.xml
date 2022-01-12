@@ -62,4 +62,7 @@
     <string name="_3_moisturize_the_soil">३. त्यसपछि केही दिन माटो लाई तयार हुन दिने</string>
     <string name="_4_soil_be_prepared_in_8_to_10_days">४. ८ देखि १० दिनमा माटो तयार हुन्छ</string>
     <string name="_5_then_make_a_high_land_for_the_crops_growing">५. त्यसपछि बाली उब्जाउनको लागि अग्लो जमिन बनाउनुहोस्</string>
+    <string name="general_health_info">सामान्य स्वास्थ्य जानकारी</string> <!--TODO get real translation from https://docs.google.com/document/d/1za7rBx0XfbcbOIcsZ8zLHlE-6GBPPE_H-N1SWb2eT28/edit (currently google translate) -->
+    <string name="_6_9_months">०- ९ महिना</string>
+    <string name="_9_12_months">९ - १२ महिना</string>
 </resources>
