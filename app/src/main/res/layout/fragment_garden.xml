@@ -45,6 +45,7 @@
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
             android:text="Preparing the soil"
+            android:drawableLeft="@drawable/soil_icon"
             android:textAlignment="center"
             android:textColor="@color/Orange"
             android:textSize="20sp"
@@ -52,7 +53,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/compost"
@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/compost_icon"
             android:text="How to make compost"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -68,7 +69,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/soil" />
-        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/water"
@@ -76,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/watering_can_icon"
             android:text="How to water crops"
             android:textAlignment="center"
             android:textColor="@color/Orange"
@@ -84,7 +85,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/compost" />
-        <!--android:drawableLeft="@drawable/pregnant_woman"-->
 
         <Button
             android:id="@+id/grow"
@@ -92,6 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/background_box"
+            android:drawableLeft="@drawable/vegetables_icon"
             android:text="What to grow in the garden"
             android:textAlignment="center"
             android:textColor="@color/Orange"
