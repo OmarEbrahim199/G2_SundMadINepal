@@ -14,6 +14,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     }
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(FragmentDateListBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
