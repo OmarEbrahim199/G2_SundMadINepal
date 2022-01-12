@@ -39,4 +39,6 @@
     <string name="how_to_make_compost">How to make compost</string>
     <string name="doctor_appointments" translatable="false">Doctor Appointments</string>
     <string name="healthy_veggies" translatable="false">Healthy veggies</string>
+    <string name="save_date">Save Date</string>
+    <string name="my_doctor_appointments">My Doctor Appointments</string>
 </resources>
