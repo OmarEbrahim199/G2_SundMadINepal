@@ -8,8 +8,6 @@
     android:background="@drawable/background_vector"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:scrollbarStyle="outsideOverlay"
     tools:ignore="ScrollViewCount">
 
     <TextView
@@ -28,15 +26,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="271dp"
-        android:layout_height="292dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="70dp"
         android:background="@drawable/background_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/Profile">
 
         <TextView
             android:id="@+id/dateBox"
@@ -46,7 +44,8 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dates" />
+            app:layout_constraintTop_toBottomOf="@+id/dates"
+            app:layout_constraintBottom_toBottomOf="@id/dates"/>
 
         <TextView
             android:id="@+id/dates"
@@ -71,6 +70,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,10 +78,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="105dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/background_box"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,10 +92,10 @@
             android:id="@+id/add_appointment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:background="@drawable/background_box"
             android:text="@string/add_doctor_appointment"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/save_date"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,13 +103,14 @@
             android:id="@+id/save_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_box"
             android:text="Save Date"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="-4dp" />
+            app:layout_constraintTop_toBottomOf="@id/add_appointment" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
