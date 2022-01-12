@@ -59,10 +59,10 @@ class Fragment_12_24_months : Fragment() {
     private fun getData() {
 
         if (string.equals("en")){
-            healthViewModel.fetchEvent_12_24_Months("itemName","itemDescription")
+            healthViewModel.fetchEvent_12_24_Months("12to24MonthsFeedingTitleEn","12to24MonthsFeedingDescriptionEn")
 
         }else if (string.equals("ne")){
-            healthViewModel.fetchEvent_12_24_Months("itemName1","itemDescription1")
+            healthViewModel.fetchEvent_12_24_Months("12to24MonthsFeedingTitleNe","12to24MonthsFeedingDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.

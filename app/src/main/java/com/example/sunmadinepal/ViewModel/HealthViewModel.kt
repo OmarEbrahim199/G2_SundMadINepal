@@ -86,7 +86,7 @@ class HealthViewModel : ViewModel() {
     }
 
     internal fun fetchEvent_12_24_Months(ItemName :String , ItemDescription:String) {
-        firestore.collection("Recipes").get().addOnCompleteListener{
+        firestore.collection("Health").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
             }
@@ -94,20 +94,11 @@ class HealthViewModel : ViewModel() {
                 for (document in it.result!!){
 
                     // ItemImage =document.data.getValue("itemName1").toString()
-
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
 
-
-
-                    _events.value =listOf(RecipesData(R.drawable.app_banana.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_banana.toString() ,itemName, itemDescription )))
-
-
-
+                    _events.value =listOf(RecipesData(R.drawable.app_banana.toString(),itemName, itemDescription ))
                 }
-
-
             }
         }.addOnFailureListener { exception ->
             Log.d(ContentValues.TAG, "get failed with ", exception)
