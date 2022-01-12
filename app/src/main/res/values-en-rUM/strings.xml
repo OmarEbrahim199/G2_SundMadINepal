@@ -56,4 +56,10 @@
     <string name="cucumber_it_is_rich_in_vitamin_k">Cucumber : it is rich in Vitamin K</string>
     <string name="eggplant_it_is_rich_in_minerals_and_fibers">Eggplant : it is rich in minerals and fibers</string>
     <string name="suggestions_for_what_to_grow_in_your_garden">Suggestions for what to grow in your garden</string>
+    <string name="how_to_make_a_garden">How to make a garden</string>
+    <string name="_1_dig_the_soil_to_make_it_loose">1. Dig the soil to make it loose</string>
+    <string name="_2_prepare_the_soil_mix_compost_with_soil_add_compost_in_soil_and_leave_it_for_8_to_10_days">2. Prepare the soil: mix compost with soil add compost in soil and leave it for 8 to 10 days</string>
+    <string name="_3_moisturize_the_soil">3. Moisturize the soil</string>
+    <string name="_4_soil_be_prepared_in_8_to_10_days">4. Soil be prepared in 8 to 10 days</string>
+    <string name="_5_then_make_a_high_land_for_the_crops_growing">5. Then make a high land for the crops growing</string>
 </resources>

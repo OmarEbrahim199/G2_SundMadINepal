@@ -56,4 +56,10 @@
     <string name="cucumber_it_is_rich_in_vitamin_k">गाजर : विटामिन ए मा धनी</string>
     <string name="eggplant_it_is_rich_in_minerals_and_fibers">काक्ररा : यसमा हामी विटामिन K पाउन सकिन्छ।</string>
     <string name="suggestions_for_what_to_grow_in_your_garden"> करेसाबारीमा के के फलाउन सकिन्छ? त्यसका लागि सुझावहरु।</string>
+    <string name="how_to_make_a_garden">कसरी करेसाबारी बनाउने</string>
+    <string name="_1_dig_the_soil_to_make_it_loose">१. यसलाई खुकुलो बनाउन माटो खन्नुहोस्</string>
+    <string name="_2_prepare_the_soil_mix_compost_with_soil_add_compost_in_soil_and_leave_it_for_8_to_10_days">२. पहिला आफ्नो जग्गा तयार गर्नु पर्दछ। हामी माटो मा कम्पोष्ट मल मिलाएर राख्नु पर्दछ। जग्गामा कम्पोष्ट मल मिसाएर ८ देखि १० दिन छोडिने र नियमित पनि राख्ने</string>
+    <string name="_3_moisturize_the_soil">३. त्यसपछि केही दिन माटो लाई तयार हुन दिने</string>
+    <string name="_4_soil_be_prepared_in_8_to_10_days">४. ८ देखि १० दिनमा माटो तयार हुन्छ</string>
+    <string name="_5_then_make_a_high_land_for_the_crops_growing">५. त्यसपछि बाली उब्जाउनको लागि अग्लो जमिन बनाउनुहोस्</string>
 </resources>
