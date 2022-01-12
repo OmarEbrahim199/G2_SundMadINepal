@@ -41,4 +41,7 @@
     <string name="healthy_veggies" translatable="false">स्वस्थ तरकारी</string>
     <string name="doctor_appointments" translatable="false">मेरो डाक्टरसंग नियुक्तिहरू</string>
     <string name="hello_blank_fragment" translatable="false">मेरो डाक्टरसंग नियुक्तिहरू</string>
+    <string name="cabbage_is_rich_in_vitamin_k">बन्दा : यो विटामिन k काे धनी</string>
+    <string name="tomato_is_rich_in_vitamin_a_c">टमाटर : विटामिन A र C काे धनी</string>
+    <string name="carrot_is_rich_in_vitamin_a">गाजर : विटामिन ए मा धनी</string>
 </resources>

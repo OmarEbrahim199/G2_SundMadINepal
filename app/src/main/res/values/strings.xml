@@ -28,8 +28,6 @@
     <string name="doctor_appointment">Doctor Appointments</string>
     <string name="add_doctor_appointment">Add Doctor Appointments +</string>
 
-
-
     <string name="choose_language">Choose Language</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -47,4 +45,7 @@
     <string name="what_to_grow_in_the_garden">What to grow in the garden</string>
     <string name="save_date">Save Date</string>
     <string name="my_doctor_appointments">My Doctor Appointments</string>
+    <string name="cabbage_is_rich_in_vitamin_k">Cabbage: is rich in Vitamin k</string>
+    <string name="tomato_is_rich_in_vitamin_a_c">Tomato: is rich in Vitamin A + C</string>
+    <string name="carrot_is_rich_in_vitamin_a">Carrot: is rich in Vitamin A</string>
 </resources>

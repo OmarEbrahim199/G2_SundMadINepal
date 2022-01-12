@@ -41,4 +41,7 @@
     <string name="healthy_veggies" translatable="false">Healthy veggies</string>
     <string name="save_date">Save Date</string>
     <string name="my_doctor_appointments">My Doctor Appointments</string>
+    <string name="cabbage_is_rich_in_vitamin_k">Cabbage: is rich in Vitamin k</string>
+    <string name="tomato_is_rich_in_vitamin_a_c">Tomato: is rich in Vitamin A + C</string>
+    <string name="carrot_is_rich_in_vitamin_a">Carrot: is rich in Vitamin A</string>
 </resources>
