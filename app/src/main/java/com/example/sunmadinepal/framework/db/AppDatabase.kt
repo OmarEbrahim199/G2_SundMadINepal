@@ -5,12 +5,12 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-
 //Based on: https://developer.android.com/training/data-storage/room
 
 @Database(entities = [DoctorAppointment::class],version=1)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun DoctorAppointmentDao(): DoctorAppointmentDao
+
 
     companion object {
         //Based on codelab: https://developer.android.com/codelabs/android-room-with-a-view-kotlin#7
