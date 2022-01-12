@@ -12,7 +12,8 @@
     <string name="generalhealth">General health information</string>
     <string name="Pregnancy">Pregnancy</string>
     <string name="months_0to6">0–6 months</string>
-    <string name="months_6to12">6–12 months</string>
+    <string name="months_6to9">6–9 months</string>
+    <string name="months_9to12">9–12 months</string>
     <string name="months_12to24">12–24 months</string>
 
     <string name="title_garden">Garden</string>

@@ -28,8 +28,11 @@
             android:id="@+id/action_navigation_health_to_fragment_maternity"
             app:destination="@id/fragment_maternity" />
         <action
-            android:id="@+id/action_navigation_health_to_fragment_06_12_months"
-            app:destination="@id/fragment_06_12_months" />
+            android:id="@+id/action_navigation_health_to_fragment_06_09_months"
+            app:destination="@id/fragment_06_09_months" />
+        <action
+            android:id="@+id/action_navigation_health_to_fragment_09_12_months"
+            app:destination="@id/fragment_09_12_months" />
         <action
             android:id="@+id/action_navigation_health_to_fragment_generalhealth"
             app:destination="@id/fragment_generalhealth" />
@@ -97,10 +100,19 @@
             app:destination="@id/navigation_health" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_06_12_months"
-        android:name="com.example.sunmadinepal.fragment.health.Fragment_06_12_months"
-        android:label="fragment_06_12_months"
-        tools:layout="@layout/fragment_06_12_months">
+        android:id="@+id/fragment_06_09_months"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_06_09_months"
+        android:label="fragment_06_09_months"
+        tools:layout="@layout/fragment_06_09_months">
+        <action
+            android:id="@+id/action_agment_06_12_months_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_09_12_months"
+        android:name="com.example.sunmadinepal.fragment.health.Fragment_09_12_months"
+        android:label="fragment_09_12_months"
+        tools:layout="@layout/fragment_09_12_months">
         <action
             android:id="@+id/action_agment_06_12_months_to_navigation_health"
             app:destination="@id/navigation_health" />

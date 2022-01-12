@@ -59,8 +59,11 @@ class HealthFragment : Fragment(){
             lady0to6.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_health_to_fragment_0_6_months)
             }
-            lady6to12.setOnClickListener {
-                findNavController().navigate(R.id.action_navigation_health_to_fragment_06_12_months)
+            lady6to9.setOnClickListener {
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_06_09_months)
+            }
+            lady9to12.setOnClickListener {
+                findNavController().navigate(R.id.action_navigation_health_to_fragment_09_12_months)
             }
             lady12to24.setOnClickListener {
                 findNavController().navigate(R.id.action_navigation_health_to_fragment_12_24_months)

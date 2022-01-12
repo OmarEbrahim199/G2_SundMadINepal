@@ -16,7 +16,8 @@
     <string name="generalhealth">सामान्य जानकारी</string>
     <string name="Pregnancy">गर्भावस्था</string>
     <string name="months_0to6">० - ६ महिना</string>
-    <string name="months_6to12">६ - १२ महिना</string>
+    <string name="months_6to9">६–९ महिना</string>
+    <string name="months_9to12">९–१२ महिना</string>
     <string name="months_12to24">१२ - २४ महिना</string>
 
     <string name="title_garden">बगैंचा</string>

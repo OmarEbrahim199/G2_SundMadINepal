@@ -11,16 +11,16 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.ViewModel.HealthViewModel
-import com.example.sunmadinepal.databinding.Fragment0612MonthsBinding
+import com.example.sunmadinepal.databinding.Fragment0609MonthsBinding
 import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import java.util.*
 import kotlin.collections.ArrayList
 
 
-class Fragment_06_12_months : Fragment() {
+class Fragment_06_09_months : Fragment() {
 
-    private var _binding: Fragment0612MonthsBinding? = null
+    private var _binding: Fragment0609MonthsBinding? = null
     private val binding get() = _binding!!
     private var _events = ArrayList<RecipesData>()
     var progressDialog: ProgressDialog? = null // Creating Progress dialog
@@ -38,7 +38,7 @@ class Fragment_06_12_months : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         healthViewModel = ViewModelProvider(this).get(HealthViewModel::class.java)
-        _binding = Fragment0612MonthsBinding.inflate(inflater, container, false)
+        _binding = Fragment0609MonthsBinding.inflate(inflater, container, false)
         val view = binding?.root
         // Inflate the layout for this fragment
         return view
@@ -47,20 +47,20 @@ class Fragment_06_12_months : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        //(activity as AppCompatActivity).supportActionBar?.title = "From 06 to 12 months"
-        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.months_6to12)
 
-       getData()
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.months_6to9)
+
+        getData()
     }
 
 
     private fun getData() {
 
         if (string.equals("en")){
-            healthViewModel.fetchEvent_06_12_Months("itemName","itemDescription")
+            healthViewModel.fetchEvent_06_09_Months("6to9MonthsExaminationTitleEn","6to9MonthsExaminationDescriptionEn","6to9MonthsFeedingTitleEn","6to9MonthsFeedingDescriptionEn","6to9MonthsWaterTitleEn","6to9MonthsWaterDescriptionEn")
 
         }else if (string.equals("ne")){
-            healthViewModel.fetchEvent_06_12_Months("itemName1","itemDescription1")
+            healthViewModel.fetchEvent_06_09_Months("6to9MonthsExaminationTitleNe","6to9MonthsExaminationDescriptionNe","6to9MonthsFeedingTitleNe","6to9MonthsFeedingDescriptionNe","6to9MonthsWaterTitleNe","6to9MonthsWaterDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.
