@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/general_information"
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/background_box"
@@ -50,8 +50,8 @@
     <Button
         android:id="@+id/maternity"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/pregnant_woman"
         android:text="@string/Pregnancy"
@@ -66,8 +66,8 @@
     <Button
         android:id="@+id/lady_0to6"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_baby"
         android:text="@string/months_0to6"
@@ -82,7 +82,7 @@
     <Button
         android:id="@+id/lady6to12"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="155dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_kid"
@@ -98,7 +98,7 @@
     <Button
         android:id="@+id/lady12to24"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="155dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_child"

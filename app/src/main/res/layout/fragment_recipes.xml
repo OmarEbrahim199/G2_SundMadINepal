@@ -31,7 +31,7 @@
 -->
         <Button
             android:id="@+id/recipes_for_pregnant_woman"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:background="@drawable/background_box"
@@ -47,7 +47,7 @@
 
         <Button
             android:id="@+id/recipes_for_mothers"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:background="@drawable/background_box"
@@ -63,7 +63,7 @@
 
         <Button
             android:id="@+id/recipes_for_children"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:background="@drawable/background_box"
