@@ -44,4 +44,15 @@
     <string name="cabbage_is_rich_in_vitamin_k">बन्दा : यो विटामिन k काे धनी</string>
     <string name="tomato_is_rich_in_vitamin_a_c">टमाटर : विटामिन A र C काे धनी</string>
     <string name="carrot_is_rich_in_vitamin_a">गाजर : विटामिन ए मा धनी</string>
+    <string name="sarg_it_is_healthy_and_easy_and_grows_all_year_around">जस्तै साग :  साग वर्ष भरि फलाउन सकिन्छ र यो स्वस्थ को लागि पनि फाइदाजनक छ। यसले हामीलाई हाम्रो आँखा तेजिलो बनाउने मद्दत गर्दछ</string>
+    <string name="pumpkin_rich_in_vitamin_a">फर्सी : यसमा भिटामिन A पाउन सकिन्छ।</string>
+    <string name="onion_needed_for_most_foods_needs_frequent_watering">प्याज :यसले मानिस काे उर्वरा शक्ति बढाउने काम गर्दछ।</string>
+    <string name="cauliflower_it_helps_in_heart_disease_it_has_choline_and_sulforaphane">काउली : यस तरकारी मानिस काे मुटु समन्धी सहयोग पुराउदछ। Choline र sulforaphane काे धनी।</string>
+    <string name="cabbage_it_is_rich_in_vitamin_k">बन्दा : यो विटामिन k काे धनी</string>
+    <string name="bitter_gourd_it_helps_in_lowering_blood_pressure">करेका : यो हाम्रो ब्लड प्रेसर कम गर्न मद्दत गर्छ।</string>
+    <string name="tomato_it_is_rich_in_vitamin_a_and_c">चिप्ले भिन्डी : हाम्रो तौल घटाउन मद्दत गर्छ।</string>
+    <string name="carrot_it_is_rich_in_vitamin_a">टमाटर : विटामिन A र C काे धनी</string>
+    <string name="cucumber_it_is_rich_in_vitamin_k">गाजर : विटामिन ए मा धनी</string>
+    <string name="eggplant_it_is_rich_in_minerals_and_fibers">काक्ररा : यसमा हामी विटामिन K पाउन सकिन्छ।</string>
+    <string name="suggestions_for_what_to_grow_in_your_garden"> करेसाबारीमा के के फलाउन सकिन्छ? त्यसका लागि सुझावहरु।</string>
 </resources>

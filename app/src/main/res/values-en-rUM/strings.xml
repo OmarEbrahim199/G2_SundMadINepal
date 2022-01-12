@@ -44,4 +44,15 @@
     <string name="cabbage_is_rich_in_vitamin_k">Cabbage: is rich in Vitamin k</string>
     <string name="tomato_is_rich_in_vitamin_a_c">Tomato: is rich in Vitamin A + C</string>
     <string name="carrot_is_rich_in_vitamin_a">Carrot: is rich in Vitamin A</string>
+    <string name="sarg_it_is_healthy_and_easy_and_grows_all_year_around">Sarg: It is healthy and easy and grows all year around.</string>
+    <string name="pumpkin_rich_in_vitamin_a">Pumpkin: Rich in vitamin A</string>
+    <string name="onion_needed_for_most_foods_needs_frequent_watering">Onion: Needed for most foods. Needs frequent watering.</string>
+    <string name="cauliflower_it_helps_in_heart_disease_it_has_choline_and_sulforaphane">Cauliflower : it helps in Heart disease. It has Choline and Sulforaphane.</string>
+    <string name="cabbage_it_is_rich_in_vitamin_k">Cabbage : It is rich in Vitamin K.</string>
+    <string name="bitter_gourd_it_helps_in_lowering_blood_pressure">Bitter gourd : It helps in lowering blood pressure.</string>
+    <string name="tomato_it_is_rich_in_vitamin_a_and_c">Tomato : it is rich in Vitamin A and C</string>
+    <string name="carrot_it_is_rich_in_vitamin_a">Carrot : It is rich in Vitamin A</string>
+    <string name="cucumber_it_is_rich_in_vitamin_k">Cucumber : it is rich in Vitamin K</string>
+    <string name="eggplant_it_is_rich_in_minerals_and_fibers">Eggplant : it is rich in minerals and fibers</string>
+    <string name="suggestions_for_what_to_grow_in_your_garden">Suggestions for what to grow in your garden</string>
 </resources>
