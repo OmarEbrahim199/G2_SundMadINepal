@@ -135,8 +135,8 @@ class HealthViewModel : ViewModel() {
         }
     }
 
-    internal fun fetchEvent_Maternity(ItemName :String , ItemDescription:String) {
-        firestore.collection("Recipes").get().addOnCompleteListener{
+    internal fun fetchEvent_Maternity(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String,ItemName2 :String , ItemDescription2:String,ItemName3 :String , ItemDescription3:String) {
+        firestore.collection("Health").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
             }
@@ -145,9 +145,17 @@ class HealthViewModel : ViewModel() {
                     // ItemImage =document.data.getValue("itemName1").toString()
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
+                    val itemName1 = document.data.getValue(ItemName1) as String
+                    val itemDescription1= document.data.getValue(ItemDescription1).toString()
+                    val itemName2 = document.data.getValue(ItemName2) as String
+                    val itemDescription2= document.data.getValue(ItemDescription2).toString()
+                    val itemName3 = document.data.getValue(ItemName3) as String
+                    val itemDescription3= document.data.getValue(ItemDescription3).toString()
 
                     _events.value =listOf(RecipesData(R.drawable.app_handwashing.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName, itemDescription )))
+                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName2, itemDescription2 ))).
+                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName3, itemDescription3 )))
                 }
             }
         }.addOnFailureListener { exception ->
