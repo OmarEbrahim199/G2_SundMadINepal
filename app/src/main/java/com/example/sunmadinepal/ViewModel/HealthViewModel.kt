@@ -48,8 +48,8 @@ class HealthViewModel : ViewModel() {
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
 
-                    _events.value =listOf(RecipesData(R.drawable.app_handwashing.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName1, itemDescription1 ))).
+                    _events.value =listOf(RecipesData(R.drawable.breastfeeding10times.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName1, itemDescription1 ))).
                     plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName2, itemDescription2 )))
                 }
             }
@@ -75,9 +75,9 @@ class HealthViewModel : ViewModel() {
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_6to9monthbreastfeedingandfeeding.toString(),itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_boiledwater.toString(),itemName2, itemDescription2 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -101,9 +101,9 @@ class HealthViewModel : ViewModel() {
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString(),itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(R.drawable.app_nojunkfood.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString(),itemName2, itemDescription2 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -124,7 +124,7 @@ class HealthViewModel : ViewModel() {
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_banana.toString(),itemName, itemDescription ))
+                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription ))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -171,10 +171,10 @@ class HealthViewModel : ViewModel() {
                     val itemName3 = document.data.getValue(ItemName3) as String
                     val itemDescription3= document.data.getValue(ItemDescription3).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_handwashing.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName2, itemDescription2 ))).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName3, itemDescription3 )))
+                    _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString() ,itemName2, itemDescription2 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName3, itemDescription3 )))
                 }
             }
         }.addOnFailureListener { exception ->

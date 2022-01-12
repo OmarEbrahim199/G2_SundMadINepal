@@ -37,7 +37,7 @@ class RecipesViewModel : ViewModel() {
     var itemName =""
     var itemDescription =""
 
-    internal fun fetchEventRecipesForChildren(ItemName :String , ItemDescription:String) {
+    internal fun fetchEventRecipesForChildren(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String,ItemName2 :String , ItemDescription2:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
@@ -45,13 +45,21 @@ class RecipesViewModel : ViewModel() {
             if (it.isSuccessful){
                 for (document in it.result!!){
 
-                     ItemImage =document.data.getValue("itemName1").toString()
+                    // ItemImage =document.data.getValue("itemName1").toString()
 
-                     itemName = document.data.getValue(ItemName) as String
-                     itemDescription= document.data.getValue(ItemDescription).toString()
+                    itemName = document.data.getValue(ItemName) as String
+                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val itemName1 = document.data.getValue(ItemName1) as String
+                    val itemDescription1= document.data.getValue(ItemDescription1).toString()
+                    val itemName2 = document.data.getValue(ItemName2) as String
+                    val itemDescription2= document.data.getValue(ItemDescription2).toString()
+
+
+
 
                     _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName2, itemDescription2 )))
 
 
 
@@ -85,9 +93,9 @@ class RecipesViewModel : ViewModel() {
 
 
 
-                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName1, itemDescription1 ))).
-                            plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName2, itemDescription2 )))
 
 
 
@@ -101,7 +109,7 @@ class RecipesViewModel : ViewModel() {
 
     }
 
-    internal fun fetchEventRecipeForMothers(ItemName :String , ItemDescription:String) {
+    internal fun fetchEventRecipeForMothers(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String,ItemName2 :String , ItemDescription2:String) {
         firestore.collection("Recipes").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
@@ -113,13 +121,17 @@ class RecipesViewModel : ViewModel() {
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
+                    val itemName1 = document.data.getValue(ItemName1) as String
+                    val itemDescription1= document.data.getValue(ItemDescription1).toString()
+                    val itemName2 = document.data.getValue(ItemName2) as String
+                    val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
 
 
-                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_0_6monthsonlybreastfeeding.toString() ,itemName, itemDescription )))
 
-
+                    _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName2, itemDescription2 )))
 
                 }
 
