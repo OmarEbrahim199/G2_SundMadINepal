@@ -20,9 +20,6 @@
             android:exported="true" />-->
 
         <activity
-            android:name=".language.Language"
-            android:exported="true" />
-        <activity
             android:name="com.example.sunmadinepal.fragment.Profile.profile_Add"
             android:exported="true" />
         <activity

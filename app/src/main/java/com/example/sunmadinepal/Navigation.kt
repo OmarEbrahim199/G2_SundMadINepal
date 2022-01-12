@@ -16,7 +16,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
 import com.example.sunmadinepal.databinding.ActivityNavigationBinding
-import com.example.sunmadinepal.language.Language
 import java.util.*
 
 
