@@ -38,7 +38,8 @@
         android:layout_width="150dp"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
         android:text="@string/general_health_info"
         android:textAlignment="center"
@@ -48,13 +49,15 @@
         app:layout_constraintBottom_toTopOf="@+id/lady_0to6"
         app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/maternity"
         android:layout_width="150dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/pregnant_woman"
         android:text="@string/Pregnancy"
@@ -67,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@id/general_information"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/lady_0to6"
@@ -75,6 +79,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_baby"
         android:text="@string/months_0to6"
@@ -92,6 +97,7 @@
         android:layout_width="150dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_kid"
         android:text="@string/_6_9_months"
@@ -112,6 +118,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_kid"
         android:text="@string/_9_12_months"
@@ -119,7 +126,7 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
-        app:layout_constraintBottom_toTopOf="@+id/text_health"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lady_0to6" />
@@ -129,6 +136,7 @@
         android:layout_width="150dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_child"
         android:text="@string/months_12to24"
@@ -136,7 +144,7 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
-        app:layout_constraintBottom_toTopOf="@+id/text_health"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
