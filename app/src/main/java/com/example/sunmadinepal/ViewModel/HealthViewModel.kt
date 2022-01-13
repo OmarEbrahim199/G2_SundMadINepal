@@ -161,9 +161,9 @@ class HealthViewModel : ViewModel() {
                     val itemName8 = document.data.getValue(ItemName8) as String
                     val itemDescription8= document.data.getValue(ItemDescription8).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName2, itemDescription2 ))).
+                    _events.value =listOf(RecipesData(R.drawable.app_growthmonitoring.toString(),itemName, itemDescription )).
+                    plus(listOf(RecipesData(R.drawable.app_whentowashhands.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.kopi_af_vegetable.toString() ,itemName2, itemDescription2 ))).
                     plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName3, itemDescription3 ))).
                     plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName4, itemDescription4 ))).
                     plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName5, itemDescription5 ))).
