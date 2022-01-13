@@ -24,11 +24,8 @@
 
     <item
         android:id="@id/navigation_profile"
-        android:icon="@drawable/ic_baseline_people_outline_24"
-        android:title="@string/title_doctor_appointments"/>
-
-
-
+        android:icon="@drawable/doctor"
+        android:title="@string/doctor"/>
 
 
 </menu>

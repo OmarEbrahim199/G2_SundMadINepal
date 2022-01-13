@@ -65,4 +65,5 @@
     <string name="general_health_info">General health info</string>
     <string name="_6_9_months">6-9 months</string>
     <string name="_9_12_months">9-12 months</string>
+    <string name="doctor">Doctor</string>
 </resources>

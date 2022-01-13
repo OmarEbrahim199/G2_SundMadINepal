@@ -65,4 +65,5 @@
     <string name="general_health_info">सामान्य स्वास्थ्य जानकारी</string> <!--TODO get real translation from https://docs.google.com/document/d/1za7rBx0XfbcbOIcsZ8zLHlE-6GBPPE_H-N1SWb2eT28/edit (currently google translate) -->
     <string name="_6_9_months">०- ९ महिना</string>
     <string name="_9_12_months">९ - १२ महिना</string>
+    <string name="doctor">डाक्टर</string>
 </resources>
