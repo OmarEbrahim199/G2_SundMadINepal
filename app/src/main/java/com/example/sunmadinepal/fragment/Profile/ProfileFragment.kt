@@ -10,11 +10,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.sunmadinepal.R
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
 import com.example.sunmadinepal.ViewModel.ProfileViewModel
+import com.example.sunmadinepal.databinding.FragmentDateListBinding
 import com.example.sunmadinepal.framework.db.*
 import java.util.*
 
@@ -22,7 +24,6 @@ class ProfileFragment : Fragment() {
 
 // Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 
-    private lateinit var profileViewModel: ProfileViewModel
     private var _binding: FragmentProfileBinding ? = null
     private lateinit var doctorAppointmentViewModel: DoctorAppointmentViewModel
 
@@ -51,7 +52,6 @@ class ProfileFragment : Fragment() {
             recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-            //doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
             doctorAppointmentViewModel.readAllData.observe(viewLifecycleOwner, androidx.lifecycle.Observer {doctorAppointment -> adapter.setData(doctorAppointment) })
 
         }

@@ -6,7 +6,6 @@ import java.util.*
 import java.util.concurrent.Flow
 
 
-//MERGE FIIIX
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
 @Dao
 interface DoctorAppointmentDao {
