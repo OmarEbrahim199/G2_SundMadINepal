@@ -19,7 +19,7 @@ class InsideRecipes : AppCompatActivity() {
         val locale = Locale(string)
         Locale.setDefault(locale)
 
-        val food_image: ImageView = findViewById(R.id.ivImage2)
+        val food_image: ImageView = findViewById(R.id.ivImage)
         val food_description: TextView = findViewById(R.id.tvwelcome)
         val food_title: TextView = findViewById(R.id.title)
 
