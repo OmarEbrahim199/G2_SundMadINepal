@@ -22,7 +22,6 @@ class ProfileFragment : Fragment() {
 
 // Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 
-    private lateinit var profileViewModel: ProfileViewModel
     private var _binding: FragmentProfileBinding ? = null
     private lateinit var doctorAppointmentViewModel: DoctorAppointmentViewModel
 
