@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-
-
-
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -68,9 +63,11 @@
                         android:id="@+id/tvDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Description"
+                        android:autoText="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
                         android:maxLines="1"
-                        android:textSize="18sp"
+                        android:text="Description"
                         />
 
 

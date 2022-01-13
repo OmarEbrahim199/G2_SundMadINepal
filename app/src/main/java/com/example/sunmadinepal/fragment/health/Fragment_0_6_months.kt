@@ -66,6 +66,7 @@ class Fragment_0_6_months : Fragment() {
         if (string.equals("en")){
             healthViewModel.fetchEvent_0_6_Months("0to6MonthsBreastfeedingTitleEn","0to6MonthsBreastfeedingDescriptionEn","0to6MonthsExaminationTitleEn","0to6MonthsExaminationDescriptionEn","0to6MonthsVitaminsTitleEn","0to6MonthsVitaminsDescriptionEn")
 
+
         }else if (string.equals("ne")){
             healthViewModel.fetchEvent_0_6_Months("0to6MonthsBreastfeedingTitleNe","0to6MonthsBreastfeedingDescriptionNe","0to6MonthsExaminationTitleNe","0to6MonthsExaminationDescriptionNe","0to6MonthsVitaminsTitleNe","0to6MonthsVitaminsDescriptionNe")
         }

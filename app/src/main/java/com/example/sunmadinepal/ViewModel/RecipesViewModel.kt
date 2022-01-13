@@ -57,7 +57,7 @@ class RecipesViewModel : ViewModel() {
 
 
 
-                    _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription )).
+                    _events.value =listOf(RecipesData(R.drawable.app_jaulo.toString(),itemName, itemDescription.replace("_b", "\n") )).
                     plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName1, itemDescription1 ))).
                     plus(listOf(RecipesData(R.drawable.app_litto.toString() ,itemName2, itemDescription2 )))
 
