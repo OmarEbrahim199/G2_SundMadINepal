@@ -67,10 +67,18 @@ class Fragment_maternity : Fragment() {
     private fun getData() {
 
         if (string.equals("en")){
-            healthViewModel.fetchEvent_Maternity( "PregnancyExaminationTitleEn", "PregnancyExaminationDescriptionEn", "PregnancyFoodTypesTitleEn", "PregnancyFoodTypesDescriptionEn", "PregnancyIrontabletTitleEn", "PregnancyIrontabletDescriptionEn","PregnancyRestTitleEn","PregnancyRestDescriptionEn")
+            healthViewModel.fetchEvent_Maternity(
+                "PregnancyExaminationTitleEn", "PregnancyExaminationDescriptionEn",
+                "PregnancyFoodTypesTitleEn", "PregnancyFoodTypesDescriptionEn",
+                "PregnancyIrontabletTitleEn", "PregnancyIrontabletDescriptionEn",
+                "PregnancyRestTitleEn","PregnancyRestDescriptionEn")
 
         }else if (string.equals("ne")){
-            healthViewModel.fetchEvent_Maternity("PregnancyExaminationTitleNe", "PregnancyExaminationDescriptionNe", "PregnancyFoodTypesTitleNe", "PregnancyFoodTypesDescriptionNe", "PregnancyIrontabletTitleNe", "PregnancyIrontabletDescriptionNe","PregnancyRestTitleNe","PregnancyRestDescriptionNe")
+            healthViewModel.fetchEvent_Maternity(
+                "PregnancyExaminationTitleNe", "PregnancyExaminationDescriptionNe",
+                "PregnancyFoodTypesTitleNe", "PregnancyFoodTypesDescriptionNe",
+                "PregnancyIrontabletTitleNe", "PregnancyIrontabletDescriptionNe",
+                "PregnancyRestTitleNe","PregnancyRestDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.

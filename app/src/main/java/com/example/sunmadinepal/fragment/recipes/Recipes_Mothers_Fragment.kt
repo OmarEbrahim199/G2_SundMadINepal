@@ -39,9 +39,15 @@ class Recipes_Mothers_Fragment : Fragment() {
         super.onStart()
 
         if (string.equals("en")){
-            recipesViewModel.fetchEventRecipeForMothers("JauloTitleEn","JauloDescriptionEn","LittoTitleEn", "LittoDescriptionEn","NutritiousFlowerTitleEn","NutritiousFlowerDescriptionEn")
+            recipesViewModel.fetchEventRecipeForMothers(
+                "JauloTitleEn","JauloDescriptionEn",
+                "LittoTitleEn", "LittoDescriptionEn",
+                "NutritiousFlowerTitleEn","NutritiousFlowerDescriptionEn")
         }else if (string.equals("ne")){
-            recipesViewModel.fetchEventRecipeForMothers("JauloTitleNe","JauloDescriptionNe","LittoTitleNe","LittoDescriptionNe","NutritiousFlowerTitleNe","NutritiousFlowerDescriptionNe")
+            recipesViewModel.fetchEventRecipeForMothers(
+                "JauloTitleNe","JauloDescriptionNe",
+                "LittoTitleNe","LittoDescriptionNe",
+                "NutritiousFlowerTitleNe","NutritiousFlowerDescriptionNe")
         }
 
         progressDialog =  ProgressDialog(this.context)

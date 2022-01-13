@@ -57,10 +57,16 @@ class Fragment_09_12_months : Fragment() {
     private fun getData() {
 
         if (string.equals("en")){
-            healthViewModel.fetchEvent_09_12_Months("9to12MonthsHealthyEatingTitleEn","9to12MonthsHealthyEatingDescriptionEn","9to12MonthsFeedingTitleEn","9to12MonthsFeedingDescriptionEn","9to12MonthsWaterTitleEn","9to12MonthsWaterDescriptionEn")
+            healthViewModel.fetchEvent_09_12_Months(
+                "9to12MonthsHealthyEatingTitleEn","9to12MonthsHealthyEatingDescriptionEn",
+                "9to12MonthsFeedingTitleEn","9to12MonthsFeedingDescriptionEn",
+                "9to12MonthsWaterTitleEn","9to12MonthsWaterDescriptionEn")
 
         }else if (string.equals("ne")){
-            healthViewModel.fetchEvent_09_12_Months("9to12MonthsHealthyEatingTitleNe","9to12MonthsHealthyEatingDescriptionNe","9to12MonthsFeedingTitleNe","9to12MonthsFeedingDescriptionNe","9to12MonthsWaterTitleNe","9to12MonthsWaterDescriptionNe")
+            healthViewModel.fetchEvent_09_12_Months(
+                "9to12MonthsHealthyEatingTitleNe","9to12MonthsHealthyEatingDescriptionNe",
+                "9to12MonthsFeedingTitleNe","9to12MonthsFeedingDescriptionNe",
+                "9to12MonthsWaterTitleNe","9to12MonthsWaterDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.

@@ -134,8 +134,8 @@ class HealthViewModel : ViewModel() {
     }
 
 
-    internal fun fetchEvent_GeneralHealth(ItemName :String , ItemDescription:String) {
-        firestore.collection("Recipes").get().addOnCompleteListener{
+    internal fun fetchEvent_GeneralHealth(ItemName :String , ItemDescription:String,ItemName1 :String , ItemDescription1:String,ItemName2 :String , ItemDescription2:String,ItemName3 :String , ItemDescription3:String,ItemName4 :String , ItemDescription4:String,ItemName5 :String , ItemDescription5:String,ItemName6 :String , ItemDescription6:String,ItemName7 :String , ItemDescription7:String,ItemName8 :String , ItemDescription8:String) {
+        firestore.collection("GeneralHealth").get().addOnCompleteListener{
             if (it.isCanceled){
                 Log.e("Error"," Error in database")
             }
@@ -144,9 +144,32 @@ class HealthViewModel : ViewModel() {
                     // ItemImage =document.data.getValue("itemName1").toString()
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription= document.data.getValue(ItemDescription).toString()
+                    val itemName1 = document.data.getValue(ItemName1) as String
+                    val itemDescription1= document.data.getValue(ItemDescription1).toString()
+                    val itemName2 = document.data.getValue(ItemName2) as String
+                    val itemDescription2= document.data.getValue(ItemDescription2).toString()
+                    val itemName3 = document.data.getValue(ItemName3) as String
+                    val itemDescription3= document.data.getValue(ItemDescription3).toString()
+                    val itemName4 = document.data.getValue(ItemName4) as String
+                    val itemDescription4= document.data.getValue(ItemDescription4).toString()
+                    val itemName5 = document.data.getValue(ItemName5) as String
+                    val itemDescription5= document.data.getValue(ItemDescription5).toString()
+                    val itemName6 = document.data.getValue(ItemName6) as String
+                    val itemDescription6= document.data.getValue(ItemDescription6).toString()
+                    val itemName7 = document.data.getValue(ItemName7) as String
+                    val itemDescription7= document.data.getValue(ItemDescription7).toString()
+                    val itemName8 = document.data.getValue(ItemName8) as String
+                    val itemDescription8= document.data.getValue(ItemDescription8).toString()
 
                     _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName, itemDescription )))
+                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName2, itemDescription2 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName3, itemDescription3 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName4, itemDescription4 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName5, itemDescription5 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName6, itemDescription6 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName7, itemDescription7 ))).
+                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName8, itemDescription8 )))
                 }
             }
         }.addOnFailureListener { exception ->

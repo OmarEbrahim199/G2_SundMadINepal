@@ -54,10 +54,28 @@ class Fragment_generalhealth : Fragment() {
     private fun getData() {
 
         if (string.equals("en")){
-            healthViewModel.fetchEvent_GeneralHealth("itemName","itemDescription")
+            healthViewModel.fetchEvent_GeneralHealth(
+                "GrowthMonitoringTitleEn","GrowthMonitoringDescriptionEn",
+                "HandwashingTitleEn", "HandwashingDescriptionEn",
+                "VitaminsTitleEn","VitaminsDescriptionEn",
+                "IronTitleEn","IronDescriptionEn",
+                "AnemiaTitleEn","AnemiaDescriptionEn",
+                "IronDeficiencyTitleEn","IronDeficiencyDescriptionEn",
+                "SickchildTitleEn","SickchildDescriptionEn",
+                "TDTitleEn","TDDescriptionEn",
+                "MalnutritionTitleEn","MalnutritionDescriptionEn")
 
         }else if (string.equals("ne")){
-            healthViewModel.fetchEvent_GeneralHealth("itemName1","itemDescription1")
+            healthViewModel.fetchEvent_GeneralHealth(
+                "GrowthMonitoringTitleNe","GrowthMonitoringDescriptionNe",
+                "HandwashingTitleNe", "HandwashingDescriptionNe",
+                "VitaminsTitleNe","VitaminsDescriptionNe",
+                "IronTitleNe","IronDescriptionNe",
+                "AnemiaTitleNe","AnemiaDescriptionNe",
+                "IronDeficiencyTitleNe","IronDeficiencyDescriptionNe",
+                "SickchildTitleNe","SickchildDescriptionNe",
+                "TDTitleNe","TDDescriptionNe",
+                "MalnutritionTitleNe","MalnutritionDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.
