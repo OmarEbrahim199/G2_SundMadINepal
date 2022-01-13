@@ -3,6 +3,7 @@ package com.example.sunmadinepal.framework.data
 import android.app.Application
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -47,7 +48,7 @@ class CustomAdapter( private val context: Context,private val mList: List<Recipe
 
         // sets the text to the textview from our itemHolder class
         holder.textView.text = user.itemName //ItemsViewModel.itemName
-        holder.textViewt.text = user.itemDescription //ItemsViewModel.itemDescription
+        holder.textViewt.text = user.itemDescription.replace("_n", "\n") //ItemsViewModel.itemDescription
 
 
         holder.imageView.setOnClickListener { v ->
@@ -55,7 +56,7 @@ class CustomAdapter( private val context: Context,private val mList: List<Recipe
             // intent.putExtra("Image",mList.get(position).getItemImage())
             intent.putExtra("Image", mList.get(holder.bindingAdapterPosition).getItemImage().toInt())
             intent.putExtra("Title", mList.get(holder.bindingAdapterPosition).getItemName())
-            intent.putExtra("Description", mList.get(holder.bindingAdapterPosition).getItemDescription())
+            intent.putExtra("Description", mList.get(holder.bindingAdapterPosition).getItemDescription().replace("_n", "\n"))
             v.context.startActivity(intent)
         }
 
