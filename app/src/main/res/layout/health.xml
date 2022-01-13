@@ -17,10 +17,11 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lady12to24" />
 
-<!--    <TextView
+    <!--    <TextView
         android:id="@+id/text1000goldendays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,22 +36,25 @@
     <Button
         android:id="@+id/general_information"
         android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:text="@string/general_health_info"
         android:textAlignment="center"
         android:textColor="@color/Orange"
         android:textSize="22sp"
         android:theme="@style/Button.White"
-        app:layout_constraintEnd_toStartOf="@id/maternity"
+        app:layout_constraintBottom_toTopOf="@+id/lady_0to6"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/maternity"
         android:layout_width="150dp"
-        android:layout_height="155dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/pregnant_woman"
         android:text="@string/Pregnancy"
@@ -58,15 +62,19 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
-        app:layout_constraintStart_toEndOf="@id/general_information"
+        app:layout_constraintBottom_toTopOf="@+id/lady6to9"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/general_information" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/general_information"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/lady_0to6"
         android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_baby"
         android:text="@string/months_0to6"
@@ -74,15 +82,16 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
+        app:layout_constraintBottom_toTopOf="@+id/lady9to12"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/lady6to9"
-        app:layout_constraintTop_toBottomOf="@id/general_information" />
+        app:layout_constraintTop_toBottomOf="@+id/general_information" />
 
     <Button
         android:id="@+id/lady6to9"
         android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_kid"
         android:text="@string/_6_9_months"
@@ -90,15 +99,19 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
+        app:layout_constraintBottom_toTopOf="@+id/lady12to24"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@id/lady_0to6"
-        app:layout_constraintTop_toBottomOf="@id/maternity" />
+        app:layout_constraintTop_toBottomOf="@+id/maternity" />
 
     <Button
         android:id="@+id/lady9to12"
         android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_kid"
         android:text="@string/_9_12_months"
@@ -106,15 +119,16 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
+        app:layout_constraintBottom_toTopOf="@+id/text_health"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/lady12to24"
-        app:layout_constraintTop_toBottomOf="@id/lady_0to6" />
+        app:layout_constraintTop_toBottomOf="@+id/lady_0to6" />
 
     <Button
         android:id="@+id/lady12to24"
         android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_box"
         android:drawableBottom="@drawable/mum_with_child"
         android:text="@string/months_12to24"
@@ -122,9 +136,12 @@
         android:textColor="@color/Orange"
         android:textSize="16sp"
         android:theme="@style/Button.White"
-        app:layout_constraintStart_toEndOf="@id/lady9to12"
+        app:layout_constraintBottom_toTopOf="@+id/text_health"
+        app:layout_constraintDimensionRatio="h,150:155"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lady6to9" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/lady9to12"
+        app:layout_constraintTop_toBottomOf="@+id/lady6to9" />
 
     <!-- <ImageButton
          android:background="?android:attr/selectableItemBackground"
