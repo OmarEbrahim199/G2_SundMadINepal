@@ -12,6 +12,7 @@ import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.HealthBinding
 
 import com.example.sunmadinepal.ViewModel.HealthViewModel
+import com.example.sunmadinepal.model.setLocale
 import java.util.*
 
 
@@ -46,7 +47,7 @@ class HealthFragment : Fragment(){
     override fun onStart() {
         super.onStart()
         goToDestinations()
-        setLocale(string)
+        setLocale(this.requireContext(),string)
     }
 
     fun goToDestinations(){
@@ -75,13 +76,6 @@ class HealthFragment : Fragment(){
 
     }
 
-    private fun setLocale(code: String) {
-        val config = Configuration()
-        var locale: Locale? = null
-        locale = Locale(code)
-        Locale.setDefault(locale)
-        config.locale = locale
-        this.resources.updateConfiguration(config,
-            this.resources.displayMetrics)
-    }
+
+
 }

@@ -11,7 +11,7 @@ import com.example.sunmadinepal.R
 
 fun getProgessDrawable(c:Context): CircularProgressDrawable {
     return CircularProgressDrawable(c).apply {
-        strokeWidth = 5f
+        strokeWidth = 40f
         centerRadius = 40f
         start()
     }
