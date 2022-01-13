@@ -12,6 +12,8 @@
     <color name="Orange">#F7AC43</color>
     <color name="Orange80">#CCF7AC43</color>
     <color name="Orange60">#99F7AC43</color>
+    <color name="Positive">#008000</color>
+    <color name="Negative">#af4154</color>
 
 
 </resources>
