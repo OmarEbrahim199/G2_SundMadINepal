@@ -1,14 +1,17 @@
 package com.example.sunmadinepal.fragment.recipes
 
+import android.content.ContentValues.TAG
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.sunmadinepal.R
+import com.example.sunmadinepal.model.loadImage
 import java.util.*
 
-class InsideRecipes : AppCompatActivity() {
 
+class InsideRecipes : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,27 +27,17 @@ class InsideRecipes : AppCompatActivity() {
         val food_title: TextView = findViewById(R.id.title)
 
 
+        val bundle: Bundle? = intent.extras
+        if (bundle != null) {
 
-
-        val bundle :Bundle ?=intent.extras
-        if (bundle!=null){
-
-
-
-            val titlel= bundle.getString("Title")
-            (this as AppCompatActivity).supportActionBar?.title =titlel
-
+            val titlel = bundle.getString("Title")
+            (this as AppCompatActivity).supportActionBar?.title = titlel
             food_description.setText(bundle.getString("Description"))
-            food_image.setImageResource(bundle.getInt("Image"))
-
+            //  food_image.setImageResource(bundle.getInt("Image"))
+            loadImage(food_image, bundle.getString("Image1").toString())
 
 
         }
-
-
-
-
-
 
 
     }

@@ -26,9 +26,7 @@ class HealthViewModel : ViewModel() {
         firestore.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
     }
 
-    var ItemImage =""
-    var itemName =""
-    var itemDescription =""
+
 
     internal fun fetchEvent_0_6_Months(ItemName :String, ItemDescription:String,ItemName1 :String, ItemDescription1:String,ItemName2 :String, ItemDescription2:String) {
         firestore.collection("Health").get().addOnCompleteListener{
@@ -38,19 +36,21 @@ class HealthViewModel : ViewModel() {
             if (it.isSuccessful){
                 for (document in it.result!!){
 
-                    //ItemImage =document.data.getValue("itemName1").toString()
+                    val ItemImage =document.data.getValue("breastfeeding10times").toString()
+                    val ItemImage1 =document.data.getValue("app_go_to_healthpost").toString()
+                    val ItemImage2 =document.data.getValue("app_handwashing").toString()
 
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
 
-                    _events.value =listOf(RecipesData(R.drawable.breastfeeding10times.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString() ,itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
+                    plus(listOf(RecipesData(ItemImage1 ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(ItemImage2 ,itemName2, itemDescription2 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -67,17 +67,20 @@ class HealthViewModel : ViewModel() {
             if (it.isSuccessful){
                 for (document in it.result!!){
 
-                    // ItemImage =document.data.getValue("itemName1").toString()
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val ItemImage =document.data.getValue("app_go_to_healthpost").toString()
+                    val ItemImage1 =document.data.getValue("app_6to9monthbreastfeedingandfeeding").toString()
+                    val ItemImage2 =document.data.getValue("app_boiledwater").toString()
+
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_6to9monthbreastfeedingandfeeding.toString(),itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_boiledwater.toString(),itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
+                    plus(listOf(RecipesData(ItemImage1,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(ItemImage2,itemName2, itemDescription2 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -93,17 +96,20 @@ class HealthViewModel : ViewModel() {
             if (it.isSuccessful){
                 for (document in it.result!!){
 
-                    // ItemImage =document.data.getValue("itemName1").toString()
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val ItemImage =document.data.getValue("app_nojunkfood").toString()
+                    val ItemImage1 =document.data.getValue("app_balanceddiet_withmeat").toString()
+                    val ItemImage2 =document.data.getValue("app_handwashing").toString()
+
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2= document.data.getValue(ItemDescription2).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_nojunkfood.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_handwashing.toString(),itemName2, itemDescription2 )))
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
+                    plus(listOf(RecipesData(ItemImage1,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(ItemImage2,itemName2, itemDescription2 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -120,11 +126,12 @@ class HealthViewModel : ViewModel() {
             if (it.isSuccessful){
                 for (document in it.result!!){
 
-                    // ItemImage =document.data.getValue("itemName1").toString()
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val ItemImage =document.data.getValue("app_balanceddiet_withmeat").toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString(),itemName, itemDescription ))
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
+
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription ))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -141,9 +148,15 @@ class HealthViewModel : ViewModel() {
             }
             if (it.isSuccessful){
                 for (document in it.result!!){
-                    // ItemImage =document.data.getValue("itemName1").toString()
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val ItemImage =document.data.getValue("app_growthmonitoring").toString()
+                    val ItemImage1 =document.data.getValue("app_whentowashhands").toString()
+
+                    val ItemImage2 =document.data.getValue("kopi_af_vegetable").toString()
+                    val ItemImage3 =document.data.getValue("app_go_to_healthpost").toString()
+
+
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
@@ -161,15 +174,15 @@ class HealthViewModel : ViewModel() {
                     val itemName8 = document.data.getValue(ItemName8) as String
                     val itemDescription8= document.data.getValue(ItemDescription8).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_growthmonitoring.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_whentowashhands.toString() ,itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.kopi_af_vegetable.toString() ,itemName2, itemDescription2 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName3, itemDescription3 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName4, itemDescription4 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName5, itemDescription5 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName6, itemDescription6 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName7, itemDescription7 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName8, itemDescription8 )))
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
+                    plus(listOf(RecipesData(ItemImage1 ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(ItemImage2 ,itemName2, itemDescription2 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName3, itemDescription3 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName4, itemDescription4 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName5, itemDescription5 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName6, itemDescription6 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName7, itemDescription7 ))).
+                    plus(listOf(RecipesData(ItemImage3 ,itemName8, itemDescription8 )))
                 }
             }
         }.addOnFailureListener { exception ->
@@ -184,9 +197,12 @@ class HealthViewModel : ViewModel() {
             }
             if (it.isSuccessful){
                 for (document in it.result!!){
-                    // ItemImage =document.data.getValue("itemName1").toString()
-                    itemName = document.data.getValue(ItemName) as String
-                    itemDescription= document.data.getValue(ItemDescription).toString()
+                    val ItemImage =document.data.getValue("app_go_to_healthpost").toString()
+                    val ItemImage1 =document.data.getValue("app_balanceddiet_withmeat").toString()
+
+
+                    val itemName = document.data.getValue(ItemName) as String
+                    val itemDescription= document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1= document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
@@ -194,10 +210,10 @@ class HealthViewModel : ViewModel() {
                     val itemName3 = document.data.getValue(ItemName3) as String
                     val itemDescription3= document.data.getValue(ItemDescription3).toString()
 
-                    _events.value =listOf(RecipesData(R.drawable.app_go_to_healthpost.toString(),itemName, itemDescription )).
-                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString() ,itemName1, itemDescription1 ))).
-                    plus(listOf(RecipesData(R.drawable.app_balanceddiet_withmeat.toString() ,itemName2, itemDescription2 ))).
-                    plus(listOf(RecipesData(R.drawable.app_go_to_healthpost.toString() ,itemName3, itemDescription3 )))
+                    _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
+                    plus(listOf(RecipesData(ItemImage1 ,itemName1, itemDescription1 ))).
+                    plus(listOf(RecipesData(ItemImage1 ,itemName2, itemDescription2 ))).
+                    plus(listOf(RecipesData(ItemImage ,itemName3, itemDescription3 )))
                 }
             }
         }.addOnFailureListener { exception ->
