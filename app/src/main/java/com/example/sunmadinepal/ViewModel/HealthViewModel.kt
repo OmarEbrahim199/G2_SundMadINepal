@@ -148,7 +148,7 @@ class HealthViewModel : ViewModel() {
             }
             if (it.isSuccessful){
                 for (document in it.result!!){
-                    val ItemImage =document.data.getValue("app_growthmonitoring").toString()
+                    val ItemImage =document.data.getValue("growthmonitoringimage").toString()
                     val ItemImage1 =document.data.getValue("app_whentowashhands").toString()
 
                     val ItemImage2 =document.data.getValue("kopi_af_vegetable").toString()

@@ -132,6 +132,7 @@
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.11574074074074074" />
         <entry key="app/src/main/res/layout/activity_profile_add.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_06_12_months.xml" value="0.11574074074074074" />
+        <entry key="app/src/main/res/layout/fragment_compost.xml" value="0.19701086956521738" />
         <entry key="app/src/main/res/layout/fragment_date_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_garden.xml" value="0.11574074074074074" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
@@ -141,6 +142,7 @@
         <entry key="app/src/main/res/layout/fragment_recipes.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/fragment_recipes__for__children_.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/fragment_recipes_for__mothers_.xml" value="0.10833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_soil.xml" value="0.19701086956521738" />
         <entry key="app/src/main/res/layout/recipedetails.xml" value="0.15" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12083333333333333" />
       </map>

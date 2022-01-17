@@ -139,9 +139,28 @@ class RecipesViewModel : ViewModel() {
 
 
                     _events.value =
-                        listOf(RecipesData(ItemImage, itemName, itemDescription)
-                        ).plus(listOf(RecipesData(ItemImage1, itemName1, itemDescription1))
-                        ).plus(listOf(RecipesData(ItemImage2, itemName2, itemDescription2))
+                        listOf(
+                            RecipesData(
+                                ItemImage,
+                                itemName,
+                                itemDescription
+                            )
+                        ).plus(
+                            listOf(
+                                RecipesData(
+                                    ItemImage1,
+                                    itemName1,
+                                    itemDescription1
+                                )
+                            )
+                        ).plus(
+                            listOf(
+                                RecipesData(
+                                    ItemImage2,
+                                    itemName2,
+                                    itemDescription2
+                                )
+                            )
                         )
 
                 }
