@@ -62,6 +62,11 @@
     <string name="_3_moisturize_the_soil">३. त्यसपछि केही दिन माटो लाई तयार हुन दिने</string>
     <string name="_4_soil_be_prepared_in_8_to_10_days">४. ८ देखि १० दिनमा माटो तयार हुन्छ</string>
     <string name="_5_then_make_a_high_land_for_the_crops_growing">५. त्यसपछि बाली उब्जाउनको लागि अग्लो जमिन बनाउनुहोस्</string>
+    <string name="compost_title">कम्पोष्ट काे आकार २m*२m. २m चौडाई २m लम्बाई</string>
+    <string name="compost_step1">पहिला  कम्पोष्ट मल बनाउनको लागि गाईको पिसाब ,पातहरू, वरिपरि रहेका झारहरु , गाईको दिसा र खरानी काे आवश्यक पर्दछ। यी सबै कुराहरू जम्मा गरेर राख्ने।   त्यसपछि आफूलाई चाहिने जति खाडल बनाउने ।</string>
+    <string name="compost_step2">त्यस खाडल मा पहिला एक तह झारहरू , पातहरू राख्ने र त्यसपछि पिसाब राख्ने अनि गोबर राख्ने अनि खरानी राख्ने ।   यसको सबै काे तह मिलाउँदै राख्ने ।</string>
+    <string name="compost_step3">सबै काे मात्रा मिलाउँदै राखे पछि खाडल भरिन्छ।</string>
+    <string name="compost_step4">र अन्तिम मा त्यसलाई एउटा लौरो जमीन सम्म पुग्ने गरी माटोले लिपेर डाक्ने।   कम्पोष्ट मल ३० देखि ३५ दिन भित्र तयार हुनेछ</string>
     <string name="general_health_info">सामान्य स्वास्थ्य जानकारी</string> <!--TODO get real translation from https://docs.google.com/document/d/1za7rBx0XfbcbOIcsZ8zLHlE-6GBPPE_H-N1SWb2eT28/edit (currently google translate) -->
     <string name="_6_9_months">०- ९ महिना</string>
     <string name="_9_12_months">९ - १२ महिना</string>
