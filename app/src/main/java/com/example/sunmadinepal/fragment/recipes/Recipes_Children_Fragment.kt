@@ -66,12 +66,12 @@ class Recipes_Children_Fragment : Fragment() {
             recipesViewModel.fetchEventRecipesForChildren(
                 "JauloTitleEn","JauloDescriptionEn",
                 "LittoTitleEn", "LittoDescriptionEn",
-                "NutritiousFlowerTitleEn","NutritiousFlowerDescriptionEn")
+                "NutritiousFlourTitleEn","NutritiousFlourDescriptionEn")
         }else if (string.equals("ne")){
             recipesViewModel.fetchEventRecipesForChildren(
                 "JauloTitleNe","JauloDescriptionNe",
                 "LittoTitleNe","LittoDescriptionNe",
-                "NutritiousFlowerTitleNe","NutritiousFlowerDescriptionNe")
+                "NutritiousFlourTitleNe","NutritiousFlourDescriptionNe")
         }
         progressDialog =  ProgressDialog(this.context)
         // Setting up message in Progress dialog.
