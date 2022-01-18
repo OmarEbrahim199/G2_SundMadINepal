@@ -37,6 +37,7 @@ class ProfileFragment : Fragment() {
 
         binding.addAppointment.setOnClickListener {
             pickDateTime()
+        }
 
 
             binding.saveDate.setOnClickListener {
@@ -52,7 +53,7 @@ class ProfileFragment : Fragment() {
 
             doctorAppointmentViewModel.readAllData.observe(viewLifecycleOwner, androidx.lifecycle.Observer {doctorAppointment -> adapter.setData(doctorAppointment) })
 
-        }
+
         return root
     }
 
