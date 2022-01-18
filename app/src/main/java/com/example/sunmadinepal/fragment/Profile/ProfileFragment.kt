@@ -71,11 +71,14 @@ class ProfileFragment : Fragment() {
             TimePickerDialog(requireContext(), R.style.DatePickerDialogTheme, TimePickerDialog.OnTimeSetListener { _, hour, minute ->
                 val pickedDateTime = Calendar.getInstance()
                 pickedDateTime.set(year, month, day, hour, minute)
-                binding.dateBox.setText(""+hour+":"+minute +"    " +day +"/"+ (month+1) +"/"+ year)
+                binding.dateBox.setText(""+timeFormat(hour)+":"+timeFormat(minute) +"    " +day +"/"+ (month+1) +"/"+ year)
             }, startHour, startMinute, true).show()
         }, startYear, startMonth, startDay).show()
     }
 
+    fun timeFormat(number: Int): String? {
+        return if (number <= 9) "0$number" else number.toString()
+    }
 
     private fun insertDataToDatabase() {
         val dateToDatabase = binding.dateBox.text.toString()
@@ -90,49 +93,3 @@ class ProfileFragment : Fragment() {
 }
 
 
-/*
-        val textView= binding.textProfile
-        profileViewModel.text.observe(viewLifecycleOwner, Observer { textView.text = it })*/
-
-
-/* val btn : Button =binding.addweightoo
-profileViewModel.newactivity.observe(viewLifecycleOwner, Observer { btn.setOnClickListener { // Launching new Activity on selecting single List Item
-val i = Intent(activity, profile_Add::class.java)
-startActivity(i)
-} })*/
-
-
-
-
-
-//val date = Calendar.getInstance()
-//val year = date.get(Calendar.YEAR)
-//val month = date.get(Calendar.MONTH)
-//val day = date.get(Calendar.DAY_OF_MONTH)
-
-
-/*binding.addAppointment.setOnClickListener { val datePickerDialog = DatePickerDialog(requireContext(),{ view, savedYear, savedMonth, savedDay ->
-binding.dateBox.setText(""+ savedDay +"-"+ (savedMonth+1) +"-"+ savedYear)
-}, year, month, day)
-
-datePickerDialog.show()
-
-}
-
-binding.saveDate.setOnClickListener {
-insertDataToDatabase()
-}
-
-
-return root
-}
-
-private fun insertDataToDatabase() {
-val dateToDatabase = binding.dateBox.text.toString()
-
-val doctorAppointment = DoctorAppointment(0,dateToDatabase)
-
-doctorAppointmentViewModel.addDoctorAppointment(doctorAppointment)
-Toast.makeText(requireContext(),"Date saved", Toast.LENGTH_LONG).show()
-}
- */
