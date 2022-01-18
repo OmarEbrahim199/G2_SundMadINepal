@@ -67,11 +67,11 @@
 
                 <ImageView
                     android:id="@+id/pic1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="351dp"
+                    android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step1"
-                    android:src="@drawable/step1_soil"
+                    android:src="@drawable/compost_a"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step1"
@@ -93,11 +93,11 @@
 
                 <ImageView
                     android:id="@+id/pic2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="351dp"
+                    android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step2"
-                    android:src="@drawable/step2_soil"
+                    android:src="@drawable/compost_b"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step2"
@@ -119,11 +119,11 @@
 
                 <ImageView
                     android:id="@+id/pic3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="351dp"
+                    android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step3"
-                    android:src="@drawable/step3_soil"
+                    android:src="@drawable/compost_c"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step3"
@@ -145,11 +145,11 @@
 
                 <ImageView
                     android:id="@+id/pic4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="351dp"
+                    android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step4"
-                    android:src="@drawable/step4_soil"
+                    android:src="@drawable/compost_d"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step4"

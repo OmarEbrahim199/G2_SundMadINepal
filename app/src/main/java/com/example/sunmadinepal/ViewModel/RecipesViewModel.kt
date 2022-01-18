@@ -64,7 +64,7 @@ class RecipesViewModel : ViewModel() {
 
                     itemName = document.data.getValue(ItemName) as String
                     val ItemImage1 =document.data.getValue("app_litto").toString()
-                    val ItemImage2 =document.data.getValue("app_litto").toString()
+                    val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
 
                     itemDescription = document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
@@ -128,7 +128,7 @@ class RecipesViewModel : ViewModel() {
 
                     ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("ItemImage5").toString()
-                    val ItemImage2 =document.data.getValue("ItemImage6").toString()
+                    val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
@@ -190,7 +190,7 @@ class RecipesViewModel : ViewModel() {
 
                     ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("app_litto").toString()
-                    val ItemImage2 =document.data.getValue("app_litto").toString()
+                    val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
