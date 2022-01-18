@@ -15,4 +15,8 @@ class DataRepository(private val doctorAppointmentDao: DoctorAppointmentDao) {
         doctorAppointmentDao.addDoctorAppointment(doctorAppointment)
     }
 
+    suspend fun deleteDoctorAppointment(doctorAppointment: DoctorAppointment) {
+        doctorAppointmentDao.deleteDoctorAppointment(doctorAppointment)
+    }
+
 }

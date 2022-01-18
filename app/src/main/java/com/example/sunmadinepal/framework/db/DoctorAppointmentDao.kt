@@ -6,7 +6,6 @@ import java.util.*
 import java.util.concurrent.Flow
 
 
-//MERGE FIIIX
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
 @Dao
 interface DoctorAppointmentDao {
@@ -17,7 +16,7 @@ interface DoctorAppointmentDao {
     suspend fun addDoctorAppointment(doctorAppointment: DoctorAppointment)
 
     @Delete
-    fun delete(doctorAppointment: DoctorAppointment)
+    suspend fun deleteDoctorAppointment(doctorAppointment: DoctorAppointment)
 
     @Query("SELECT * FROM doctorAppointments")
     fun readAll(): LiveData<List<DoctorAppointment>>

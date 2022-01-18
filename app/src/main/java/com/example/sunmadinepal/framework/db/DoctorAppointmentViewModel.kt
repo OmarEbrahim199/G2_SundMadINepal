@@ -28,5 +28,12 @@ class DoctorAppointmentViewModel(application: Application): AndroidViewModel(app
         }
     }
 
+    fun deleteDoctorAppointment(doctorAppointment: DoctorAppointment) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteDoctorAppointment(doctorAppointment)
+        }
+    }
+
+
 
 }

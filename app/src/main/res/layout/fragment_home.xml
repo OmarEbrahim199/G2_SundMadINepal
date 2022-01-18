@@ -47,50 +47,49 @@
             android:layout_marginBottom="731dp"
             android:text="@string/choose_language"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/box_date"
-            app:layout_constraintStart_toEndOf="@+id/box_date"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/box_date"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="320dp"
-            android:layout_height="125dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:src="@drawable/background_box"
+            android:background="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/welcome"
-            android:contentDescription="doctor appointments overview"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintTop_toBottomOf="@id/welcome">
 
-        <TextView
-            android:id="@+id/next_doc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/next_doctors_appointment"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@id/box_date"
-            app:layout_constraintTop_toTopOf="@id/box_date" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/next_doc" />
 
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="25dp"
-            android:text="21-10-2021"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/box_date"
-            app:layout_constraintStart_toStartOf="@id/box_date"
-            app:layout_constraintTop_toTopOf="@id/box_date"
-            tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/next_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/next_doctors_appointment"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/veggie"
@@ -100,7 +99,7 @@
             android:background="@drawable/background_box"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/box_date">
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
                 <TextView
                     android:id="@+id/titel"

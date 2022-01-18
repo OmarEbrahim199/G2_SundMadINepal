@@ -1,11 +1,10 @@
 package com.example.sunmadinepal.fragment.Profile
 
+import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -44,13 +43,13 @@ class ProfileFragment : Fragment() {
                 insertDataToDatabase()
             }
 
+
             //Based on https://www.youtube.com/watch?v=3USvr1Lz8g8&t=49s
             val adapter = ListAdapter()
             val recyclerView = binding.recyclerview1
             recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-            //doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
             doctorAppointmentViewModel.readAllData.observe(viewLifecycleOwner, androidx.lifecycle.Observer {doctorAppointment -> adapter.setData(doctorAppointment) })
 
         }

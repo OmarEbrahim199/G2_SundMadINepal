@@ -6,12 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.databinding.FragmentHomeBinding
 import com.example.sunmadinepal.ViewModel.HomeViewModel
+import com.example.sunmadinepal.framework.db.DoctorAppointmentViewModel
+import com.example.sunmadinepal.framework.db.ListAdapter
 
 
 class HomeFragment : Fragment() {
 
+    private lateinit var doctorAppointmentViewModel: DoctorAppointmentViewModel
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
 
@@ -25,6 +29,15 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val adapter = ListAdapter()
+        val recyclerView = binding.recyclerview
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+        doctorAppointmentViewModel = ViewModelProvider(this).get(DoctorAppointmentViewModel::class.java)
+        doctorAppointmentViewModel.readAllData.observe(viewLifecycleOwner, androidx.lifecycle.Observer {doctorAppointment -> adapter.setData(doctorAppointment) })
+
 
         return root
     }
