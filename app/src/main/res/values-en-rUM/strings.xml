@@ -62,13 +62,15 @@
     <string name="_3_moisturize_the_soil">3. Moisturize the soil</string>
     <string name="_4_soil_be_prepared_in_8_to_10_days">4. Soil be prepared in 8 to 10 days</string>
     <string name="_5_then_make_a_high_land_for_the_crops_growing">5. Then make a high land for the crops growing</string>
-    <string name="compost_title">Compost size of 2x2 meters</string>
-    <string name="compost_step1">1. To make compost we need Cow’s urine, leaves , bushes with leaves, ash and Cow dung. (Make a pit according to how much land you have.)</string>
-    <string name="compost_step2">2. put layer by layer elements in the pit, firstly, put Bushes with leaves then cow dung, then Urine and ash. repeat until the pit is full.</string>
-    <string name="compost_step3">3. Put a stick that reaches the bottom  of the pit and cover it with Soil.</string>
-    <string name="compost_step4">4. Your compost Pit will be ready in 30 to 35 days.</string>
+
     <string name="general_health_info">General health info</string>
     <string name="_6_9_months">6-9 months</string>
     <string name="_9_12_months">9-12 months</string>
     <string name="doctor">Doctor</string>
+    <string name="Compost_title">How to make compost</string>
+    <string name="Compost_Step1">Compost size of 2m*2m</string>
+    <string name="Compost_Step2">To make compost we need Cow’s urine, leaves, bushes with leaves, ash and Cow dung (Make a pit according to how much land you have)</string>
+    <string name="Compost_Step3">Put layer by layer elements in the pit, firstly, put Bushes with leaves then cow dung, then Urine and ash. repeat until the pit is full</string>
+    <string name="Compost_Step4">Put a stick that reaches the bottom of the pit and cover it with Soil</string>
+    <string name="Compost_Step5">Your compost Pit will be ready in 30 to 35 days</string>
 </resources>

@@ -44,7 +44,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="15dp"
-                    android:text="@string/compost_title"
+                    android:text="@string/Compost_title"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -52,13 +52,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/compost_step1"
+                    android:id="@+id/Step1_compost"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="15dp"
-                    android:text="@string/compost_step1"
+                    android:text="@string/Compost_Step1"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -67,24 +67,24 @@
 
                 <ImageView
                     android:id="@+id/pic1"
-                    android:layout_width="351dp"
+                    android:layout_width="match_parent"
                     android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step1"
-                    android:src="@drawable/compost_a"
+                    android:src="@drawable/step1_compost"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/compost_step1"
+                    app:layout_constraintTop_toBottomOf="@id/Step1_compost"
                     tools:ignore="HardcodedText" />
 
                 <TextView
-                    android:id="@+id/compost_step2"
+                    android:id="@+id/Step2_compost"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="15dp"
-                    android:text="@string/compost_step2"
+                    android:text="@string/Compost_Step2"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -93,14 +93,14 @@
 
                 <ImageView
                     android:id="@+id/pic2"
-                    android:layout_width="351dp"
+                    android:layout_width="match_parent"
                     android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step2"
-                    android:src="@drawable/compost_b"
+                    android:src="@drawable/step2_compost"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/compost_step2"
+                    app:layout_constraintTop_toBottomOf="@id/Step2_compost"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -110,7 +110,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="15dp"
-                    android:text="@string/compost_step3"
+                    android:text="@string/Compost_Step3"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,11 +119,11 @@
 
                 <ImageView
                     android:id="@+id/pic3"
-                    android:layout_width="351dp"
+                    android:layout_width="match_parent"
                     android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step3"
-                    android:src="@drawable/compost_c"
+                    android:src="@drawable/step3_compost"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step3"
@@ -136,7 +136,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="15dp"
-                    android:text="@string/compost_step4"
+                    android:text="@string/Compost_Step4"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -145,16 +145,31 @@
 
                 <ImageView
                     android:id="@+id/pic4"
-                    android:layout_width="351dp"
+                    android:layout_width="match_parent"
                     android:layout_height="324dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="step4"
-                    android:src="@drawable/compost_d"
+                    android:src="@drawable/step4_compost"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/compost_step4"
                     tools:ignore="HardcodedText" />
 
+                <TextView
+                    android:id="@+id/compost_step5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/Compost_Step5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pic4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
