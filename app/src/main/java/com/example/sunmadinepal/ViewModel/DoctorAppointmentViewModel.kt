@@ -1,10 +1,12 @@
-package com.example.sunmadinepal.framework.db
+package com.example.sunmadinepal.ViewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.example.sunmadinepal.DataRepository
+import com.example.sunmadinepal.database.local.AppDatabase
+import com.example.sunmadinepal.model.DoctorAppointment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

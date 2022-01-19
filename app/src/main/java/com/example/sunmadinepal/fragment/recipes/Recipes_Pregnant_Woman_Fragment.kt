@@ -9,41 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentPregantWomanBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
+import com.example.sunmadinepal.database.adapter.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 import kotlin.collections.ArrayList
 import android.app.ProgressDialog
-import android.os.Handler
-import android.os.Looper
-import android.util.Log
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
 import com.example.sunmadinepal.ViewModel.RecipesViewModel
-import com.example.sunmadinepal.framework.db.CloudData
-import com.google.android.gms.tasks.Task
-import com.google.firebase.database.DatabaseError
-
-import com.google.firebase.database.DataSnapshot
-
-import com.google.firebase.database.ValueEventListener
-
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.DocumentSnapshot
-import kotlinx.coroutines.InternalCoroutinesApi
-import kotlinx.coroutines.internal.synchronized
-import android.graphics.drawable.ColorDrawable
-
-import com.example.sunmadinepal.MainActivity
-
-import android.os.CountDownTimer
-import com.example.sunmadinepal.ViewModel.ProfileViewModel
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 
 class Recipes_Pregnant_Woman_Fragment : Fragment() {

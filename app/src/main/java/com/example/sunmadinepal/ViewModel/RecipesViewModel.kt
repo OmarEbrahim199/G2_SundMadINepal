@@ -1,30 +1,14 @@
 package com.example.sunmadinepal.ViewModel
 
 
-import android.app.Activity
-import android.app.ProgressDialog
 import android.content.ContentValues
-import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.util.Log
-import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.bumptech.glide.Glide
-import com.example.sunmadinepal.R
-import com.example.sunmadinepal.framework.data.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.google.android.gms.tasks.OnFailureListener
-
-import com.google.android.gms.tasks.OnSuccessListener
-import com.google.firebase.storage.FirebaseStorage
-
-import com.google.firebase.storage.StorageReference
 
 
 class RecipesViewModel : ViewModel() {

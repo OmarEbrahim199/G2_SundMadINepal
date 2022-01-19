@@ -1,19 +1,12 @@
 package com.example.sunmadinepal
 
-import android.app.Activity
-import android.app.AlertDialog
-import android.content.Context
 import android.content.Intent
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.RotateAnimation
 import android.widget.*
-import androidx.room.Room
-import com.example.sunmadinepal.framework.db.AppDatabase
 import java.util.*
 
 

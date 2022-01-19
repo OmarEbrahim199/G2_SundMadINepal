@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.ViewModel.RecipesViewModel
 import com.example.sunmadinepal.databinding.FragmentRecipesMothersBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
+import com.example.sunmadinepal.database.adapter.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import java.util.*
 import kotlin.collections.ArrayList

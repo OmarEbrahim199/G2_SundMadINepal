@@ -1,16 +1,13 @@
-package com.example.sunmadinepal.framework.db
+package com.example.sunmadinepal.database.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import java.util.*
-import java.util.concurrent.Flow
+import com.example.sunmadinepal.model.DoctorAppointment
 
 
 // Based on https://developer.android.com/training/data-storage/room/accessing-data#kotlin
 @Dao
 interface DoctorAppointmentDao {
-    @Insert
-    fun insertAll(vararg doctorAppointments: DoctorAppointment)
 
     @Insert
     suspend fun addDoctorAppointment(doctorAppointment: DoctorAppointment)

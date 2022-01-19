@@ -2,7 +2,6 @@ package com.example.sunmadinepal.fragment.health
 
 import android.app.ProgressDialog
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,13 +11,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.ViewModel.HealthViewModel
-import com.example.sunmadinepal.ViewModel.RecipesViewModel
 import com.example.sunmadinepal.databinding.Fragment06MonthsBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
+import com.example.sunmadinepal.database.adapter.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
-import com.google.firebase.firestore.*
 
-import com.google.firebase.firestore.EventListener
 import java.util.*
 import kotlin.collections.ArrayList
 

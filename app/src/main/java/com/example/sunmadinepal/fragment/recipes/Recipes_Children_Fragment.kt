@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentRecipesChildrenBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
+import com.example.sunmadinepal.database.adapter.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
 import com.example.sunmadinepal.ViewModel.RecipesViewModel
 import java.util.*

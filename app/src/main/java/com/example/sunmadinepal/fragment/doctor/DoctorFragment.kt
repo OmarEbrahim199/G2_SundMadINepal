@@ -9,9 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.R
+import com.example.sunmadinepal.ViewModel.DoctorAppointmentViewModel
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
-import com.example.sunmadinepal.framework.db.*
+import com.example.sunmadinepal.database.local.*
+import com.example.sunmadinepal.model.DoctorAppointment
 import java.util.*
 
 class DoctorFragment : Fragment() {

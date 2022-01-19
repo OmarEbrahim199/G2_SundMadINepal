@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sunmadinepal.databinding.FragmentHomeBinding
 import com.example.sunmadinepal.ViewModel.HomeViewModel
-import com.example.sunmadinepal.framework.db.DoctorAppointmentViewModel
-import com.example.sunmadinepal.framework.db.ListAdapter
+import com.example.sunmadinepal.ViewModel.DoctorAppointmentViewModel
+import com.example.sunmadinepal.database.local.ListAdapter
 
 
 class HomeFragment : Fragment() {

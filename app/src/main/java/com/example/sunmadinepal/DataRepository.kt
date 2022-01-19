@@ -1,8 +1,8 @@
 package com.example.sunmadinepal
 
 import androidx.lifecycle.LiveData
-import com.example.sunmadinepal.framework.db.DoctorAppointment
-import com.example.sunmadinepal.framework.db.DoctorAppointmentDao
+import com.example.sunmadinepal.model.DoctorAppointment
+import com.example.sunmadinepal.database.local.DoctorAppointmentDao
 
 //Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 

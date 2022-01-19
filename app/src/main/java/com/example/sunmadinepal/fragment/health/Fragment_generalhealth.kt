@@ -9,12 +9,10 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.sunmadinepal.R
 import com.example.sunmadinepal.ViewModel.HealthViewModel
 import com.example.sunmadinepal.databinding.FragmentGeneralhealthBinding
-import com.example.sunmadinepal.framework.data.CustomAdapter
+import com.example.sunmadinepal.database.adapter.CustomAdapter
 import com.example.sunmadinepal.model.RecipesData
-import com.google.firebase.firestore.*
 import java.util.*
 import kotlin.collections.ArrayList
 

@@ -1,4 +1,4 @@
-package com.example.sunmadinepal.framework.db
+package com.example.sunmadinepal.database.local
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sunmadinepal.R
-import com.example.sunmadinepal.databinding.FragmentDateListBinding
-import com.example.sunmadinepal.databinding.FragmentProfileBinding
+import com.example.sunmadinepal.model.DoctorAppointment
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
@@ -16,8 +15,6 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     class MyViewHolder(val view: View): RecyclerView.ViewHolder(view){
 
     }
-
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
