@@ -23,20 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <!-- <TextView
-            android:id="@+id/How_to_plant_in_my_garden"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/garden"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            app:layout_constraintStart_toStartOf
-            ="@id/soil"
-            app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/corner"
-            android:textColor="@color/white" />-->
-
     <Button
         android:id="@+id/soil"
         android:layout_width="320dp"

@@ -18,17 +18,6 @@
             tools:layout_editor_absoluteY="570dp"
             tools:ignore="MissingConstraints" />
 
-        <!-- Search widget commented out
-        <ImageButton
-            android:id="@+id/search_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/search_bar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
--->
         <Button
             android:id="@+id/recipes_for_pregnant_woman"
             android:layout_width="320dp"
@@ -78,38 +67,6 @@
             app:layout_constraintTop_toBottomOf="@id/recipes_for_mothers" />
 
 
-        <!--<ImageButton
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/recipes_for_pregnant_woman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@drawable/recipes_for_pregnant_woman"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/recipes_for_mothers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@drawable/recipes_for_mothers"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recipes_for_pregnant_woman" />
-
-        <ImageButton
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/recipes_for_children"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@drawable/recipes_for_children"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recipes_for_mothers" /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
