@@ -25,7 +25,6 @@
         android:id="@+id/general_information"
         android:layout_width="150dp"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
@@ -36,6 +35,7 @@
         android:theme="@style/Button.White"
         app:layout_constraintBottom_toTopOf="@+id/lady_0to6"
         app:layout_constraintDimensionRatio="h,150:155"
+        app:layout_constraintEnd_toStartOf="@id/maternity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside" />
@@ -65,7 +65,6 @@
         android:id="@+id/lady_0to6"
         android:layout_width="150dp"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/background_box"
@@ -77,6 +76,7 @@
         android:theme="@style/Button.White"
         app:layout_constraintBottom_toTopOf="@+id/lady9to12"
         app:layout_constraintDimensionRatio="h,150:155"
+        app:layout_constraintEnd_toStartOf="@id/lady6to9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/general_information" />
 
@@ -104,7 +104,6 @@
         android:id="@+id/lady9to12"
         android:layout_width="150dp"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/background_box"
@@ -116,6 +115,7 @@
         android:theme="@style/Button.White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="h,150:155"
+        app:layout_constraintEnd_toStartOf="@id/lady12to24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lady_0to6" />
 
