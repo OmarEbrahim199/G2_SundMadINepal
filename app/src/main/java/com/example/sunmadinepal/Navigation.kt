@@ -81,10 +81,21 @@ class Navigation() : AppCompatActivity() {
         val text: TextView = findViewById(R.id.Choose_Language)
 
         val listItmes = arrayOf( "नेपाली", "English")
+         val string = Locale.getDefault().getLanguage()
+         var checkedLanguage = 1
+
+         if (
+             string.equals("ne")
+         ) {checkedLanguage = 0
+         }
+         else if (
+             string.equals("en")
+         ) {checkedLanguage = 1
+         }
 
         val mBuilder = AlertDialog.Builder(this)
         mBuilder.setTitle(text.text)
-        mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
+        mBuilder.setSingleChoiceItems(listItmes, checkedLanguage) { dialog, which ->
             if (which == 0) {
                 setLocate("ne")
                 recreate()
