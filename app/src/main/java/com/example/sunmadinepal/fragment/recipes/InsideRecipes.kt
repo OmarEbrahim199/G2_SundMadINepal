@@ -24,8 +24,6 @@ class InsideRecipes : AppCompatActivity() {
 
         val food_image: ImageView = findViewById(R.id.ivImage)
         val food_description: TextView = findViewById(R.id.tvwelcome)
-        val food_title: TextView = findViewById(R.id.title)
-
 
         val bundle: Bundle? = intent.extras
         if (bundle != null) {
@@ -33,7 +31,6 @@ class InsideRecipes : AppCompatActivity() {
             val titlel = bundle.getString("Title")
             (this as AppCompatActivity).supportActionBar?.title = titlel
             food_description.setText(bundle.getString("Description"))
-            //  food_image.setImageResource(bundle.getInt("Image"))
             loadImage(food_image, bundle.getString("Image1").toString())
 
 

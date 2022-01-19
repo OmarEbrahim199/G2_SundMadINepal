@@ -46,7 +46,6 @@ class Fragment_12_24_months : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        //(activity as AppCompatActivity).supportActionBar?.title = "From 12 to 24months"
         (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.months_12to24)
 
         getData()

@@ -76,7 +76,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.sunmadinepal.fragment.Profile.ProfileFragment"
+        android:name="com.example.sunmadinepal.fragment.doctor.DoctorFragment"
         android:label="@string/title_doctor_appointments"
         tools:layout="@layout/fragment_profile">
 

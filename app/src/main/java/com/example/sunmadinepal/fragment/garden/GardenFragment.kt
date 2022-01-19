@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentGardenBinding
 import com.example.sunmadinepal.ViewModel.GardenViewModel
+import com.example.sunmadinepal.model.setLocale
 import java.util.*
 
 
@@ -46,7 +47,7 @@ class GardenFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         goToDestinations()
-        setLocale(string)
+        setLocale(this.requireContext(),string)
     }
 
     fun goToDestinations(){
@@ -68,13 +69,4 @@ class GardenFragment : Fragment() {
         }
     }
 
-    private fun setLocale(code: String) {
-        val config = Configuration()
-        var locale: Locale? = null
-        locale = Locale(code)
-        Locale.setDefault(locale)
-        config.locale = locale
-        this.resources.updateConfiguration(config,
-            this.resources.displayMetrics)
-    }
 }

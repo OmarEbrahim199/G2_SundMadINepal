@@ -92,11 +92,9 @@ class Recipes_Mothers_Fragment : Fragment() {
         val view = binding?.root
 
         // Change ActionBar title in fragment
-        //(activity as AppCompatActivity).supportActionBar?.title = "Recipes for mothers"
         (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.recipe_for_mothers)
 
         return  view
-       // return inflater.inflate(R.layout.fragment_recipes_for__mothers_, container, false)
     }
 
 }

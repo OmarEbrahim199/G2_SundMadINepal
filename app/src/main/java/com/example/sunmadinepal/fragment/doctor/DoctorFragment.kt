@@ -1,6 +1,5 @@
-package com.example.sunmadinepal.fragment.Profile
+package com.example.sunmadinepal.fragment.doctor
 
-import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
@@ -9,15 +8,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.room.Room
 import com.example.sunmadinepal.R
 
 import com.example.sunmadinepal.databinding.FragmentProfileBinding
-import com.example.sunmadinepal.ViewModel.ProfileViewModel
 import com.example.sunmadinepal.framework.db.*
 import java.util.*
 
-class ProfileFragment : Fragment() {
+class DoctorFragment : Fragment() {
 
 // Based on https://www.youtube.com/watch?v=UBCAWfztTrQ
 
