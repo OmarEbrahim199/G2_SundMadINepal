@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentSoilBinding
 import java.util.*
 
@@ -30,7 +31,7 @@ class SoilFragment : Fragment() {
 
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "Preparing the soil"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.preparing_the_soil)
 
         return  view
     }

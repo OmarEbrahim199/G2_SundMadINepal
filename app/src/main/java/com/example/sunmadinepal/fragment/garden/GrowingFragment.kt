@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentGrowingBinding
 import java.util.*
 
@@ -29,7 +30,7 @@ class GrowingFragment : Fragment() {
 
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "What veggies to grow"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.what_to_grow_in_the_garden)
 
         return  view
     }

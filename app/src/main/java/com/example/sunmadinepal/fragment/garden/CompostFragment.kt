@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentCompostBinding
 import java.util.*
 
@@ -30,7 +31,9 @@ class CompostFragment : Fragment() {
 
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "How to make a compost"
+
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.Compost_title)
+
 
         return  view
     }

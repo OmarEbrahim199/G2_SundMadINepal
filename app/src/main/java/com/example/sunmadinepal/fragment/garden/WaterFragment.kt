@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sunmadinepal.R
 import com.example.sunmadinepal.databinding.FragmentWaterBinding
 import java.util.*
 
@@ -30,7 +31,7 @@ class WaterFragment : Fragment() {
 
 
         // Change ActionBar title in fragment
-        (activity as AppCompatActivity).supportActionBar?.title = "How to water crops"
+        (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.how_to_water_crops)
 
         return  view
     }
