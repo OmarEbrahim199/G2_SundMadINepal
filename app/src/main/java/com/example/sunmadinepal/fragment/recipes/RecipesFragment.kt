@@ -23,7 +23,6 @@ import java.util.*
 class RecipesFragment : Fragment() {
 
 
-    private lateinit var dashboardViewModel: RecipesViewModel
     private var _binding: FragmentRecipesBinding? = null
 
     // This property is only valid between onCreateView and
@@ -46,18 +45,9 @@ class RecipesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        //dashboardViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)
 
         _binding = FragmentRecipesBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-/*
-        val callback =object  : OnBackPressedCallback(true){
-           override fun handleOnBackPressed() {
-               findNavController().navigate(R.id.action_recipes_For_Children_Fragment_to_navigation_recipes2)
-           }
-       }
-       requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,callback)*/
 
         return root
     }

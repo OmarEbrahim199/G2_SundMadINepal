@@ -28,7 +28,6 @@ class Recipes_Children_Fragment : Fragment() {
     private lateinit var recipesViewModel : RecipesViewModel
 
     val string = Locale.getDefault().getLanguage()
-   // val locale = Locale(string)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +39,6 @@ class Recipes_Children_Fragment : Fragment() {
     ): View? {
 
         // Change ActionBar title in fragment
-        //(activity as AppCompatActivity).supportActionBar?.title = "Recipes for children"
         (activity as AppCompatActivity).supportActionBar?.title = getText(R.string.recipe_for_children)
 
         recipesViewModel = ViewModelProvider(this).get(RecipesViewModel::class.java)

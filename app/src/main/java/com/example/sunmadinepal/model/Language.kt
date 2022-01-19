@@ -15,21 +15,3 @@ fun setLocale(c:Context,code: String) {
 
 
 }
-
-
-/*private fun setLocale(code: String) {
-
-       val locale = Locale(code)
-       Locale.setDefault(locale)
-       val config = Configuration()
-       config.locale = locale
-       requireContext().getApplicationContext().resources.updateConfiguration(config, null)
-
-       *//*val config = Configuration()
-        var locale: Locale? = null
-        locale = Locale(code)
-        Locale.setDefault(locale)
-        config.locale = locale
-        this.resources.updateConfiguration(config,
-            this.resources.displayMetrics)*//*
-    }*/
