@@ -42,12 +42,14 @@ class Recipes_Mothers_Fragment : Fragment() {
             recipesViewModel.fetchEventRecipeForMothers(
                 "JauloTitleEn","JauloDescriptionEn",
                 "LittoTitleEn", "LittoDescriptionEn",
-                "NutritiousFlourTitleEn","NutritiousFlourDescriptionEn")
+                "NutritiousFlourTitleEn","NutritiousFlourDescriptionEn",
+                "PumpkinPuddingTitleEn", "PumpkinPuddingDescriptionEn")
         }else if (string.equals("ne")){
             recipesViewModel.fetchEventRecipeForMothers(
                 "JauloTitleNe","JauloDescriptionNe",
                 "LittoTitleNe","LittoDescriptionNe",
-                "NutritiousFlourTitleNe","NutritiousFlourDescriptionNe")
+                "NutritiousFlourTitleNe","NutritiousFlourDescriptionNe",
+                "PumpkinPuddingTitleNe", "PumpkinPuddingDescriptionNe")
         }
 
         progressDialog =  ProgressDialog(this.context)

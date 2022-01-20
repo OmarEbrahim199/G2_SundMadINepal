@@ -35,7 +35,9 @@ class RecipesViewModel : ViewModel() {
         ItemName1: String,
         ItemDescription1: String,
         ItemName2: String,
-        ItemDescription2: String
+        ItemDescription2: String,
+        ItemName3: String,
+        ItemDescription3: String
     ) {
         firestore.collection("Recipes").get().addOnCompleteListener {
             if (it.isCanceled) {
@@ -47,6 +49,7 @@ class RecipesViewModel : ViewModel() {
                     ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("app_litto").toString()
                     val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
+                    val ItemImage3 =document.data.getValue("PumpkinPudding").toString()
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
@@ -54,6 +57,8 @@ class RecipesViewModel : ViewModel() {
                     val itemDescription1 = document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2 = document.data.getValue(ItemDescription2).toString()
+                    val itemName3 = document.data.getValue(ItemName3) as String
+                    val itemDescription3 = document.data.getValue(ItemDescription3).toString()
 
 
                     _events.value = listOf(
@@ -78,6 +83,14 @@ class RecipesViewModel : ViewModel() {
                                 itemDescription2
                             )
                         )
+                    ).plus(
+                        listOf(
+                            RecipesData(
+                                ItemImage3,
+                                itemName3,
+                                itemDescription3
+                            )
+                        )
                     )
                 }
             }
@@ -92,7 +105,9 @@ class RecipesViewModel : ViewModel() {
         ItemName1: String,
         ItemDescription1: String,
         ItemName2: String,
-        ItemDescription2: String
+        ItemDescription2: String,
+        ItemName3: String,
+        ItemDescription3: String
     ) {
 
             firestore.collection("Recipes").get().addOnCompleteListener {
@@ -105,6 +120,7 @@ class RecipesViewModel : ViewModel() {
                     ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("ItemImage5").toString()
                     val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
+                    val ItemImage3 =document.data.getValue("PumpkinPudding").toString()
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
@@ -112,6 +128,8 @@ class RecipesViewModel : ViewModel() {
                     val itemDescription1 = document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2 = document.data.getValue(ItemDescription2).toString()
+                    val itemName3 = document.data.getValue(ItemName3) as String
+                    val itemDescription3 = document.data.getValue(ItemDescription3).toString()
 
 
                     _events.value =
@@ -137,6 +155,14 @@ class RecipesViewModel : ViewModel() {
                                     itemDescription2
                                 )
                             )
+                        ).plus(
+                            listOf(
+                                RecipesData(
+                                    ItemImage3,
+                                    itemName3,
+                                    itemDescription3
+                                )
+                            )
                         )
                 }
             }
@@ -151,7 +177,9 @@ class RecipesViewModel : ViewModel() {
         ItemName1: String,
         ItemDescription1: String,
         ItemName2: String,
-        ItemDescription2: String
+        ItemDescription2: String,
+        ItemName3: String,
+        ItemDescription3: String
     ) {
         firestore.collection("Recipes").get().addOnCompleteListener {
             if (it.isCanceled) {
@@ -163,6 +191,7 @@ class RecipesViewModel : ViewModel() {
                     ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("app_litto").toString()
                     val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
+                    val ItemImage3 =document.data.getValue("PumpkinPudding").toString()
 
                     itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
@@ -170,6 +199,8 @@ class RecipesViewModel : ViewModel() {
                     val itemDescription1 = document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2 = document.data.getValue(ItemDescription2).toString()
+                    val itemName3 = document.data.getValue(ItemName3) as String
+                    val itemDescription3 = document.data.getValue(ItemDescription3).toString()
 
 
                     _events.value = listOf(
@@ -192,6 +223,14 @@ class RecipesViewModel : ViewModel() {
                                 ItemImage2,
                                 itemName2,
                                 itemDescription2
+                            )
+                        )
+                    ).plus(
+                        listOf(
+                            RecipesData(
+                                ItemImage3,
+                                itemName3,
+                                itemDescription3
                             )
                         )
                     )

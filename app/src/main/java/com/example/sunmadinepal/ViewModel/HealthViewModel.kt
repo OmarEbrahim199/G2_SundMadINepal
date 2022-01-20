@@ -38,7 +38,7 @@ class HealthViewModel : ViewModel() {
 
                     val ItemImage =document.data.getValue("breastfeeding10times").toString()
                     val ItemImage1 =document.data.getValue("app_go_to_healthpost").toString()
-                    val ItemImage2 =document.data.getValue("app_handwashing").toString()
+                    val ItemImage2 =document.data.getValue("VitaminsIronImage").toString()
 
                     val itemName = document.data.getValue(ItemName) as String
                     val itemDescription= document.data.getValue(ItemDescription).toString()
@@ -151,8 +151,8 @@ class HealthViewModel : ViewModel() {
                     val ItemImage =document.data.getValue("growthmonitoringimage").toString()
                     val ItemImage1 =document.data.getValue("app_whentowashhands").toString()
 
-                    val ItemImage2 =document.data.getValue("kopi_af_vegetable").toString()
-                    val ItemImage3 =document.data.getValue("app_go_to_healthpost").toString()
+                    val ItemImage2 =document.data.getValue("VitaminsIronImage").toString()
+                    val ItemImage3 =document.data.getValue("kopi_af_vegetable").toString()
 
 
                     val itemName = document.data.getValue(ItemName) as String
@@ -199,6 +199,7 @@ class HealthViewModel : ViewModel() {
                 for (document in it.result!!){
                     val ItemImage =document.data.getValue("app_go_to_healthpost").toString()
                     val ItemImage1 =document.data.getValue("app_balanceddiet_withmeat").toString()
+                    val ItemImage2 = document.data.getValue("RestingImage").toString()
 
 
                     val itemName = document.data.getValue(ItemName) as String
@@ -213,7 +214,7 @@ class HealthViewModel : ViewModel() {
                     _events.value =listOf(RecipesData(ItemImage,itemName, itemDescription )).
                     plus(listOf(RecipesData(ItemImage1 ,itemName1, itemDescription1 ))).
                     plus(listOf(RecipesData(ItemImage1 ,itemName2, itemDescription2 ))).
-                    plus(listOf(RecipesData(ItemImage ,itemName3, itemDescription3 )))
+                    plus(listOf(RecipesData(ItemImage2 ,itemName3, itemDescription3 )))
                 }
             }
         }.addOnFailureListener { exception ->
