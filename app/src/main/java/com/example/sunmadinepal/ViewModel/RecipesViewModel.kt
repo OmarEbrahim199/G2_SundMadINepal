@@ -44,19 +44,16 @@ class RecipesViewModel : ViewModel() {
             if (it.isSuccessful) {
                 for (document in it.result!!) {
 
-                     ItemImage =document.data.getValue("app_jaulo").toString()
-
-                    itemName = document.data.getValue(ItemName) as String
+                    ItemImage =document.data.getValue("app_jaulo").toString()
                     val ItemImage1 =document.data.getValue("app_litto").toString()
                     val ItemImage2 =document.data.getValue("NutritiousFlour").toString()
 
+                    itemName = document.data.getValue(ItemName) as String
                     itemDescription = document.data.getValue(ItemDescription).toString()
                     val itemName1 = document.data.getValue(ItemName1) as String
                     val itemDescription1 = document.data.getValue(ItemDescription1).toString()
                     val itemName2 = document.data.getValue(ItemName2) as String
                     val itemDescription2 = document.data.getValue(ItemDescription2).toString()
-
-
 
 
                     _events.value = listOf(
@@ -82,16 +79,11 @@ class RecipesViewModel : ViewModel() {
                             )
                         )
                     )
-
-
                 }
-
-
             }
         }.addOnFailureListener { exception ->
             Log.d(ContentValues.TAG, "get failed with ", exception)
         }
-
     }
 
     internal fun fetchEventRecipeForPregnant(
@@ -146,15 +138,11 @@ class RecipesViewModel : ViewModel() {
                                 )
                             )
                         )
-
                 }
-
-
             }
         }.addOnFailureListener { exception ->
             Log.d(ContentValues.TAG, "get failed with ", exception)
         }
-
     }
 
     internal fun fetchEventRecipeForMothers(
@@ -184,8 +172,6 @@ class RecipesViewModel : ViewModel() {
                     val itemDescription2 = document.data.getValue(ItemDescription2).toString()
 
 
-
-
                     _events.value = listOf(
                         RecipesData(
                             ItemImage,
@@ -209,15 +195,11 @@ class RecipesViewModel : ViewModel() {
                             )
                         )
                     )
-
                 }
-
-
             }
         }.addOnFailureListener { exception ->
             Log.d(ContentValues.TAG, "get failed with ", exception)
         }
-
     }
 
 

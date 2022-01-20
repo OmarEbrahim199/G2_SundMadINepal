@@ -42,7 +42,8 @@ class CustomAdapter( private val context: Context,private val mList: List<Recipe
             val intent = Intent(v.context, InsideRecipes::class.java)
             intent.putExtra("Image1",user.itemImage)
             intent.putExtra("Title", mList.get(holder.bindingAdapterPosition).getItemName())
-            intent.putExtra("Description", mList.get(holder.bindingAdapterPosition).getItemDescription().replace("_n", "\n"))
+            intent.putExtra("Description", mList.get(
+                holder.bindingAdapterPosition).getItemDescription().replace("_n", "\n"))
             v.context.startActivity(intent)
         }
 
